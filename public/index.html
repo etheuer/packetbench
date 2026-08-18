@@ -3,152 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Packetbench — Operational packets for US operators.</title>
+  <title>Packetbench</title>
   <meta name="description" content="Operational packets for US operators.">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <a href="/">Packetbench</a>
-    <nav>
+  <!--
+  THESIS: Each desk is a standalone product page that sells one packet, not a studio catalog.
+  OWN-WORLD: Cool paper, ink, one cobalt accent, sharp corners, self-hosted Geist.
+  STORY: Visitor sees the failure, the file they get, the price, and can request kickoff.
+  FIRST VIEWPORT: Split hero. Headline left, packet contents right, primary CTA under the subtext.
+  FORM: Trust-first B2B service landing. Seed: unattended-rebuild-2026-08-18.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+  -->
+  <div class="wrap">
+  <nav class="nav">
+    <a class="brand" href="/">Packetbench</a>
+    <div class="nav-links">
       <a href="/#desks">Desks</a>
       <a href="/legal/terms.html">Terms</a>
-      <a href="/legal/privacy.html">Privacy</a>
-    </nav>
-  </header>
-  <main>
-    <p class="kicker">Twenty desks. One studio.</p>
-    <h1>Operational packets for US operators.</h1>
-    <p class="lede">You approve. We assemble. You submit. Each desk is a fixed-scope packet for a named US operator. No audience required. You pay for a completed file, not software.</p>
-    <p class="note">These are live offers. Checkout wires when Stripe is connected. Intake is open as soon as the lead hook is set.</p>
-    <h2 id="desks">The desks</h2>
-    <div class="grid">
-    <a class="card" href="/offers/01-pecos-revalidation.html">
-      <div class="kicker">regulatory · 01</div>
-      <h3>PECOS Revalidation Packet</h3>
-      <p>CMS lists your NPI on the revalidation due-date list and the 60-day window is already running.</p>
-      <p class="price">$1,200 one-time</p>
-    </a>
-    <a class="card" href="/offers/02-fda-ffr-renewal.html">
-      <div class="kicker">regulatory · 02</div>
-      <h3>FDA Food Facility Renewal</h3>
-      <p>The Oct 1–Dec 31 2026 biennial renewal window is open and the FURLS login is a mess.</p>
-      <p class="price">$900 one-time</p>
-    </a>
-    <a class="card" href="/offers/03-osha-ita-hygiene.html">
-      <div class="kicker">regulatory · 03</div>
-      <h3>OSHA ITA Log Desk</h3>
-      <p>March 2 passed or next March is coming and the 300/300A/301 files are incomplete.</p>
-      <p class="price">$600 setup + $250/mo</p>
-    </a>
-    <a class="card" href="/offers/04-fsis-origin-label.html">
-      <div class="kicker">regulatory · 04</div>
-      <h3>Product-of-USA Evidence Pack</h3>
-      <p>The Jan 2026 origin standard is in force and your file cannot show born-raised-slaughtered-processed in the US.</p>
-      <p class="price">$1,500 one-time</p>
-    </a>
-    <a class="card" href="/offers/05-solar-interconnect.html">
-      <div class="kicker">workflow · 05</div>
-      <h3>Solar Interconnect First-Pass</h3>
-      <p>A missing inverter model or site-plan mismatch sends the utility app to the back of the queue.</p>
-      <p class="price">$400 per application</p>
-    </a>
-    <a class="card" href="/offers/06-gmc-pid-recovery.html">
-      <div class="kicker">workflow · 06</div>
-      <h3>Merchant Center PID Recovery</h3>
-      <p>Google flags price or availability mismatch. Ads and free listings vanish.</p>
-      <p class="price">$1,800 one-time</p>
-    </a>
-    <a class="card" href="/offers/07-amz-vendor-chargebacks.html">
-      <div class="kicker">workflow · 07</div>
-      <h3>Vendor Chargeback Packets</h3>
-      <p>Operational chargebacks hit the defect list and the dispute window is days, not weeks.</p>
-      <p class="price">$800 setup + $600/mo</p>
-    </a>
-    <a class="card" href="/offers/08-gbp-trade-reinstatement.html">
-      <div class="kicker">workflow · 08</div>
-      <h3>Trade GBP Reinstatement Pack</h3>
-      <p>The Maps listing is gone. The phones stop.</p>
-      <p class="price">$750 one-time</p>
-    </a>
-    <a class="card" href="/offers/09-ncci-emod-audit.html">
-      <div class="kicker">labor · 09</div>
-      <h3>e-Mod Worksheet Audit</h3>
-      <p>The new mod arrives and nobody has checked claims, class codes, or closed dates against the worksheet.</p>
-      <p class="price">$1,400 one-time</p>
-    </a>
-    <a class="card" href="/offers/10-coi-chase-desk.html">
-      <div class="kicker">labor · 10</div>
-      <h3>Post-Award COI Chase</h3>
-      <p>The GC will not let you on site until every cert matches the exhibit.</p>
-      <p class="price">$500 setup + $350/mo</p>
-    </a>
-    <a class="card" href="/offers/11-prior-auth-chase.html">
-      <div class="kicker">labor · 11</div>
-      <h3>Prior-Auth Status Desk</h3>
-      <p>Auths sit in missing-info. Nobody is chasing the payer queue.</p>
-      <p class="price">$900 setup + $700/mo</p>
-    </a>
-    <a class="card" href="/offers/12-resto-cash-tax-pack.html">
-      <div class="kicker">labor · 12</div>
-      <h3>Restaurant Cash &amp; Tax Pack</h3>
-      <p>Weekly cash-over-short and sales-tax exceptions live in five POS exports.</p>
-      <p class="price">$400 setup + $350/mo per unit</p>
-    </a>
-    <a class="card" href="/offers/13-hvac-rebate-filing.html">
-      <div class="kicker">leakage · 13</div>
-      <h3>HVAC Rebate Filing Desk</h3>
-      <p>Jobs are done. Utility and IRA rebate forms are still in the truck.</p>
-      <p class="price">$250 setup + $75 per filed packet</p>
-    </a>
-    <a class="card" href="/offers/14-pharmacy-pbm-recon.html">
-      <div class="kicker">leakage · 14</div>
-      <h3>Pharmacy PBM Reconciliation</h3>
-      <p>DIR and recoupment statements do not match your claim export.</p>
-      <p class="price">$1,200 setup + $800/mo</p>
-    </a>
-    <a class="card" href="/offers/15-warranty-labor-rescue.html">
-      <div class="kicker">leakage · 15</div>
-      <h3>Warranty Labor Rescue</h3>
-      <p>The manufacturer rejects the labor claim for a missing photo or model mismatch.</p>
-      <p class="price">$40 per rescued claim</p>
-    </a>
-    <a class="card" href="/offers/16-hotel-ota-shortpay.html">
-      <div class="kicker">leakage · 16</div>
-      <h3>Hotel OTA Short-Pay Desk</h3>
-      <p>The OTA virtual card posts short, or a no-show never gets billed.</p>
-      <p class="price">$800 setup + $500/mo</p>
-    </a>
-    <a class="card" href="/offers/17-sam-first-award.html">
-      <div class="kicker">trigger · 17</div>
-      <h3>First Award Onboarding Pack</h3>
-      <p>The award hits and UEI, CAGE, reporting, and subcontracting are still a pile of tabs.</p>
-      <p class="price">$1,800 one-time</p>
-    </a>
-    <a class="card" href="/offers/18-new-contractor-pack.html">
-      <div class="kicker">trigger · 18</div>
-      <h3>New Contractor 90-Day Pack</h3>
-      <p>The license email arrived. COI, postings, and workers-comp setup have not.</p>
-      <p class="price">$650 one-time</p>
-    </a>
-    <a class="card" href="/offers/19-fda-warning-cleanup.html">
-      <div class="kicker">trigger · 19</div>
-      <h3>Warning-Letter File Desk</h3>
-      <p>The letter is public. Registration, label, and recall files are not in one place.</p>
-      <p class="price">$2,400 one-time</p>
-    </a>
-    <a class="card" href="/offers/20-new-medicare-dme.html">
-      <div class="kicker">trigger · 20</div>
-      <h3>New DME First-Billing Pack</h3>
-      <p>Enrollment is active and the first claims will bounce on missing documentation.</p>
-      <p class="price">$1,500 one-time</p>
-    </a>
     </div>
-
-  </main>
-  <footer>
+  </nav>
+</div>
+  <div class="wrap dir">
+    <h1>Operational packets for a named deadline.</h1>
+    <p class="sub">Each desk is its own offer. You pay for a completed file, not software.</p>
+    <div class="groups" id="desks">
+      <div><h2>regulatory</h2><ul class="desk-list">
+        <li><a href="/offers/01-pecos-revalidation.html"><span><span class="dn">PECOS Revalidation Packet</span><div class="dp">Your PECOS window is already running.</div></span><span class="dp">$1,200 one-time</span></a></li>
+        <li><a href="/offers/02-fda-ffr-renewal.html"><span><span class="dn">FDA Food Facility Renewal</span><div class="dp">The 2026 FDA renewal window is open.</div></span><span class="dp">$900 one-time</span></a></li>
+        <li><a href="/offers/03-osha-ita-hygiene.html"><span><span class="dn">OSHA ITA Log Desk</span><div class="dp">The ITA file is still sitting open.</div></span><span class="dp">$600 setup + $250/mo</span></a></li>
+        <li><a href="/offers/04-fsis-origin-label.html"><span><span class="dn">Product-of-USA Evidence Pack</span><div class="dp">The origin claim needs a paper trail.</div></span><span class="dp">$1,500 one-time</span></a></li>
+      </ul></div>
+      <div><h2>workflow</h2><ul class="desk-list">
+        <li><a href="/offers/05-solar-interconnect.html"><span><span class="dn">Solar Interconnect First-Pass</span><div class="dp">One missing model number resets the queue.</div></span><span class="dp">$400 per application</span></a></li>
+        <li><a href="/offers/06-gmc-pid-recovery.html"><span><span class="dn">Merchant Center PID Recovery</span><div class="dp">Shopping went dark on a price mismatch.</div></span><span class="dp">$1,800 one-time</span></a></li>
+        <li><a href="/offers/07-amz-vendor-chargebacks.html"><span><span class="dn">Vendor Chargeback Packets</span><div class="dp">The defect list is eating the margin.</div></span><span class="dp">$800 setup + $600/mo</span></a></li>
+        <li><a href="/offers/08-gbp-trade-reinstatement.html"><span><span class="dn">Trade GBP Reinstatement Pack</span><div class="dp">The Maps listing is gone. The phones stopped.</div></span><span class="dp">$750 one-time</span></a></li>
+      </ul></div>
+      <div><h2>labor</h2><ul class="desk-list">
+        <li><a href="/offers/09-ncci-emod-audit.html"><span><span class="dn">e-Mod Worksheet Audit</span><div class="dp">The new mod landed. Nobody checked the worksheet.</div></span><span class="dp">$1,400 one-time</span></a></li>
+        <li><a href="/offers/10-coi-chase-desk.html"><span><span class="dn">Post-Award COI Chase</span><div class="dp">The award is public. You still cannot get on site.</div></span><span class="dp">$500 setup + $350/mo</span></a></li>
+        <li><a href="/offers/11-prior-auth-chase.html"><span><span class="dn">Prior-Auth Status Desk</span><div class="dp">Auths are sitting in missing-info.</div></span><span class="dp">$900 setup + $700/mo</span></a></li>
+        <li><a href="/offers/12-resto-cash-tax-pack.html"><span><span class="dn">Restaurant Cash &amp; Tax Pack</span><div class="dp">Monday should not start in five POS exports.</div></span><span class="dp">$400 setup + $350/mo per unit</span></a></li>
+      </ul></div>
+      <div><h2>leakage</h2><ul class="desk-list">
+        <li><a href="/offers/13-hvac-rebate-filing.html"><span><span class="dn">HVAC Rebate Filing Desk</span><div class="dp">The job is done. The rebate form is still in the truck.</div></span><span class="dp">$250 setup + $75 per filed packet</span></a></li>
+        <li><a href="/offers/14-pharmacy-pbm-recon.html"><span><span class="dn">Pharmacy PBM Reconciliation</span><div class="dp">The remit does not match your claim file.</div></span><span class="dp">$1,200 setup + $800/mo</span></a></li>
+        <li><a href="/offers/15-warranty-labor-rescue.html"><span><span class="dn">Warranty Labor Rescue</span><div class="dp">You already did the work. The labor claim bounced.</div></span><span class="dp">$40 per rescued claim</span></a></li>
+        <li><a href="/offers/16-hotel-ota-shortpay.html"><span><span class="dn">Hotel OTA Short-Pay Desk</span><div class="dp">The virtual card posted short again.</div></span><span class="dp">$800 setup + $500/mo</span></a></li>
+      </ul></div>
+      <div><h2>trigger</h2><ul class="desk-list">
+        <li><a href="/offers/17-sam-first-award.html"><span><span class="dn">First Award Onboarding Pack</span><div class="dp">The award hit. The onboarding pile did not.</div></span><span class="dp">$1,800 one-time</span></a></li>
+        <li><a href="/offers/18-new-contractor-pack.html"><span><span class="dn">New Contractor 90-Day Pack</span><div class="dp">The license email arrived. The site still will not let you on.</div></span><span class="dp">$650 one-time</span></a></li>
+        <li><a href="/offers/19-fda-warning-cleanup.html"><span><span class="dn">Warning-Letter File Desk</span><div class="dp">The warning letter is public. The files are not in one place.</div></span><span class="dp">$2,400 one-time</span></a></li>
+        <li><a href="/offers/20-new-medicare-dme.html"><span><span class="dn">New DME First-Billing Pack</span><div class="dp">Enrollment is active. The first claims will bounce.</div></span><span class="dp">$1,500 one-time</span></a></li>
+      </ul></div>
+    </div>
+  </div>
+<footer>
+  <div class="wrap">
     <p>Packetbench assembles operational packets. We do not provide legal, medical, tax, or insurance advice. You own every submission and attestation.</p>
     <p><a href="/legal/terms.html">Terms</a> · <a href="/legal/privacy.html">Privacy</a></p>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>

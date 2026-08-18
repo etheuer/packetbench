@@ -3,87 +3,142 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OSHA ITA Log Desk — Packetbench</title>
-  <meta name="description" content="March 2 passed or next March is coming and the 300/300A/301 files are incomplete.">
+  <title>OSHA ITA Log Desk | Packetbench</title>
+  <meta name="description" content="The ITA file is still sitting open.">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <a href="/">Packetbench</a>
-    <nav>
-      <a href="/#desks">Desks</a>
+  <!--
+  THESIS: Each desk is a standalone product page that sells one packet, not a studio catalog.
+  OWN-WORLD: Cool paper, ink, one cobalt accent, sharp corners, self-hosted Geist.
+  STORY: Visitor sees the failure, the file they get, the price, and can request kickoff.
+  FIRST VIEWPORT: Split hero. Headline left, packet contents right, primary CTA under the subtext.
+  FORM: Trust-first B2B service landing. Seed: unattended-rebuild-2026-08-18.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+  -->
+  <div class="wrap">
+  <nav class="nav">
+    <a class="brand" href="/">Packetbench</a>
+    <div class="nav-links">
+      <span>OSHA ITA Log Desk</span>
       <a href="/legal/terms.html">Terms</a>
-      <a href="/legal/privacy.html">Privacy</a>
-    </nav>
-  </header>
-  <main>
-    <p class="kicker">regulatory desk · 03-osha-ita-hygiene</p>
-    <h1>OSHA ITA Log Desk</h1>
-    <p class="lede">For Covered US establishments that must file electronically.</p>
-    <div class="box">
-      <p><strong>The failure.</strong> March 2 passed or next March is coming and the 300/300A/301 files are incomplete.</p>
-      <p><strong>What it costs.</strong> Late ITA, SST targeting risk, and a scramble every winter.</p>
-      <p><strong>What you get.</strong> Cleaned prior-year submission file plus a 2026 log hygiene kit (what to capture weekly so March is boring).</p>
-      <p><strong>Price.</strong> $600 setup + $250/mo. One establishment. Extra sites $150/mo.</p>
-      <p><strong>We will not.</strong> We do not decide recordability or represent you to OSHA.</p>
     </div>
-    <h2>Request this packet</h2>
-    <p class="note">No fake urgency. If we cannot take the job this week we will say so.</p>
-    <form id="lead" class="box">
-      <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
-      <input type="hidden" name="offer_id" value="03-osha-ita-hygiene">
-      <label>Name<input name="name" required></label>
-      <label>Work email<input name="email" type="email" required></label>
-      <label>Company<input name="company"></label>
-      <label>What is due, and when?<textarea name="message" rows="5" required></textarea></label>
-      <label><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
-      <p><button class="cta" type="submit">Request kickoff — $600 setup + $250/mo</button></p>
-      <p id="status" class="note"></p>
-    </form>
-    <script>
-    const form = document.getElementById('lead');
-    const status = document.getElementById('status');
-    const params = new URLSearchParams(location.search);
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      status.textContent = 'Sending…';
-      const fd = new FormData(form);
-      const payload = Object.fromEntries(fd.entries());
-      payload.consented = fd.get('consented') === 'on';
-      payload.utm_source = params.get('utm_source') || '';
-      payload.utm_medium = params.get('utm_medium') || '';
-      payload.utm_campaign = params.get('utm_campaign') || '';
-      payload.referrer = document.referrer || '';
-      payload.path = location.pathname;
-      try {
-        const r = await fetch('/api/lead', {
-          method: 'POST',
-          headers: {'content-type': 'application/json'},
-          body: JSON.stringify(payload)
-        });
-        const j = await r.json();
-        if (r.ok && j.ok) {
-          status.className = 'ok';
-          status.textContent = 'Received. We will reply from the studio mailbox.';
-          form.reset();
-        } else if (j.error === 'INTAKE_NOT_WIRED') {
-          status.className = 'err';
-          status.textContent = 'Intake is not wired yet. Email the studio operator directly.';
-        } else {
-          status.className = 'err';
-          status.textContent = 'Could not send. Try again or email the studio.';
-        }
-      } catch (err) {
-        status.className = 'err';
-        status.textContent = 'Network error.';
-      }
-    });
-    </script>
-
-  </main>
-  <footer>
+  </nav>
+</div>
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <h1>The ITA file is still sitting open.</h1>
+        <p class="sub">We clean last year&#x27;s submission and set a weekly log so next March is quiet.</p>
+        <div class="actions">
+          <a class="btn" href="#request">Request this packet</a>
+          <a class="btn ghost" href="#includes">See what is in it</a>
+        </div>
+      </div>
+      <aside class="packet">
+        <h2>What is in the packet</h2>
+        <ol>
+          <li>Prior-year 300A file checked against ITA rules</li>
+          <li>Late-file packet if March 2 already passed</li>
+          <li>Weekly capture sheet for 2026 cases</li>
+          <li>A one-page owner note on what you still decide</li>
+        </ol>
+      </aside>
+    </section>
+  </div>
+  <div class="wrap">
+    <section class="section" id="includes">
+      <h2>How the work runs</h2>
+      <p class="lead">Built for the Safety lead or controller at a covered establishment. Setup in one week, then a monthly hygiene pass.</p>
+      <div class="steps">
+      <div class="step"><h3>Export the logs</h3><p>300, 300A, and 301 as you already keep them.</p></div>
+      <div class="step"><h3>We tidy the file</h3><p>Formatting, totals, and a list of questions only you can answer.</p></div>
+      <div class="step"><h3>You post and submit</h3><p>Recordability stays with you. We do not speak to OSHA.</p></div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Price and limits</h2>
+      <div class="price-row">
+        <div class="price">$600 setup + $250/mo</div>
+        <div class="price-note">One establishment. Extra sites $150/mo.</div>
+      </div>
+      <div class="split">
+        <div class="block">
+          <strong>What you get</strong>
+          <p>Cleaned prior-year submission file plus a 2026 log hygiene kit (what to capture weekly so March is boring).</p>
+        </div>
+        <div class="block">
+          <strong>What we will not do</strong>
+          <p class="wont">We do not decide recordability or represent you to OSHA.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="request">
+      <h2>Request this packet</h2>
+      <p class="lead">Tell us what is due and when. If we cannot take the job this week we will say so.</p>
+      <form id="lead" class="intake">
+        <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="offer_id" value="03-osha-ita-hygiene">
+        <label for="name">Name</label>
+        <input id="name" name="name" required>
+        <label for="email">Work email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="company">Company</label>
+        <input id="company" name="company">
+        <label for="message">What is due, and when?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <label class="check"><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
+        <button class="btn" type="submit">Request this packet</button>
+        <p id="status" class="status"></p>
+      </form>
+    </section>
+  </div>
+<footer>
+  <div class="wrap">
     <p>Packetbench assembles operational packets. We do not provide legal, medical, tax, or insurance advice. You own every submission and attestation.</p>
     <p><a href="/legal/terms.html">Terms</a> · <a href="/legal/privacy.html">Privacy</a></p>
-  </footer>
+  </div>
+</footer>
+<script>
+const form = document.getElementById('lead');
+const status = document.getElementById('status');
+const params = new URLSearchParams(location.search);
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  status.className = 'status';
+  status.textContent = 'Sending…';
+  const fd = new FormData(form);
+  const payload = Object.fromEntries(fd.entries());
+  payload.consented = fd.get('consented') === 'on';
+  payload.utm_source = params.get('utm_source') || '';
+  payload.utm_medium = params.get('utm_medium') || '';
+  payload.utm_campaign = params.get('utm_campaign') || '';
+  payload.referrer = document.referrer || '';
+  payload.path = location.pathname;
+  try {
+    const r = await fetch('/api/lead', {
+      method: 'POST',
+      headers: {'content-type':'application/json'},
+      body: JSON.stringify(payload)
+    });
+    const j = await r.json();
+    if (r.ok && j.ok) {
+      status.className = 'status ok';
+      status.textContent = 'Received. We will reply from the studio mailbox.';
+      form.reset();
+    } else if (j.error === 'INTAKE_NOT_WIRED') {
+      status.className = 'status err';
+      status.textContent = 'Intake is not connected yet. Email the person who sent you this page.';
+    } else {
+      status.className = 'status err';
+      status.textContent = 'Could not send. Try again.';
+    }
+  } catch (err) {
+    status.className = 'status err';
+    status.textContent = 'Network error.';
+  }
+});
+</script>
+
 </body>
 </html>

@@ -3,87 +3,142 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Product-of-USA Evidence Pack — Packetbench</title>
-  <meta name="description" content="The Jan 2026 origin standard is in force and your file cannot show born-raised-slaughtered-processed in the US.">
+  <title>Product-of-USA Evidence Pack | Packetbench</title>
+  <meta name="description" content="The origin claim needs a paper trail.">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <a href="/">Packetbench</a>
-    <nav>
-      <a href="/#desks">Desks</a>
+  <!--
+  THESIS: Each desk is a standalone product page that sells one packet, not a studio catalog.
+  OWN-WORLD: Cool paper, ink, one cobalt accent, sharp corners, self-hosted Geist.
+  STORY: Visitor sees the failure, the file they get, the price, and can request kickoff.
+  FIRST VIEWPORT: Split hero. Headline left, packet contents right, primary CTA under the subtext.
+  FORM: Trust-first B2B service landing. Seed: unattended-rebuild-2026-08-18.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+  -->
+  <div class="wrap">
+  <nav class="nav">
+    <a class="brand" href="/">Packetbench</a>
+    <div class="nav-links">
+      <span>Product-of-USA Evidence Pack</span>
       <a href="/legal/terms.html">Terms</a>
-      <a href="/legal/privacy.html">Privacy</a>
-    </nav>
-  </header>
-  <main>
-    <p class="kicker">regulatory desk · 04-fsis-origin-label</p>
-    <h1>Product-of-USA Evidence Pack</h1>
-    <p class="lede">For Small FSIS-inspected plants using U.S.-origin claims.</p>
-    <div class="box">
-      <p><strong>The failure.</strong> The Jan 2026 origin standard is in force and your file cannot show born-raised-slaughtered-processed in the US.</p>
-      <p><strong>What it costs.</strong> Label pulled, product held, sales claims die.</p>
-      <p><strong>What you get.</strong> A document map and draft substantiation file for your existing claims, ready for your QA lead.</p>
-      <p><strong>Price.</strong> $1,500 one-time. One establishment / one claim set.</p>
-      <p><strong>We will not.</strong> We do not obtain USDA label approval or certify origin.</p>
     </div>
-    <h2>Request this packet</h2>
-    <p class="note">No fake urgency. If we cannot take the job this week we will say so.</p>
-    <form id="lead" class="box">
-      <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
-      <input type="hidden" name="offer_id" value="04-fsis-origin-label">
-      <label>Name<input name="name" required></label>
-      <label>Work email<input name="email" type="email" required></label>
-      <label>Company<input name="company"></label>
-      <label>What is due, and when?<textarea name="message" rows="5" required></textarea></label>
-      <label><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
-      <p><button class="cta" type="submit">Request kickoff — $1,500 one-time</button></p>
-      <p id="status" class="note"></p>
-    </form>
-    <script>
-    const form = document.getElementById('lead');
-    const status = document.getElementById('status');
-    const params = new URLSearchParams(location.search);
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      status.textContent = 'Sending…';
-      const fd = new FormData(form);
-      const payload = Object.fromEntries(fd.entries());
-      payload.consented = fd.get('consented') === 'on';
-      payload.utm_source = params.get('utm_source') || '';
-      payload.utm_medium = params.get('utm_medium') || '';
-      payload.utm_campaign = params.get('utm_campaign') || '';
-      payload.referrer = document.referrer || '';
-      payload.path = location.pathname;
-      try {
-        const r = await fetch('/api/lead', {
-          method: 'POST',
-          headers: {'content-type': 'application/json'},
-          body: JSON.stringify(payload)
-        });
-        const j = await r.json();
-        if (r.ok && j.ok) {
-          status.className = 'ok';
-          status.textContent = 'Received. We will reply from the studio mailbox.';
-          form.reset();
-        } else if (j.error === 'INTAKE_NOT_WIRED') {
-          status.className = 'err';
-          status.textContent = 'Intake is not wired yet. Email the studio operator directly.';
-        } else {
-          status.className = 'err';
-          status.textContent = 'Could not send. Try again or email the studio.';
-        }
-      } catch (err) {
-        status.className = 'err';
-        status.textContent = 'Network error.';
-      }
-    });
-    </script>
-
-  </main>
-  <footer>
+  </nav>
+</div>
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <h1>The origin claim needs a paper trail.</h1>
+        <p class="sub">We map your Product of USA file. Your QA lead keeps the attestations.</p>
+        <div class="actions">
+          <a class="btn" href="#request">Request this packet</a>
+          <a class="btn ghost" href="#includes">See what is in it</a>
+        </div>
+      </div>
+      <aside class="packet">
+        <h2>What is in the packet</h2>
+        <ol>
+          <li>Claim inventory from current labels</li>
+          <li>Document map for born, raised, slaughtered, processed</li>
+          <li>Gaps called out in plain language</li>
+          <li>A folder layout your inspector can follow</li>
+        </ol>
+      </aside>
+    </section>
+  </div>
+  <div class="wrap">
+    <section class="section" id="includes">
+      <h2>How the work runs</h2>
+      <p class="lead">Built for the QA or plant manager at a small FSIS establishment. 10 business days for one establishment.</p>
+      <div class="steps">
+      <div class="step"><h3>Send current claims</h3><p>Photos or PDFs of labels that say Product of USA or Made in USA.</p></div>
+      <div class="step"><h3>We assemble the map</h3><p>What you have, what is missing, what QA should sign.</p></div>
+      <div class="step"><h3>QA owns the file</h3><p>We do not file LSAS or certify origin.</p></div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Price and limits</h2>
+      <div class="price-row">
+        <div class="price">$1,500 one-time</div>
+        <div class="price-note">One establishment / one claim set.</div>
+      </div>
+      <div class="split">
+        <div class="block">
+          <strong>What you get</strong>
+          <p>A document map and draft substantiation file for your existing claims, ready for your QA lead.</p>
+        </div>
+        <div class="block">
+          <strong>What we will not do</strong>
+          <p class="wont">We do not obtain USDA label approval or certify origin.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="request">
+      <h2>Request this packet</h2>
+      <p class="lead">Tell us what is due and when. If we cannot take the job this week we will say so.</p>
+      <form id="lead" class="intake">
+        <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="offer_id" value="04-fsis-origin-label">
+        <label for="name">Name</label>
+        <input id="name" name="name" required>
+        <label for="email">Work email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="company">Company</label>
+        <input id="company" name="company">
+        <label for="message">What is due, and when?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <label class="check"><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
+        <button class="btn" type="submit">Request this packet</button>
+        <p id="status" class="status"></p>
+      </form>
+    </section>
+  </div>
+<footer>
+  <div class="wrap">
     <p>Packetbench assembles operational packets. We do not provide legal, medical, tax, or insurance advice. You own every submission and attestation.</p>
     <p><a href="/legal/terms.html">Terms</a> · <a href="/legal/privacy.html">Privacy</a></p>
-  </footer>
+  </div>
+</footer>
+<script>
+const form = document.getElementById('lead');
+const status = document.getElementById('status');
+const params = new URLSearchParams(location.search);
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  status.className = 'status';
+  status.textContent = 'Sending…';
+  const fd = new FormData(form);
+  const payload = Object.fromEntries(fd.entries());
+  payload.consented = fd.get('consented') === 'on';
+  payload.utm_source = params.get('utm_source') || '';
+  payload.utm_medium = params.get('utm_medium') || '';
+  payload.utm_campaign = params.get('utm_campaign') || '';
+  payload.referrer = document.referrer || '';
+  payload.path = location.pathname;
+  try {
+    const r = await fetch('/api/lead', {
+      method: 'POST',
+      headers: {'content-type':'application/json'},
+      body: JSON.stringify(payload)
+    });
+    const j = await r.json();
+    if (r.ok && j.ok) {
+      status.className = 'status ok';
+      status.textContent = 'Received. We will reply from the studio mailbox.';
+      form.reset();
+    } else if (j.error === 'INTAKE_NOT_WIRED') {
+      status.className = 'status err';
+      status.textContent = 'Intake is not connected yet. Email the person who sent you this page.';
+    } else {
+      status.className = 'status err';
+      status.textContent = 'Could not send. Try again.';
+    }
+  } catch (err) {
+    status.className = 'status err';
+    status.textContent = 'Network error.';
+  }
+});
+</script>
+
 </body>
 </html>

@@ -3,87 +3,142 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pharmacy PBM Reconciliation — Packetbench</title>
-  <meta name="description" content="DIR and recoupment statements do not match your claim export.">
+  <title>Pharmacy PBM Reconciliation | Packetbench</title>
+  <meta name="description" content="The remit does not match your claim file.">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <a href="/">Packetbench</a>
-    <nav>
-      <a href="/#desks">Desks</a>
+  <!--
+  THESIS: Each desk is a standalone product page that sells one packet, not a studio catalog.
+  OWN-WORLD: Cool paper, ink, one cobalt accent, sharp corners, self-hosted Geist.
+  STORY: Visitor sees the failure, the file they get, the price, and can request kickoff.
+  FIRST VIEWPORT: Split hero. Headline left, packet contents right, primary CTA under the subtext.
+  FORM: Trust-first B2B service landing. Seed: unattended-rebuild-2026-08-18.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+  -->
+  <div class="wrap">
+  <nav class="nav">
+    <a class="brand" href="/">Packetbench</a>
+    <div class="nav-links">
+      <span>Pharmacy PBM Reconciliation</span>
       <a href="/legal/terms.html">Terms</a>
-      <a href="/legal/privacy.html">Privacy</a>
-    </nav>
-  </header>
-  <main>
-    <p class="kicker">leakage desk · 14-pharmacy-pbm-recon</p>
-    <h1>Pharmacy PBM Reconciliation</h1>
-    <p class="lede">For Independent US pharmacies.</p>
-    <div class="box">
-      <p><strong>The failure.</strong> DIR and recoupment statements do not match your claim export.</p>
-      <p><strong>What it costs.</strong> Silent margin leak. Disputes expire.</p>
-      <p><strong>What you get.</strong> A monthly identified-vs-disputed-vs-collected ledger from your statements. You decide what to file.</p>
-      <p><strong>Price.</strong> $1,200 setup + $800/mo. One NPI / one primary PBM first.</p>
-      <p><strong>We will not.</strong> We do not give legal advice or guarantee recoveries.</p>
     </div>
-    <h2>Request this packet</h2>
-    <p class="note">No fake urgency. If we cannot take the job this week we will say so.</p>
-    <form id="lead" class="box">
-      <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
-      <input type="hidden" name="offer_id" value="14-pharmacy-pbm-recon">
-      <label>Name<input name="name" required></label>
-      <label>Work email<input name="email" type="email" required></label>
-      <label>Company<input name="company"></label>
-      <label>What is due, and when?<textarea name="message" rows="5" required></textarea></label>
-      <label><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
-      <p><button class="cta" type="submit">Request kickoff — $1,200 setup + $800/mo</button></p>
-      <p id="status" class="note"></p>
-    </form>
-    <script>
-    const form = document.getElementById('lead');
-    const status = document.getElementById('status');
-    const params = new URLSearchParams(location.search);
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      status.textContent = 'Sending…';
-      const fd = new FormData(form);
-      const payload = Object.fromEntries(fd.entries());
-      payload.consented = fd.get('consented') === 'on';
-      payload.utm_source = params.get('utm_source') || '';
-      payload.utm_medium = params.get('utm_medium') || '';
-      payload.utm_campaign = params.get('utm_campaign') || '';
-      payload.referrer = document.referrer || '';
-      payload.path = location.pathname;
-      try {
-        const r = await fetch('/api/lead', {
-          method: 'POST',
-          headers: {'content-type': 'application/json'},
-          body: JSON.stringify(payload)
-        });
-        const j = await r.json();
-        if (r.ok && j.ok) {
-          status.className = 'ok';
-          status.textContent = 'Received. We will reply from the studio mailbox.';
-          form.reset();
-        } else if (j.error === 'INTAKE_NOT_WIRED') {
-          status.className = 'err';
-          status.textContent = 'Intake is not wired yet. Email the studio operator directly.';
-        } else {
-          status.className = 'err';
-          status.textContent = 'Could not send. Try again or email the studio.';
-        }
-      } catch (err) {
-        status.className = 'err';
-        status.textContent = 'Network error.';
-      }
-    });
-    </script>
-
-  </main>
-  <footer>
+  </nav>
+</div>
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <h1>The remit does not match your claim file.</h1>
+        <p class="sub">We build a monthly identified-versus-disputed ledger. You decide what to file.</p>
+        <div class="actions">
+          <a class="btn" href="#request">Request this packet</a>
+          <a class="btn ghost" href="#includes">See what is in it</a>
+        </div>
+      </div>
+      <aside class="packet">
+        <h2>What is in the packet</h2>
+        <ol>
+          <li>835 versus claim exception list</li>
+          <li>Identified, disputed, and collected columns</li>
+          <li>A skip list for noise</li>
+          <li>A one-page note: identified is not cash</li>
+        </ol>
+      </aside>
+    </section>
+  </div>
+  <div class="wrap">
+    <section class="section" id="includes">
+      <h2>How the work runs</h2>
+      <p class="lead">Built for the Owner or PIC at an independent pharmacy. Monthly, ten business days after you send remits.</p>
+      <div class="steps">
+      <div class="step"><h3>Send remits and claims</h3><p>One PBM first. Redact where you can.</p></div>
+      <div class="step"><h3>We reconcile</h3><p>You get a ledger, not a lawsuit memo.</p></div>
+      <div class="step"><h3>You file disputes</h3><p>We do not give legal advice or guarantee recoveries.</p></div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Price and limits</h2>
+      <div class="price-row">
+        <div class="price">$1,200 setup + $800/mo</div>
+        <div class="price-note">One NPI / one primary PBM first.</div>
+      </div>
+      <div class="split">
+        <div class="block">
+          <strong>What you get</strong>
+          <p>A monthly identified-vs-disputed-vs-collected ledger from your statements. You decide what to file.</p>
+        </div>
+        <div class="block">
+          <strong>What we will not do</strong>
+          <p class="wont">We do not give legal advice or guarantee recoveries.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="request">
+      <h2>Request this packet</h2>
+      <p class="lead">Tell us what is due and when. If we cannot take the job this week we will say so.</p>
+      <form id="lead" class="intake">
+        <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="offer_id" value="14-pharmacy-pbm-recon">
+        <label for="name">Name</label>
+        <input id="name" name="name" required>
+        <label for="email">Work email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="company">Company</label>
+        <input id="company" name="company">
+        <label for="message">What is due, and when?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <label class="check"><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
+        <button class="btn" type="submit">Request this packet</button>
+        <p id="status" class="status"></p>
+      </form>
+    </section>
+  </div>
+<footer>
+  <div class="wrap">
     <p>Packetbench assembles operational packets. We do not provide legal, medical, tax, or insurance advice. You own every submission and attestation.</p>
     <p><a href="/legal/terms.html">Terms</a> · <a href="/legal/privacy.html">Privacy</a></p>
-  </footer>
+  </div>
+</footer>
+<script>
+const form = document.getElementById('lead');
+const status = document.getElementById('status');
+const params = new URLSearchParams(location.search);
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  status.className = 'status';
+  status.textContent = 'Sending…';
+  const fd = new FormData(form);
+  const payload = Object.fromEntries(fd.entries());
+  payload.consented = fd.get('consented') === 'on';
+  payload.utm_source = params.get('utm_source') || '';
+  payload.utm_medium = params.get('utm_medium') || '';
+  payload.utm_campaign = params.get('utm_campaign') || '';
+  payload.referrer = document.referrer || '';
+  payload.path = location.pathname;
+  try {
+    const r = await fetch('/api/lead', {
+      method: 'POST',
+      headers: {'content-type':'application/json'},
+      body: JSON.stringify(payload)
+    });
+    const j = await r.json();
+    if (r.ok && j.ok) {
+      status.className = 'status ok';
+      status.textContent = 'Received. We will reply from the studio mailbox.';
+      form.reset();
+    } else if (j.error === 'INTAKE_NOT_WIRED') {
+      status.className = 'status err';
+      status.textContent = 'Intake is not connected yet. Email the person who sent you this page.';
+    } else {
+      status.className = 'status err';
+      status.textContent = 'Could not send. Try again.';
+    }
+  } catch (err) {
+    status.className = 'status err';
+    status.textContent = 'Network error.';
+  }
+});
+</script>
+
 </body>
 </html>
