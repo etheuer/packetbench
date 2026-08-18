@@ -1,0 +1,1162 @@
+[
+  {
+    "id": "01-pecos-revalidation",
+    "name": "5-Day PECOS Revalidation File",
+    "headline": "Stay enrolled without living in PECOS.",
+    "sub": "A 5-day revalidation file. You keep the login. You click Submit.",
+    "problem": "CMS listed your NPI. The clock is already running. Nobody on staff wants to own PECOS.",
+    "after": "Your official sits down once with a complete file. The window is no longer a mystery.",
+    "mechanism": "Sit-beside packet. We assemble. You attest. We never take the password.",
+    "avatar": "Practice admin at an independent clinic whose NPI is on the CMS due-date list.",
+    "price": "$1,197",
+    "price_note": "One enrollment record. Extra NPIs $397 each.",
+    "delivery": "DFY file in 5 business days. You keep the PECOS login.",
+    "anchor": "A deactivated enrollment stalls a month of claims. This is one sitting.",
+    "core_value": 2500,
+    "stack": [
+      {
+        "name": "PECOS Document Inventory",
+        "does": "Every screen mapped to a doc you already have or still need.",
+        "value": 900
+      },
+      {
+        "name": "Draft Attestation Answers",
+        "does": "Written for your official to edit, not for us to sign.",
+        "value": 800
+      },
+      {
+        "name": "Due-Date Extract",
+        "does": "Your line from the public CMS revalidation list.",
+        "value": 300
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 5600,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "02-fda-ffr-renewal",
+    "name": "Dec 31 FDA Renewal Sit-Beside",
+    "headline": "Renew before December 31. Keep the login.",
+    "sub": "We fill the 2026 FDA facility worksheet. The owner submits.",
+    "problem": "FURLS is a mess and the even-year window does not wait.",
+    "after": "The owner has a sit-beside pack and a December 15 reminder.",
+    "mechanism": "Sit-beside worksheet. No US Agent. No password share.",
+    "avatar": "Owner of a US shared kitchen or small copacker who still has the FURLS login.",
+    "price": "$897",
+    "price_note": "Per facility.",
+    "delivery": "DFY worksheet in 3 business days. Owner submits.",
+    "anchor": "An expired registration can hold shipments. This is a 3-day file.",
+    "core_value": 1800,
+    "stack": [
+      {
+        "name": "FURLS Worksheet",
+        "does": "Facility facts ready to type.",
+        "value": 700
+      },
+      {
+        "name": "UFI / DUNS Check",
+        "does": "Catch the identifier mismatch before you sit down.",
+        "value": 400
+      },
+      {
+        "name": "Dec 15 Reminder Card",
+        "does": "A dated nudge before the window dies.",
+        "value": 200
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 4200,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "03-osha-ita-hygiene",
+    "name": "OSHA ITA Cleanup Desk",
+    "headline": "Clean the ITA file. Make next March quiet.",
+    "sub": "We tidy last year's submission and install a weekly log.",
+    "problem": "The logs are incomplete and ITA does not explain itself.",
+    "after": "A file you can submit and a habit that feeds next March.",
+    "mechanism": "We format. You still decide what is recordable.",
+    "avatar": "Safety lead at a covered establishment with a late or messy 300A.",
+    "price": "$597 setup + $247/mo",
+    "price_note": "One establishment. Extra sites $147/mo.",
+    "delivery": "DFY cleanup in one week, then a monthly hygiene pass.",
+    "anchor": "A scramble every winter costs more than a monthly pass.",
+    "core_value": 2200,
+    "stack": [
+      {
+        "name": "Prior-Year Cleanup File",
+        "does": "300A checked against ITA rules.",
+        "value": 800
+      },
+      {
+        "name": "Weekly Capture Sheet",
+        "does": "What to write down so March is boring.",
+        "value": 600
+      },
+      {
+        "name": "Owner Decision Note",
+        "does": "The questions only you can answer.",
+        "value": 300
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 5000,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "04-fsis-origin-label",
+    "name": "Product-of-USA Evidence File",
+    "headline": "Give the origin claim a paper trail.",
+    "sub": "We map the file. QA signs. We do not certify origin.",
+    "problem": "The label says Product of USA. The folder does not.",
+    "after": "QA has a folder an inspector can follow.",
+    "mechanism": "Document map, not a USDA approval.",
+    "avatar": "QA lead at a small FSIS plant printing a US-origin claim.",
+    "price": "$1,497",
+    "price_note": "One establishment, one claim set.",
+    "delivery": "DFY map in 10 business days. You keep LSAS.",
+    "anchor": "A pulled claim costs a lot more than a 10-day file.",
+    "core_value": 3500,
+    "stack": [
+      {
+        "name": "Claim Inventory",
+        "does": "Every current US-origin line on the label.",
+        "value": 800
+      },
+      {
+        "name": "Four-Step Evidence Map",
+        "does": "Born, raised, slaughtered, processed.",
+        "value": 1400
+      },
+      {
+        "name": "Inspector Folder Layout",
+        "does": "Where each PDF lives.",
+        "value": 400
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 7200,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "05-solar-interconnect",
+    "name": "First-Pass Interconnect Check",
+    "headline": "Stop sending incomplete interconnect apps.",
+    "sub": "We completeness-check the packet. Your engineer still stamps.",
+    "problem": "The utility sends you to the back of the line for a blank field.",
+    "after": "The file is complete or you have a punch list the same day.",
+    "mechanism": "Utility-specific checklist. Not an electrical redesign.",
+    "avatar": "Ops manager at a residential solar installer tired of completeness bounces.",
+    "price": "$397 per app",
+    "price_note": "8 apps/mo for $2,397.",
+    "delivery": "DFY check in 2 business days. Your PE stamps.",
+    "anchor": "A reset queue idles a crew. This is a 2-day check.",
+    "core_value": 900,
+    "stack": [
+      {
+        "name": "Utility Completeness Check",
+        "does": "Their list, not a generic one.",
+        "value": 400
+      },
+      {
+        "name": "Equipment Match",
+        "does": "Inverter and module vs the site plan.",
+        "value": 300
+      },
+      {
+        "name": "Bounce Punch List",
+        "does": "If they already rejected you.",
+        "value": 200
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 2900,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "06-gmc-pid-recovery",
+    "name": "Shopping PID Clearance File",
+    "headline": "Shopping went dark. Here is the fix file.",
+    "sub": "SKU-level mismatches and the exact landing-page and feed changes.",
+    "problem": "Google flagged price or availability. Free listings vanished.",
+    "after": "You have a publish list, not a vibe.",
+    "mechanism": "Diagnostics export in. Ledger and fixes out. You keep GMC.",
+    "avatar": "Ecommerce lead at a US Shopify brand whose Shopping listings went dark.",
+    "price": "$1,797",
+    "price_note": "Up to 200 flagged SKUs. Then $6/SKU.",
+    "delivery": "DFY ledger in 5 business days. You publish.",
+    "anchor": "Dark Shopping while ads run is more expensive than this file.",
+    "core_value": 3600,
+    "stack": [
+      {
+        "name": "SKU Mismatch Ledger",
+        "does": "Cause and fix per flagged item.",
+        "value": 1500
+      },
+      {
+        "name": "Landing-Page Fix List",
+        "does": "URL, schema, visible price.",
+        "value": 1200
+      },
+      {
+        "name": "Review Request Note",
+        "does": "What to tell Merchant Center.",
+        "value": 300
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 7700,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "07-amz-vendor-chargebacks",
+    "name": "Vendor Defect-List Desk",
+    "headline": "Stop letting the defect list eat margin.",
+    "sub": "We build the evidence packets. You upload. Amazon still decides.",
+    "problem": "Operational chargebacks hit and nobody owns the backup.",
+    "after": "A weekly identified-versus-submitted ledger.",
+    "mechanism": "Vendor Central defect list. Not Seller Central card disputes.",
+    "avatar": "Vendor ops lead with operational chargebacks eating margin.",
+    "price": "$797 setup + $597/mo",
+    "price_note": "Up to 40 disputes/mo. Vendor Central only.",
+    "delivery": "DFY weekly packets. You submit.",
+    "anchor": "Unworked chargebacks are silent margin. This is a weekly file.",
+    "core_value": 4000,
+    "stack": [
+      {
+        "name": "Reason-Coded Packets",
+        "does": "One folder per dispute.",
+        "value": 1600
+      },
+      {
+        "name": "Weekly Ledger",
+        "does": "Identified vs submitted. Not collected.",
+        "value": 900
+      },
+      {
+        "name": "Skip List",
+        "does": "Disputes that are not worth filing.",
+        "value": 400
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 8000,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "08-gbp-trade-reinstatement",
+    "name": "One-Shot Maps Appeal File",
+    "headline": "One appeal. Matched to your license.",
+    "sub": "We build the file. You submit once. Google still decides.",
+    "problem": "The profile is suspended and stacked appeals make it worse.",
+    "after": "One packet. Identity match first.",
+    "mechanism": "License-matched evidence pack. Not an SEO retainer.",
+    "avatar": "Licensed trades owner whose Google Business Profile is suspended.",
+    "price": "$747",
+    "price_note": "One listing. No monthly SEO.",
+    "delivery": "DFY packet in 3 business days. You submit once.",
+    "anchor": "A dark Maps listing costs jobs every day.",
+    "core_value": 1500,
+    "stack": [
+      {
+        "name": "NAP Match Sheet",
+        "does": "Name, address, phone vs the docs.",
+        "value": 400
+      },
+      {
+        "name": "License and Proof Set",
+        "does": "What the appeal form actually wants.",
+        "value": 500
+      },
+      {
+        "name": "One-Shot Appeal Text",
+        "does": "Written for a single submit.",
+        "value": 300
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 3800,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "09-ncci-emod-audit",
+    "name": "e-Mod Mismatch File",
+    "headline": "Check the worksheet before you pay the mod.",
+    "sub": "We mark mismatches. Your broker files. We do not sell insurance.",
+    "problem": "The new mod showed up and nobody lined it up to the claims.",
+    "after": "A broker-ready exception list.",
+    "mechanism": "Worksheet vs claim file. You still own the insurance.",
+    "avatar": "Controller at an experience-rated contractor with a new worksheet.",
+    "price": "$1,397",
+    "price_note": "One legal entity, one rating year.",
+    "delivery": "DFY reconcile in 7 business days. Broker files.",
+    "anchor": "A tenth of a mod on a big premium dwarfs this file.",
+    "core_value": 2800,
+    "stack": [
+      {
+        "name": "Line-by-Line Reconcile",
+        "does": "Worksheet against the claim extract.",
+        "value": 1200
+      },
+      {
+        "name": "Class and Close-Date Flags",
+        "does": "The usual silent errors.",
+        "value": 800
+      },
+      {
+        "name": "Broker Exception List",
+        "does": "Ready to send.",
+        "value": 400
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 6300,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "10-coi-chase-desk",
+    "name": "Site-Access COI Chase",
+    "headline": "The award is public. Get the certs matched.",
+    "sub": "We chase and pack. Your broker issues. We do not bind coverage.",
+    "problem": "You cannot get on site and the exhibit is a scavenger hunt.",
+    "after": "A matrix, a log, and a packet for the GC.",
+    "mechanism": "Requirement matrix plus chase. Not an insurance opinion.",
+    "avatar": "PM at a specialty sub who won a public award and cannot get on site.",
+    "price": "$497 setup + $347/mo",
+    "price_note": "One prime contract.",
+    "delivery": "DFY chase. Broker issues certs.",
+    "anchor": "Idle mobilization costs more than a monthly chase.",
+    "core_value": 1800,
+    "stack": [
+      {
+        "name": "Exhibit Matrix",
+        "does": "Every cert the GC asked for.",
+        "value": 500
+      },
+      {
+        "name": "Chase Log",
+        "does": "Last-touch dates, not a pile of PDFs.",
+        "value": 600
+      },
+      {
+        "name": "GC-Ready Packet",
+        "does": "Matched certs in one folder.",
+        "value": 400
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 4400,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "11-prior-auth-chase",
+    "name": "Missing-Info Auth Queue",
+    "headline": "Chase the missing-info. Do not write necessity.",
+    "sub": "Daily queue from your exports. Clinicians decide. BAA first.",
+    "problem": "Auths age out in missing-info and nobody owns the chase.",
+    "after": "A board of what is waiting on the payer vs the clinic.",
+    "mechanism": "Status only. No medical necessity language.",
+    "avatar": "Office manager at an independent specialty clinic.",
+    "price": "$897 setup + $697/mo",
+    "price_note": "Up to 80 open auths. BAA required before PHI.",
+    "delivery": "DFY status chase after a BAA.",
+    "anchor": "A stalled procedure week costs more than the desk.",
+    "core_value": 2800,
+    "stack": [
+      {
+        "name": "Daily Status Board",
+        "does": "Open auths, age, next ask.",
+        "value": 900
+      },
+      {
+        "name": "Missing-Info List",
+        "does": "The exact payer question.",
+        "value": 800
+      },
+      {
+        "name": "BAA-First Onboarding",
+        "does": "No PHI until the paper is signed.",
+        "value": 400
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 6000,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "12-resto-cash-tax-pack",
+    "name": "Monday Cash Pack",
+    "headline": "Monday should not start in five exports.",
+    "sub": "Cash over-short and tax exceptions. Your CPA files.",
+    "problem": "The close lives in inboxes. The CPA gets a junk drawer.",
+    "after": "A named pack every Monday.",
+    "mechanism": "Exceptions only. Not a tax return.",
+    "avatar": "Operator of a multi-unit independent restaurant.",
+    "price": "$397 setup + $347/mo per unit",
+    "price_note": "3-unit minimum after month one.",
+    "delivery": "DFY every Monday. CPA files.",
+    "anchor": "Unseen over-shorts cost more than a Monday pack.",
+    "core_value": 1400,
+    "stack": [
+      {
+        "name": "Drawer Over-Short",
+        "does": "By unit, by day.",
+        "value": 500
+      },
+      {
+        "name": "Tax Exception List",
+        "does": "What does not match the export.",
+        "value": 500
+      },
+      {
+        "name": "CPA File Names",
+        "does": "The folder they actually asked for.",
+        "value": 200
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 3700,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "13-hvac-rebate-filing",
+    "name": "Closed-Job Rebate File",
+    "headline": "The job is done. File the rebate.",
+    "sub": "We complete the utility packet. We do not promise they pay.",
+    "problem": "The form is still in the truck and the window is 60 days.",
+    "after": "A ready packet or a not-ready list.",
+    "mechanism": "Live utility mail-in only. Not a tax-credit opinion.",
+    "avatar": "Office manager at a licensed HVAC shop.",
+    "price": "$247 setup + $77 per packet",
+    "price_note": "Or $497/mo for up to 8 packets.",
+    "delivery": "DFY packet in 4 business days. You or the homeowner submit.",
+    "anchor": "An unfiled rebate is cash you already promised.",
+    "core_value": 600,
+    "stack": [
+      {
+        "name": "Completed Utility Form",
+        "does": "From your invoice and photos.",
+        "value": 250
+      },
+      {
+        "name": "Photo and Model Check",
+        "does": "What that program actually wants.",
+        "value": 200
+      },
+      {
+        "name": "Not-Ready List",
+        "does": "Jobs we will not fake.",
+        "value": 150
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 2300,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "14-pharmacy-pbm-recon",
+    "name": "PBM Remit Ledger",
+    "headline": "Match the remit to the claim file.",
+    "sub": "Identified is not collected. You decide what to dispute.",
+    "problem": "DIR and recoupment lines do not match your export.",
+    "after": "A ledger with four columns, not a feeling.",
+    "mechanism": "835 vs claims. No legal advice.",
+    "avatar": "Owner or PIC at an independent pharmacy.",
+    "price": "$1,197 setup + $797/mo",
+    "price_note": "One NPI, one primary PBM first.",
+    "delivery": "DFY monthly ledger. You file disputes.",
+    "anchor": "Unseen recoupments dwarf a monthly ledger.",
+    "core_value": 3600,
+    "stack": [
+      {
+        "name": "Monthly Exception Ledger",
+        "does": "Identified, disputed, collected, skip.",
+        "value": 1500
+      },
+      {
+        "name": "One-PBM Start",
+        "does": "We do not boil the ocean.",
+        "value": 600
+      },
+      {
+        "name": "Dispute-Ready Rows",
+        "does": "You still file.",
+        "value": 500
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 7300,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "15-warranty-labor-rescue",
+    "name": "Rejected Labor Rescue",
+    "headline": "The labor claim bounced. Rebuild the pack.",
+    "sub": "We match the rejection reason. We do not promise they pay.",
+    "problem": "A missing photo or model mismatch killed the claim.",
+    "after": "A named resubmit pack or a do-not-resubmit flag.",
+    "mechanism": "Rejection-reason map. Not a warranty platform.",
+    "avatar": "Owner of an independent appliance or HVAC shop.",
+    "price": "$39 per claim",
+    "price_note": "Or $497/mo for up to 15 claims.",
+    "delivery": "DFY pack in 2 business days. You resubmit.",
+    "anchor": "Unpaid labor you already did is the value.",
+    "core_value": 250,
+    "stack": [
+      {
+        "name": "Rejection Map",
+        "does": "Why it died, in their words.",
+        "value": 80
+      },
+      {
+        "name": "Evidence Rebuild",
+        "does": "Only what that OEM asked for.",
+        "value": 120
+      },
+      {
+        "name": "Dead-Claim Flag",
+        "does": "We do not keep billing a corpse.",
+        "value": 50
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 1600,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "16-hotel-ota-shortpay",
+    "name": "Nightly Folio Exception Desk",
+    "headline": "The virtual card posted short again.",
+    "sub": "Nightly exceptions. Dispute packets. No collection promise.",
+    "problem": "OTA short-pays and no-shows die in the folio.",
+    "after": "A morning list with packets attached.",
+    "mechanism": "Expected vs posted. You still send the dispute.",
+    "avatar": "GM or night audit at an independent hotel.",
+    "price": "$797 setup + $497/mo",
+    "price_note": "One property.",
+    "delivery": "DFY next-morning pack. You send the dispute.",
+    "anchor": "A few short pays a week cover the desk.",
+    "core_value": 2400,
+    "stack": [
+      {
+        "name": "Nightly Exception List",
+        "does": "Short pays and no-shows.",
+        "value": 800
+      },
+      {
+        "name": "Dispute Packets",
+        "does": "Per reservation.",
+        "value": 900
+      },
+      {
+        "name": "Skip Threshold",
+        "does": "Noise under your number.",
+        "value": 300
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 5500,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "17-sam-first-award",
+    "name": "First-Award 30-Day File",
+    "headline": "The award hit. Build the 30-day file.",
+    "sub": "Identifier hygiene and a calendar. You remain the registrant.",
+    "problem": "You cannot invoice cleanly and the reporting clock started.",
+    "after": "A pack and a calendar. No SAM password share.",
+    "mechanism": "Post-award onboarding. Not bid writing.",
+    "avatar": "Owner of a first-time SAM.gov federal awardee.",
+    "price": "$1,797",
+    "price_note": "One UEI. No proposal writing.",
+    "delivery": "DFY pack in 7 business days.",
+    "anchor": "A missed reporting date on award one is expensive.",
+    "core_value": 4000,
+    "stack": [
+      {
+        "name": "Identifier Hygiene",
+        "does": "UEI, CAGE, legal name match.",
+        "value": 900
+      },
+      {
+        "name": "30-Day Calendar",
+        "does": "What is actually due.",
+        "value": 800
+      },
+      {
+        "name": "Invoice Doc List",
+        "does": "What finance still needs to collect.",
+        "value": 700
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 7500,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "18-new-contractor-pack",
+    "name": "New License 90-Day File",
+    "headline": "License is live. Get site-ready.",
+    "sub": "COI request, postings, 90-day checklist. We do not sell insurance.",
+    "problem": "You have a number and none of the site paperwork.",
+    "after": "A pack your broker and accountant can finish.",
+    "mechanism": "First-90 checklist. Not a policy.",
+    "avatar": "Newly licensed contractor in California or Florida.",
+    "price": "$647",
+    "price_note": "One state license. CA or FL first.",
+    "delivery": "DFY pack in 5 business days. Broker finishes.",
+    "anchor": "A month you cannot bid costs more than this file.",
+    "core_value": 1300,
+    "stack": [
+      {
+        "name": "90-Day Checklist",
+        "does": "State-specific.",
+        "value": 400
+      },
+      {
+        "name": "Broker COI Request",
+        "does": "Drafted, not bound.",
+        "value": 350
+      },
+      {
+        "name": "Posting List",
+        "does": "What has to be on the wall.",
+        "value": 250
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 3400,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "19-fda-warning-cleanup",
+    "name": "Warning-Letter File Index",
+    "headline": "The letter is public. Index the files.",
+    "sub": "We pack the documents. Counsel writes. We do not practice law.",
+    "problem": "Retailers are asking and the PDFs live in five inboxes.",
+    "after": "Counsel has a folder, not a scavenger hunt.",
+    "mechanism": "Index only. No response letter.",
+    "avatar": "QA lead at a US food facility named on a new FDA letter.",
+    "price": "$2,397",
+    "price_note": "Document assembly only. Counsel must be on the thread.",
+    "delivery": "DFY index in 10 business days. Counsel required at intake.",
+    "anchor": "Counsel hours spent hunting files dwarf this index.",
+    "core_value": 6000,
+    "stack": [
+      {
+        "name": "Letter Date Index",
+        "does": "What they cited, where it lives.",
+        "value": 1200
+      },
+      {
+        "name": "Registration and Label Inventory",
+        "does": "Current, not hoped-for.",
+        "value": 1800
+      },
+      {
+        "name": "Counsel Handoff Memo",
+        "does": "Not a legal draft.",
+        "value": 900
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 11000,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "20-new-medicare-dme",
+    "name": "First-Claim DME Kit",
+    "headline": "Enrollment is live. Do not bounce claim one.",
+    "sub": "A documentation kit. Your biller submits. We do not bill Medicare.",
+    "problem": "The first claims die on missing paperwork.",
+    "after": "A chart checklist before claim one.",
+    "mechanism": "Documentation kit. Not a billing company.",
+    "avatar": "Owner or biller at a newly enrolled DME supplier.",
+    "price": "$1,497",
+    "price_note": "No beneficiary files before a BAA.",
+    "delivery": "DFY kit in 7 business days. BAA before any PHI.",
+    "anchor": "A month of bounced first claims costs more than the kit.",
+    "core_value": 3000,
+    "stack": [
+      {
+        "name": "First-Claim Checklist",
+        "does": "What must sit in the chart.",
+        "value": 900
+      },
+      {
+        "name": "Common Reject Crib",
+        "does": "Why new DME claims bounce.",
+        "value": 700
+      },
+      {
+        "name": "BAA-First Gate",
+        "does": "Process only until the paper is signed.",
+        "value": 400
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "3-Item Kickoff Sheet",
+        "purpose": "I don't have time / it's complicated",
+        "does": "Tells you the only three things to send. Nothing else.",
+        "format": "one-page checklist",
+        "value": 200
+      },
+      {
+        "name": "Submit-Day Click Path",
+        "purpose": "I will mess up the portal",
+        "does": "Screen-by-screen path for the sitting where you attest.",
+        "format": "written click path",
+        "value": 400
+      },
+      {
+        "name": "Incomplete-File Redo",
+        "purpose": "What if you miss something",
+        "does": "If a listed checklist item is missing, we fix it at no charge.",
+        "format": "service guarantee",
+        "value": 500
+      }
+    ],
+    "total_value": 6100,
+    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "cta": "Request this file"
+  }
+]

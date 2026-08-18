@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
 DATA = json.loads((ROOT / "data" / "offers.json").read_text())
 CONV = json.loads((ROOT / "data" / "conversion.json").read_text())
+HORMOZI = {o["id"]: o for o in json.loads((ROOT / "data" / "hormozi.json").read_text())}
 OFFERS = {o["id"]: o for o in DATA["offers"]}
 
 # Per-desk landing copy. No em-dashes. Headlines stay short.
@@ -385,15 +386,16 @@ def shell(title: str, desc: str, body: str) -> str:
 """
 
 
-def nav(kind: str = "index") -> str:
+def nav(kind: str = "index", brand: str = "Packetbench") -> str:
     links = (
-        '<div class="nav-links"><a href="/#desks">Desks</a></div>'
+        '<div class="nav-links"><a href="/desks.html">Internal index</a></div>'
         if kind == "index"
         else ""
     )
+    home = "/" if kind == "index" else "#"
     return f"""<div class="wrap">
   <nav class="nav">
-    <a class="brand" href="/">Packetbench</a>
+    <a class="brand" href="{home}">{esc(brand)}</a>
     {links}
   </nav>
 </div>"""
@@ -402,7 +404,7 @@ def nav(kind: str = "index") -> str:
 def footer() -> str:
     return """<footer>
   <div class="wrap">
-    <p>Packetbench assembles operational packets. We do not provide legal, medical, tax, or insurance advice. You own every submission and attestation.</p>
+    <p>This is a productized operations desk. We do not provide legal, medical, tax, or insurance advice. You own every submission and attestation.</p>
     <p><a href="/legal/terms.html">Terms</a> · <a href="/legal/privacy.html">Privacy</a></p>
   </div>
 </footer>"""
@@ -412,6 +414,7 @@ def offer_page(oid: str) -> str:
     o = OFFERS[oid]
     L = LANDING[oid]
     C = CONV[oid]
+    H = HORMOZI[oid]
     items = "\n".join(f"          <li>{esc(x)}</li>" for x in L["packet"])
     steps = "\n".join(
         f'      <div class="step"><h3>{esc(t)}</h3><p>{esc(b)}</p></div>'
@@ -423,15 +426,23 @@ def offer_page(oid: str) -> str:
         f"      <details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>"
         for q, a in C["faq"]
     )
-    body = f"""{nav("offer")}
+    stack_html = "\n".join(
+        f'      <div class="stack-item"><div><strong>{esc(s["name"])}</strong><p>{esc(s["does"])}</p></div><div class="stack-val">${s["value"]:,}</div></div>'
+        for s in H["stack"]
+    )
+    bonus_html = "\n".join(
+        f'      <div class="stack-item"><div><strong>{esc(b["name"])}</strong><p>{esc(b["does"])}</p></div><div class="stack-val">${b["value"]:,}</div></div>'
+        for b in H["bonuses"]
+    )
+    body = f"""{nav("offer", H["name"])}
   <div class="wrap">
     <section class="hero">
       <div>
-        <h1>{esc(L["headline"])}</h1>
-        <p class="sub">{esc(L["sub"])}</p>
-        <p class="meta">{esc(o["price"])} <span>{esc(L["turnaround"])}</span></p>
+        <h1>{esc(H["headline"])}</h1>
+        <p class="sub">{esc(H["sub"])}</p>
+        <p class="meta">{esc(H["price"])} <span>{esc(H["delivery"])}</span></p>
         <div class="actions">
-          <a class="btn" href="#request">Request this packet</a>
+          <a class="btn" href="#request">Request this file</a>
         </div>
       </div>
       <aside class="packet">
@@ -443,6 +454,18 @@ def offer_page(oid: str) -> str:
     </section>
   </div>
   <div class="wrap">
+    <section class="section">
+      <h2>The problem</h2>
+      <p class="lead">{esc(H["problem"])}</p>
+    </section>
+    <section class="section">
+      <h2>What changes</h2>
+      <p class="lead">{esc(H["after"])}</p>
+    </section>
+    <section class="section">
+      <h2>How this works</h2>
+      <p class="lead">{esc(H["mechanism"])}</p>
+    </section>
     <section class="section">
       <h2>Is this for you</h2>
       <div class="split">
@@ -468,11 +491,21 @@ def offer_page(oid: str) -> str:
       </div>
     </section>
     <section class="section">
+      <h2>Everything in the file</h2>
+      <p class="lead">Value shown is packaging so you can see the stack. It is not an appraisal.</p>
+      <div class="stack">
+{stack_html}
+{bonus_html}
+      </div>
+      <div class="total"><span>Packaged stack</span><span>${H["total_value"]:,}</span></div>
+    </section>
+    <section class="section">
       <h2>Price and limits</h2>
       <div class="price-row">
-        <div class="price">{esc(o["price"])}</div>
-        <div class="price-note">{esc(o["price_note"])}</div>
+        <div class="price">{esc(H["price"])}</div>
+        <div class="price-note">{esc(H["price_note"])}</div>
       </div>
+      <p class="lead">{esc(H["anchor"])}</p>
       <div class="split">
         <div class="block">
           <strong>What you get</strong>
@@ -490,8 +523,14 @@ def offer_page(oid: str) -> str:
 {faqs}
       </div>
     </section>
+    <section class="section">
+      <h2>If a listed item is missing</h2>
+      <div class="guarantee">
+        <p>{esc(H["guarantee"])}</p>
+      </div>
+    </section>
     <section class="section" id="request">
-      <h2>Request this packet</h2>
+      <h2>Request this file</h2>
       <p class="lead">Tell us what is due and when. If we cannot take the job this week we will say so.</p>
       <div class="request-grid">
       <form id="lead" class="intake">
@@ -504,7 +543,7 @@ def offer_page(oid: str) -> str:
         <label for="message">What is due, and when?</label>
         <textarea id="message" name="message" rows="4" required></textarea>
         <label class="check"><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
-        <button class="btn" type="submit">Request this packet</button>
+        <button class="btn" type="submit">Request this file</button>
         <p id="status" class="status"></p>
       </form>
       <aside class="proof">
@@ -516,7 +555,7 @@ def offer_page(oid: str) -> str:
       </div>
     </section>
   </div>
-  <div class="stick"><a class="btn" href="#request">Request this packet</a></div>
+  <div class="stick"><a class="btn" href="#request">Request this file</a></div>
 {footer()}
 <script>
 const form = document.getElementById('lead');
@@ -559,31 +598,42 @@ form.addEventListener('submit', async (e) => {{
 }});
 </script>
 """
-    return shell(f"{o['name']} | Packetbench", L["headline"], body)
+    return shell(f"{H['name']}", H["headline"], body)
 
 
 def index() -> str:
+    body = f"""{nav("offer", "Operations desk")}
+  <div class="wrap dir">
+    <h1>Use the link you were sent.</h1>
+    <p class="sub">Each file is its own offer. This page is not a catalog of twenty shops.</p>
+  </div>
+{footer()}
+"""
+    return shell("Operations desk", "Use the link you were sent.", body)
+
+
+def desks() -> str:
     groups = {}
     for o in DATA["offers"]:
         groups.setdefault(o["lens"], []).append(o)
     chunks = []
     for lens, items in groups.items():
         rows = "\n".join(
-            f'        <li><a href="/offers/{esc(o["id"])}.html"><span><span class="dn">{esc(o["name"])}</span><div class="dp">{esc(LANDING[o["id"]]["headline"])}</div></span><span class="dp">{esc(o["price"])}</span></a></li>'
+            f'        <li><a href="/offers/{esc(o["id"])}.html"><span><span class="dn">{esc(HORMOZI[o["id"]]["name"])}</span><div class="dp">{esc(HORMOZI[o["id"]]["headline"])}</div></span><span class="dp">{esc(HORMOZI[o["id"]]["price"])}</span></a></li>'
             for o in items
         )
         chunks.append(f'      <div><h2>{esc(lens)}</h2><ul class="desk-list">\n{rows}\n      </ul></div>')
-    body = f"""{nav()}
+    body = f"""{nav("index", "Internal")}
   <div class="wrap dir">
-    <h1>Operational packets for a named deadline.</h1>
-    <p class="sub">Each desk is its own offer. You pay for a completed file, not software.</p>
+    <h1>Internal desk index</h1>
+    <p class="sub">Not for prospects. Each public page stands alone.</p>
     <div class="groups" id="desks">
 {chr(10).join(chunks)}
     </div>
   </div>
 {footer()}
 """
-    return shell("Packetbench", "Operational packets for US operators.", body)
+    return shell("Internal desk index", "Internal index", body)
 
 
 def legal(title: str, paras: list[str]) -> str:
@@ -606,9 +656,13 @@ def main() -> None:
     cmiss = set(OFFERS) - set(CONV)
     if cmiss:
         raise SystemExit(f"conversion map missing {cmiss}")
+    hmiss = set(OFFERS) - set(HORMOZI)
+    if hmiss:
+        raise SystemExit(f"hormozi map missing {hmiss}")
     (PUBLIC / "offers").mkdir(parents=True, exist_ok=True)
     (PUBLIC / "legal").mkdir(parents=True, exist_ok=True)
     (PUBLIC / "index.html").write_text(index())
+    (PUBLIC / "desks.html").write_text(desks())
     (PUBLIC / "legal" / "terms.html").write_text(
         legal(
             "Terms",
