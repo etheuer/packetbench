@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Warning-Letter File Desk — Packetbench</title>
+  <meta name="description" content="The letter is public. Registration, label, and recall files are not in one place.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <a href="/">Packetbench</a>
+    <nav>
+      <a href="/#desks">Desks</a>
+      <a href="/legal/terms.html">Terms</a>
+      <a href="/legal/privacy.html">Privacy</a>
+    </nav>
+  </header>
+  <main>
+    <p class="kicker">trigger desk · 19-fda-warning-cleanup</p>
+    <h1>Warning-Letter File Desk</h1>
+    <p class="lede">For US food facilities named on a new FDA warning letter.</p>
+    <div class="box">
+      <p><strong>The failure.</strong> The letter is public. Registration, label, and recall files are not in one place.</p>
+      <p><strong>What it costs.</strong> Counsel bills hours to find PDFs. Retailers ask questions.</p>
+      <p><strong>What you get.</strong> A document pack: current registration, label inventory, and recall-readiness file for your counsel.</p>
+      <p><strong>Price.</strong> $2,400 one-time. Document assembly only.</p>
+      <p><strong>We will not.</strong> We do not practice law or promise FDA close-out.</p>
+    </div>
+    <h2>Request this packet</h2>
+    <p class="note">No fake urgency. If we cannot take the job this week we will say so.</p>
+    <form id="lead" class="box">
+      <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="offer_id" value="19-fda-warning-cleanup">
+      <label>Name<input name="name" required></label>
+      <label>Work email<input name="email" type="email" required></label>
+      <label>Company<input name="company"></label>
+      <label>What is due, and when?<textarea name="message" rows="5" required></textarea></label>
+      <label><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
+      <p><button class="cta" type="submit">Request kickoff — $2,400 one-time</button></p>
+      <p id="status" class="note"></p>
+    </form>
+    <script>
+    const form = document.getElementById('lead');
+    const status = document.getElementById('status');
+    const params = new URLSearchParams(location.search);
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = 'Sending…';
+      const fd = new FormData(form);
+      const payload = Object.fromEntries(fd.entries());
+      payload.consented = fd.get('consented') === 'on';
+      payload.utm_source = params.get('utm_source') || '';
+      payload.utm_medium = params.get('utm_medium') || '';
+      payload.utm_campaign = params.get('utm_campaign') || '';
+      payload.referrer = document.referrer || '';
+      payload.path = location.pathname;
+      try {
+        const r = await fetch('/api/lead', {
+          method: 'POST',
+          headers: {'content-type': 'application/json'},
+          body: JSON.stringify(payload)
+        });
+        const j = await r.json();
+        if (r.ok && j.ok) {
+          status.className = 'ok';
+          status.textContent = 'Received. We will reply from the studio mailbox.';
+          form.reset();
+        } else if (j.error === 'INTAKE_NOT_WIRED') {
+          status.className = 'err';
+          status.textContent = 'Intake is not wired yet. Email the studio operator directly.';
+        } else {
+          status.className = 'err';
+          status.textContent = 'Could not send. Try again or email the studio.';
+        }
+      } catch (err) {
+        status.className = 'err';
+        status.textContent = 'Network error.';
+      }
+    });
+    </script>
+
+  </main>
+  <footer>
+    <p>Packetbench assembles operational packets. We do not provide legal, medical, tax, or insurance advice. You own every submission and attestation.</p>
+    <p><a href="/legal/terms.html">Terms</a> · <a href="/legal/privacy.html">Privacy</a></p>
+  </footer>
+</body>
+</html>

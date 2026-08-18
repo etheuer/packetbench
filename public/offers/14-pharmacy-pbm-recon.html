@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pharmacy PBM Reconciliation — Packetbench</title>
+  <meta name="description" content="DIR and recoupment statements do not match your claim export.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <a href="/">Packetbench</a>
+    <nav>
+      <a href="/#desks">Desks</a>
+      <a href="/legal/terms.html">Terms</a>
+      <a href="/legal/privacy.html">Privacy</a>
+    </nav>
+  </header>
+  <main>
+    <p class="kicker">leakage desk · 14-pharmacy-pbm-recon</p>
+    <h1>Pharmacy PBM Reconciliation</h1>
+    <p class="lede">For Independent US pharmacies.</p>
+    <div class="box">
+      <p><strong>The failure.</strong> DIR and recoupment statements do not match your claim export.</p>
+      <p><strong>What it costs.</strong> Silent margin leak. Disputes expire.</p>
+      <p><strong>What you get.</strong> A monthly identified-vs-disputed-vs-collected ledger from your statements. You decide what to file.</p>
+      <p><strong>Price.</strong> $1,200 setup + $800/mo. One NPI / one primary PBM first.</p>
+      <p><strong>We will not.</strong> We do not give legal advice or guarantee recoveries.</p>
+    </div>
+    <h2>Request this packet</h2>
+    <p class="note">No fake urgency. If we cannot take the job this week we will say so.</p>
+    <form id="lead" class="box">
+      <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="offer_id" value="14-pharmacy-pbm-recon">
+      <label>Name<input name="name" required></label>
+      <label>Work email<input name="email" type="email" required></label>
+      <label>Company<input name="company"></label>
+      <label>What is due, and when?<textarea name="message" rows="5" required></textarea></label>
+      <label><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
+      <p><button class="cta" type="submit">Request kickoff — $1,200 setup + $800/mo</button></p>
+      <p id="status" class="note"></p>
+    </form>
+    <script>
+    const form = document.getElementById('lead');
+    const status = document.getElementById('status');
+    const params = new URLSearchParams(location.search);
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = 'Sending…';
+      const fd = new FormData(form);
+      const payload = Object.fromEntries(fd.entries());
+      payload.consented = fd.get('consented') === 'on';
+      payload.utm_source = params.get('utm_source') || '';
+      payload.utm_medium = params.get('utm_medium') || '';
+      payload.utm_campaign = params.get('utm_campaign') || '';
+      payload.referrer = document.referrer || '';
+      payload.path = location.pathname;
+      try {
+        const r = await fetch('/api/lead', {
+          method: 'POST',
+          headers: {'content-type': 'application/json'},
+          body: JSON.stringify(payload)
+        });
+        const j = await r.json();
+        if (r.ok && j.ok) {
+          status.className = 'ok';
+          status.textContent = 'Received. We will reply from the studio mailbox.';
+          form.reset();
+        } else if (j.error === 'INTAKE_NOT_WIRED') {
+          status.className = 'err';
+          status.textContent = 'Intake is not wired yet. Email the studio operator directly.';
+        } else {
+          status.className = 'err';
+          status.textContent = 'Could not send. Try again or email the studio.';
+        }
+      } catch (err) {
+        status.className = 'err';
+        status.textContent = 'Network error.';
+      }
+    });
+    </script>
+
+  </main>
+  <footer>
+    <p>Packetbench assembles operational packets. We do not provide legal, medical, tax, or insurance advice. You own every submission and attestation.</p>
+    <p><a href="/legal/terms.html">Terms</a> · <a href="/legal/privacy.html">Privacy</a></p>
+  </footer>
+</body>
+</html>
