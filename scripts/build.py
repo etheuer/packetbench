@@ -167,39 +167,39 @@ LANDING = {
         ],
         "turnaround": "7 business days for one rating year",
     },
-    "10-coi-chase-desk": {
-        "headline": "The award is public. You still cannot get on site.",
-        "sub": "We chase and match certificates to the exhibit. Your broker issues the certs.",
-        "buyer": "Project manager at a specialty subcontractor",
+    "10-sos-annual-report": {
+        "headline": "The next annual report, filled in before it is late.",
+        "sub": "We prepare the worksheet from the public state rules. You submit and pay the state.",
+        "buyer": "Owner or bookkeeper who can sign the state form",
         "packet": [
-            "Requirement matrix from the exhibit",
-            "Chase log with last-touch dates",
-            "Matched COI packet for the GC",
-            "A list of gaps only the broker can close",
+            "Due date and form name for that state and entity type",
+            "Worksheet with the fields the state asks for",
+            "Official filing URL",
+            "A short list of what only you can confirm"
         ],
         "steps": [
-            ("Send the award and exhibit", "Plus current certs and broker contact."),
-            ("We chase and match", "You see a living log, not a pile of PDFs."),
-            ("Broker issues", "We do not decide if coverage is adequate."),
+            ("Send the entity facts", "Legal name, state, entity type, and the last annual report if you have it."),
+            ("We build the worksheet", "From the public SOS rules and your facts. AI drafts, we check the official page."),
+            ("You file", "You keep the SOS login. We do not pay the state fee.")
         ],
-        "turnaround": "Setup in 3 days, then a twice-weekly chase",
+        "turnaround": "Ready in three business days for one entity.",
     },
-    "11-prior-auth-chase": {
-        "headline": "Auths are sitting in missing-info.",
-        "sub": "We run the status queue from your exports. Clinicians still decide necessity.",
-        "buyer": "Office manager at an independent specialty clinic",
+    "11-wcag-punchlist": {
+        "headline": "A page-level accessibility list, not a certificate.",
+        "sub": "We review up to 10 public URLs and list concrete issues. You own the fixes.",
+        "buyer": "Owner or PM who can change the site",
         "packet": [
-            "Daily open-auth status board",
-            "Missing-info list with the exact payer ask",
-            "Aging over 7 and 14 days",
-            "A BAA-first onboarding note",
+            "URL-by-URL issue list",
+            "WCAG criterion cited for each issue",
+            "Suggested fix in plain language",
+            "A do-not-claim note: this is not a certification"
         ],
         "steps": [
-            ("Sign a BAA, then export", "No PHI until the agreement is in place."),
-            ("We chase status", "Portal work from your logins, or from files you send."),
-            ("Clinicians decide", "We never write medical necessity."),
+            ("Send the URLs", "Up to 10 public pages. No login walls."),
+            ("We crawl and list", "AI plus a browser pass. Only what is visible without an account."),
+            ("You fix or assign", "Your developer implements. We do not certify.")
         ],
-        "turnaround": "Daily queue once onboarded",
+        "turnaround": "Ready in five business days.",
     },
     "12-resto-cash-tax-pack": {
         "headline": "Monday should not start in five POS exports.",
@@ -235,22 +235,22 @@ LANDING = {
         ],
         "turnaround": "4 business days per packet",
     },
-    "14-pharmacy-pbm-recon": {
-        "headline": "The remit does not match your claim file.",
-        "sub": "We build a monthly identified-versus-disputed ledger. You decide what to file.",
-        "buyer": "Owner or PIC at an independent pharmacy",
+    "14-nofo-matrix": {
+        "headline": "Know if the grant is even for you.",
+        "sub": "We turn one public NOFO into an eligibility and document matrix. You write the application.",
+        "buyer": "Executive director or founder who will submit",
         "packet": [
-            "835 versus claim exception list",
-            "Identified, disputed, and collected columns",
-            "A skip list for noise",
-            "A one-page note: identified is not cash",
+            "Eligibility matrix (yes / no / you must confirm)",
+            "Required attachments list",
+            "Deadline and submission system",
+            "Open questions only you can answer"
         ],
         "steps": [
-            ("Send remits and claims", "One PBM first. Redact where you can."),
-            ("We reconcile", "You get a ledger, not a lawsuit memo."),
-            ("You file disputes", "We do not give legal advice or guarantee recoveries."),
+            ("Send the NOFO link", "Grants.gov or the agency PDF."),
+            ("We extract the rules", "AI reads the notice. We keep quotes next to each row."),
+            ("You decide to bid", "You write and submit. We do not promise funding.")
         ],
-        "turnaround": "Monthly, ten business days after you send remits",
+        "turnaround": "Ready in four business days.",
     },
     "15-warranty-labor-rescue": {
         "headline": "You already did the work. The labor claim bounced.",
@@ -337,22 +337,22 @@ LANDING = {
         ],
         "turnaround": "10 business days for the index",
     },
-    "20-new-medicare-dme": {
-        "headline": "Enrollment is active. The first claims will bounce.",
-        "sub": "A first-billing documentation kit. Your biller submits. We do not bill Medicare.",
-        "buyer": "Owner or biller at a newly enrolled DME supplier",
+    "20-labor-posters": {
+        "headline": "The posters that belong on that wall.",
+        "sub": "We gather the current official federal and state notices for one address. You print them.",
+        "buyer": "Owner or office manager who can print",
         "packet": [
-            "First-claim document checklist",
-            "Sample packet layout with no beneficiary data",
-            "A bounce-reason crib from common rejects",
-            "BAA-first onboarding note",
+            "Federal poster set from DOL",
+            "State set for that address",
+            "Hang list (what goes where)",
+            "Date we pulled the official files"
         ],
         "steps": [
-            ("Sign a BAA if we will see PHI", "Until then, process only. No beneficiary files."),
-            ("We build the kit", "What must sit in the chart before claim one."),
-            ("Your biller submits", "We do not determine coverage or send claims."),
+            ("Send the address", "Street, city, state, and whether you have any employees."),
+            ("We pull official files", "DOL and the state labor site. AI matches the set."),
+            ("You print and hang", "We do not mail laminated posters unless you ask later.")
         ],
-        "turnaround": "7 business days",
+        "turnaround": "Ready in two business days.",
     },
 }
 
@@ -420,17 +420,17 @@ SHORT = {
     "07-amz-vendor-chargebacks": "Vendor Desk",
     "08-gbp-trade-reinstatement": "Maps Appeal",
     "09-ncci-emod-audit": "e-Mod File",
-    "10-coi-chase-desk": "COI Chase",
-    "11-prior-auth-chase": "Auth Queue",
+    "10-sos-annual-report": "Annual Report",
+    "11-wcag-punchlist": "Access Audit",
     "12-resto-cash-tax-pack": "Monday Pack",
     "13-hvac-rebate-filing": "Rebate File",
-    "14-pharmacy-pbm-recon": "PBM Ledger",
+    "14-nofo-matrix": "NOFO Matrix",
     "15-warranty-labor-rescue": "Labor Rescue",
     "16-hotel-ota-shortpay": "Folio Desk",
     "17-sam-first-award": "First Award",
     "18-new-contractor-pack": "New License",
     "19-fda-warning-cleanup": "Warning Index",
-    "20-new-medicare-dme": "First Claim",
+    "20-labor-posters": "Poster Pack",
 }
 
 

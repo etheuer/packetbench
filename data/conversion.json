@@ -1,182 +1,482 @@
 {
   "01-pecos-revalidation": {
-    "for": ["Independent medical or dental practices with a CMS revalidation due date", "A practice admin or authorized official who can attest in PECOS"],
-    "not": ["Billing companies that already run PECOS as a product", "Anyone who wants us to log in or click Submit"],
+    "for": [
+      "Independent medical or dental practices with a CMS revalidation due date",
+      "A practice admin or authorized official who can attest in PECOS"
+    ],
+    "not": [
+      "Billing companies that already run PECOS as a product",
+      "Anyone who wants us to log in or click Submit"
+    ],
     "faq": [
-      ["Do you need our PECOS password?", "No. You keep the login. We send a packet your official uses in one sitting."],
-      ["Can you guarantee CMS accepts it?", "No. We assemble a complete file. Acceptance stays with CMS and your official."],
-      ["How fast?", "Five business days for one enrollment record after we have the NPI and due month."]
+      [
+        "Do you need our PECOS password?",
+        "No. You keep the login. We send a packet your official uses in one sitting."
+      ],
+      [
+        "Can you guarantee CMS accepts it?",
+        "No. We assemble a complete file. Acceptance stays with CMS and your official."
+      ],
+      [
+        "How fast?",
+        "Five business days for one enrollment record after we have the NPI and due month."
+      ]
     ]
   },
   "02-fda-ffr-renewal": {
-    "for": ["US shared kitchens and small copackers that must renew in the 2026 window", "An owner who still has the FDA account"],
-    "not": ["Foreign facilities that need a US Agent", "Anyone who wants us to hold the FURLS login"],
+    "for": [
+      "US shared kitchens and small copackers that must renew in the 2026 window",
+      "An owner who still has the FDA account"
+    ],
+    "not": [
+      "Foreign facilities that need a US Agent",
+      "Anyone who wants us to hold the FURLS login"
+    ],
     "faq": [
-      ["Is the 2026 window still open?", "Yes. October 1 through December 31, 2026. After that the registration expires."],
-      ["Will you submit for us?", "No. The owner submits. We prepare the worksheet and the click path."],
-      ["How fast?", "Three business days per facility."]
+      [
+        "Is the 2026 window still open?",
+        "Yes. October 1 through December 31, 2026. After that the registration expires."
+      ],
+      [
+        "Will you submit for us?",
+        "No. The owner submits. We prepare the worksheet and the click path."
+      ],
+      [
+        "How fast?",
+        "Three business days per facility."
+      ]
     ]
   },
   "03-osha-ita-hygiene": {
-    "for": ["Establishments that must file OSHA injury data electronically", "A safety lead who already keeps 300 and 300A logs"],
-    "not": ["Companies that want us to decide what is recordable", "Anyone asking us to speak to OSHA"],
+    "for": [
+      "Establishments that must file OSHA injury data electronically",
+      "A safety lead who already keeps 300 and 300A logs"
+    ],
+    "not": [
+      "Companies that want us to decide what is recordable",
+      "Anyone asking us to speak to OSHA"
+    ],
     "faq": [
-      ["March 2 already passed. Too late?", "OSHA still accepts the file through December 31. We also set next year's weekly log."],
-      ["Do you decide recordability?", "No. That stays with you. We clean the file and list questions only you can answer."],
-      ["How fast?", "Setup in one week, then a monthly hygiene pass."]
+      [
+        "March 2 already passed. Too late?",
+        "OSHA still accepts the file through December 31. We also set next year's weekly log."
+      ],
+      [
+        "Do you decide recordability?",
+        "No. That stays with you. We clean the file and list questions only you can answer."
+      ],
+      [
+        "How fast?",
+        "Setup in one week, then a monthly hygiene pass."
+      ]
     ]
   },
   "04-fsis-origin-label": {
-    "for": ["Small FSIS plants that print Product of USA or Made in USA", "A QA lead who can sign the plant file"],
-    "not": ["Plants that want us to obtain USDA label approval", "Anyone asking us to certify origin"],
+    "for": [
+      "Small FSIS plants that print Product of USA or Made in USA",
+      "A QA lead who can sign the plant file"
+    ],
+    "not": [
+      "Plants that want us to obtain USDA label approval",
+      "Anyone asking us to certify origin"
+    ],
     "faq": [
-      ["Is this USDA approval?", "No. We map the evidence file. LSAS and approval stay with you."],
-      ["What do you need from us?", "Current labels plus whatever origin records you already have."],
-      ["How fast?", "Ten business days for one establishment."]
+      [
+        "Is this USDA approval?",
+        "No. We map the evidence file. LSAS and approval stay with you."
+      ],
+      [
+        "What do you need from us?",
+        "Current labels plus whatever origin records you already have."
+      ],
+      [
+        "How fast?",
+        "Ten business days for one establishment."
+      ]
     ]
   },
   "05-solar-interconnect": {
-    "for": ["Residential solar installers who keep missing completeness checks", "An ops manager who can get the engineer to stamp"],
-    "not": ["Anyone who wants us to stamp electrical drawings", "We do not submit as contractor of record"],
+    "for": [
+      "Residential solar installers who keep missing completeness checks",
+      "An ops manager who can get the engineer to stamp"
+    ],
+    "not": [
+      "Anyone who wants us to stamp electrical drawings",
+      "We do not submit as contractor of record"
+    ],
     "faq": [
-      ["Do you design the system?", "No. We completeness-check the packet against that utility's list."],
-      ["What if the utility already bounced us?", "Send the bounce. We turn it into a punch list and a resubmit pack."],
-      ["How fast?", "Two business days per application."]
+      [
+        "Do you design the system?",
+        "No. We completeness-check the packet against that utility's list."
+      ],
+      [
+        "What if the utility already bounced us?",
+        "Send the bounce. We turn it into a punch list and a resubmit pack."
+      ],
+      [
+        "How fast?",
+        "Two business days per application."
+      ]
     ]
   },
   "06-gmc-pid-recovery": {
-    "for": ["US Shopify brands with Shopping listings down on price or availability", "An ecommerce lead who can publish feed and page fixes"],
-    "not": ["Stores that want us to run Google Ads", "Anyone who will not give a Diagnostics export"],
+    "for": [
+      "US Shopify brands with Shopping listings down on price or availability",
+      "An ecommerce lead who can publish feed and page fixes"
+    ],
+    "not": [
+      "Stores that want us to run Google Ads",
+      "Anyone who will not give a Diagnostics export"
+    ],
     "faq": [
-      ["Will Google approve us again?", "We cannot promise that. We give you the SKU ledger and the exact fixes."],
-      ["Do you need our Merchant Center login?", "No. Export Diagnostics and three product URLs."],
-      ["How fast?", "Five business days for up to 200 flagged SKUs."]
+      [
+        "Will Google approve us again?",
+        "We cannot promise that. We give you the SKU ledger and the exact fixes."
+      ],
+      [
+        "Do you need our Merchant Center login?",
+        "No. Export Diagnostics and three product URLs."
+      ],
+      [
+        "How fast?",
+        "Five business days for up to 200 flagged SKUs."
+      ]
     ]
   },
   "07-amz-vendor-chargebacks": {
-    "for": ["US Vendor Central brands with operational chargebacks on the defect list", "A vendor ops or finance lead who can upload disputes"],
-    "not": ["Seller Central consumer card chargebacks", "Anyone who wants a guaranteed reversal"],
+    "for": [
+      "US Vendor Central brands with operational chargebacks on the defect list",
+      "A vendor ops or finance lead who can upload disputes"
+    ],
+    "not": [
+      "Seller Central consumer card chargebacks",
+      "Anyone who wants a guaranteed reversal"
+    ],
     "faq": [
-      ["Is this Seller Central A-to-Z?", "No. This desk is Vendor Central operational chargebacks only."],
-      ["Will Amazon reverse the fees?", "We build the evidence packet. Amazon decides. Identified is not cash."],
-      ["How fast?", "Setup in one week, then a weekly batch."]
+      [
+        "Is this Seller Central A-to-Z?",
+        "No. This desk is Vendor Central operational chargebacks only."
+      ],
+      [
+        "Will Amazon reverse the fees?",
+        "We build the evidence packet. Amazon decides. Identified is not cash."
+      ],
+      [
+        "How fast?",
+        "Setup in one week, then a weekly batch."
+      ]
     ]
   },
   "08-gbp-trade-reinstatement": {
-    "for": ["Licensed home-service trades with a suspended Google Business Profile", "An owner who can upload license and address proof once"],
-    "not": ["Agencies looking for monthly SEO", "Anyone who wants a guaranteed reinstatement"],
+    "for": [
+      "Licensed home-service trades with a suspended Google Business Profile",
+      "An owner who can upload license and address proof once"
+    ],
+    "not": [
+      "Agencies looking for monthly SEO",
+      "Anyone who wants a guaranteed reinstatement"
+    ],
     "faq": [
-      ["Can you guarantee we come back on Maps?", "No. We build one clean appeal packet. Google decides."],
-      ["Should we keep appealing?", "No. One packet. Stacked appeals usually make it worse."],
-      ["How fast?", "Three business days."]
+      [
+        "Can you guarantee we come back on Maps?",
+        "No. We build one clean appeal packet. Google decides."
+      ],
+      [
+        "Should we keep appealing?",
+        "No. One packet. Stacked appeals usually make it worse."
+      ],
+      [
+        "How fast?",
+        "Three business days."
+      ]
     ]
   },
   "09-ncci-emod-audit": {
-    "for": ["Experience-rated US contractors with a new mod worksheet", "A controller who can send the claim listing to their broker"],
-    "not": ["Anyone who wants us to sell insurance or change the mod", "Firms whose broker already reconciled the sheet"],
+    "for": [
+      "Experience-rated US contractors with a new mod worksheet",
+      "A controller who can send the claim listing to their broker"
+    ],
+    "not": [
+      "Anyone who wants us to sell insurance or change the mod",
+      "Firms whose broker already reconciled the sheet"
+    ],
     "faq": [
-      ["Will this lower our premium?", "Only if the worksheet is wrong and your broker files. We find mismatches."],
-      ["Do you need carrier access?", "No. Send the worksheet you already have plus the claim list."],
-      ["How fast?", "Seven business days for one rating year."]
-    ]
-  },
-  "10-coi-chase-desk": {
-    "for": ["Specialty subcontractors with a public award who cannot get on site", "A PM who has the exhibit and a broker"],
-    "not": ["Anyone who wants us to decide if coverage is enough", "We do not bind insurance"],
-    "faq": [
-      ["Do you issue certificates?", "No. Your broker issues. We chase, match, and pack."],
-      ["What do you need?", "The award, the insurance exhibit, and current certs."],
-      ["How fast?", "Setup in three days, then a twice-weekly chase."]
-    ]
-  },
-  "11-prior-auth-chase": {
-    "for": ["Independent specialty clinics with a missing-info queue", "An office manager who will sign a BAA before any PHI"],
-    "not": ["Clinics that want us to write medical necessity", "Anyone who will not sign a BAA"],
-    "faq": [
-      ["Is this clinical?", "No. We chase status and missing-info. Clinicians decide necessity."],
-      ["When do you see patient data?", "Only after a signed BAA. Until then, process only."],
-      ["How fast?", "Daily queue once onboarded."]
+      [
+        "Will this lower our premium?",
+        "Only if the worksheet is wrong and your broker files. We find mismatches."
+      ],
+      [
+        "Do you need carrier access?",
+        "No. Send the worksheet you already have plus the claim list."
+      ],
+      [
+        "How fast?",
+        "Seven business days for one rating year."
+      ]
     ]
   },
   "12-resto-cash-tax-pack": {
-    "for": ["Multi-unit independent restaurants with messy Monday closes", "A bookkeeper who already exports the POS"],
-    "not": ["Groups that want us to file sales tax", "Anyone asking for tax advice"],
+    "for": [
+      "Multi-unit independent restaurants with messy Monday closes",
+      "A bookkeeper who already exports the POS"
+    ],
+    "not": [
+      "Groups that want us to file sales tax",
+      "Anyone asking for tax advice"
+    ],
     "faq": [
-      ["Do you file the return?", "No. Your CPA files. We send the exception pack."],
-      ["Which POS?", "Whatever you already export. Toast and Square are common."],
-      ["How fast?", "Every Monday for the prior week."]
+      [
+        "Do you file the return?",
+        "No. Your CPA files. We send the exception pack."
+      ],
+      [
+        "Which POS?",
+        "Whatever you already export. Toast and Square are common."
+      ],
+      [
+        "How fast?",
+        "Every Monday for the prior week."
+      ]
     ]
   },
   "13-hvac-rebate-filing": {
-    "for": ["Licensed HVAC shops with finished jobs and unfiled utility rebates", "An office manager who can send invoice and equipment photos"],
-    "not": ["Anyone who wants an eligibility opinion we will stand behind", "We do not promise the utility pays"],
+    "for": [
+      "Licensed HVAC shops with finished jobs and unfiled utility rebates",
+      "An office manager who can send invoice and equipment photos"
+    ],
+    "not": [
+      "Anyone who wants an eligibility opinion we will stand behind",
+      "We do not promise the utility pays"
+    ],
     "faq": [
-      ["Is this the federal tax credit?", "No. This desk files live utility mail-in packets on completed jobs."],
-      ["What if a job is missing photos?", "It goes on the not-ready list. We do not invent evidence."],
-      ["How fast?", "Four business days per packet."]
-    ]
-  },
-  "14-pharmacy-pbm-recon": {
-    "for": ["Independent pharmacies whose remits do not match claims", "An owner or PIC starting with one PBM"],
-    "not": ["Anyone who wants legal advice on DIR disputes", "We do not guarantee recoveries"],
-    "faq": [
-      ["Is identified money collected money?", "No. The ledger keeps those columns separate on purpose."],
-      ["Do you need full PHI?", "Send remits and claim exports. Redact where you can."],
-      ["How fast?", "Monthly, ten business days after you send remits."]
+      [
+        "Is this the federal tax credit?",
+        "No. This desk files live utility mail-in packets on completed jobs."
+      ],
+      [
+        "What if a job is missing photos?",
+        "It goes on the not-ready list. We do not invent evidence."
+      ],
+      [
+        "How fast?",
+        "Four business days per packet."
+      ]
     ]
   },
   "15-warranty-labor-rescue": {
-    "for": ["Independent appliance or HVAC shops with rejected labor claims", "An owner who still has the job photos"],
-    "not": ["Shops that already run a full warranty platform", "Anyone who wants a payment promise"],
+    "for": [
+      "Independent appliance or HVAC shops with rejected labor claims",
+      "An owner who still has the job photos"
+    ],
+    "not": [
+      "Shops that already run a full warranty platform",
+      "Anyone who wants a payment promise"
+    ],
     "faq": [
-      ["Will the manufacturer pay this time?", "We rebuild the pack they asked for. Payment stays with them."],
-      ["What if the claim is dead?", "It goes on a do-not-resubmit list. We do not keep billing a dead claim."],
-      ["How fast?", "Two business days per claim."]
+      [
+        "Will the manufacturer pay this time?",
+        "We rebuild the pack they asked for. Payment stays with them."
+      ],
+      [
+        "What if the claim is dead?",
+        "It goes on a do-not-resubmit list. We do not keep billing a dead claim."
+      ],
+      [
+        "How fast?",
+        "Two business days per claim."
+      ]
     ]
   },
   "16-hotel-ota-shortpay": {
-    "for": ["Independent hotels with virtual-card short pays or unbilled no-shows", "A GM or night audit who can export the folio"],
-    "not": ["Brands that already run a full OTA recovery platform", "Anyone who wants a collection promise"],
+    "for": [
+      "Independent hotels with virtual-card short pays or unbilled no-shows",
+      "A GM or night audit who can export the folio"
+    ],
+    "not": [
+      "Brands that already run a full OTA recovery platform",
+      "Anyone who wants a collection promise"
+    ],
     "faq": [
-      ["Do you collect from the OTA?", "No. We mark exceptions and build dispute packets. You send them."],
-      ["Which OTAs?", "Whatever posts a virtual card against your folio."],
-      ["How fast?", "Nightly file, pack the next morning."]
+      [
+        "Do you collect from the OTA?",
+        "No. We mark exceptions and build dispute packets. You send them."
+      ],
+      [
+        "Which OTAs?",
+        "Whatever posts a virtual card against your folio."
+      ],
+      [
+        "How fast?",
+        "Nightly file, pack the next morning."
+      ]
     ]
   },
   "17-sam-first-award": {
-    "for": ["First-time SAM.gov federal awardees in the first 30 days", "An owner who will stay the registrant"],
-    "not": ["Firms that want us to bid or certify size status", "Anyone who wants us to take the SAM login"],
+    "for": [
+      "First-time SAM.gov federal awardees in the first 30 days",
+      "An owner who will stay the registrant"
+    ],
+    "not": [
+      "Firms that want us to bid or certify size status",
+      "Anyone who wants us to take the SAM login"
+    ],
     "faq": [
-      ["Do you register us in SAM?", "No. You remain the registrant. We build the 30-day onboarding packet."],
-      ["Is this proposal writing?", "No. Post-award onboarding only."],
-      ["How fast?", "Seven business days."]
+      [
+        "Do you register us in SAM?",
+        "No. You remain the registrant. We build the 30-day onboarding packet."
+      ],
+      [
+        "Is this proposal writing?",
+        "No. Post-award onboarding only."
+      ],
+      [
+        "How fast?",
+        "Seven business days."
+      ]
     ]
   },
   "18-new-contractor-pack": {
-    "for": ["Newly licensed contractors in California or Florida", "An owner who has or will have a broker"],
-    "not": ["Anyone who wants us to sell insurance", "We do not act as agent of record"],
+    "for": [
+      "Newly licensed contractors in California or Florida",
+      "An owner who has or will have a broker"
+    ],
+    "not": [
+      "Anyone who wants us to sell insurance",
+      "We do not act as agent of record"
+    ],
     "faq": [
-      ["Do you issue the COI?", "No. Your broker does. We write the request and the 90-day checklist."],
-      ["Which states?", "California and Florida first. Their new-license lists are public."],
-      ["How fast?", "Five business days."]
+      [
+        "Do you issue the COI?",
+        "No. Your broker does. We write the request and the 90-day checklist."
+      ],
+      [
+        "Which states?",
+        "California and Florida first. Their new-license lists are public."
+      ],
+      [
+        "How fast?",
+        "Five business days."
+      ]
     ]
   },
   "19-fda-warning-cleanup": {
-    "for": ["US food facilities named on a new FDA warning letter", "A QA lead who already has counsel on the thread"],
-    "not": ["Anyone who wants us to write the FDA response", "We will not start without counsel"],
+    "for": [
+      "US food facilities named on a new FDA warning letter",
+      "A QA lead who already has counsel on the thread"
+    ],
+    "not": [
+      "Anyone who wants us to write the FDA response",
+      "We will not start without counsel"
+    ],
     "faq": [
-      ["Are you lawyers?", "No. We index registration, labels, and recall files for your counsel."],
-      ["Will this close the letter?", "Counsel owns the response and the close-out. We own the file pile."],
-      ["How fast?", "Ten business days for the index."]
+      [
+        "Are you lawyers?",
+        "No. We index registration, labels, and recall files for your counsel."
+      ],
+      [
+        "Will this close the letter?",
+        "Counsel owns the response and the close-out. We own the file pile."
+      ],
+      [
+        "How fast?",
+        "Ten business days for the index."
+      ]
     ]
   },
-  "20-new-medicare-dme": {
-    "for": ["Newly Medicare-enrolled DME suppliers before first claims", "An owner or biller who will sign a BAA before any beneficiary data"],
-    "not": ["Anyone who wants us to bill Medicare or decide coverage", "No beneficiary files before a BAA"],
+  "10-sos-annual-report": {
+    "for": [
+      "A US LLC or corporation with a known home state",
+      "Someone who can confirm officers and the principal address"
+    ],
+    "not": [
+      "Anyone who wants us to be the registered agent",
+      "Tax return preparation"
+    ],
     "faq": [
-      ["Do you submit claims?", "No. Your biller submits. We build the first-claim documentation kit."],
-      ["When do you see patient data?", "Only after a BAA. The kit itself can start with no PHI."],
-      ["How fast?", "Seven business days."]
+      [
+        "Do you file it?",
+        "No. You submit and pay the state. We prepare the worksheet."
+      ],
+      [
+        "Which states?",
+        "Any state with a public annual-report page. One state per order."
+      ],
+      [
+        "How fast?",
+        "Three business days after we have the entity facts."
+      ]
+    ]
+  },
+  "11-wcag-punchlist": {
+    "for": [
+      "A public marketing or brochure site",
+      "A bid or complaint that named WCAG or ADA web access"
+    ],
+    "not": [
+      "Logged-in apps we cannot see",
+      "Anyone who wants a legally binding certification"
+    ],
+    "faq": [
+      [
+        "Is this a WCAG certificate?",
+        "No. It is a punch list. Certification is a different product."
+      ],
+      [
+        "Do you need our CMS login?",
+        "No. Public URLs only."
+      ],
+      [
+        "How fast?",
+        "Five business days for up to 10 URLs."
+      ]
+    ]
+  },
+  "14-nofo-matrix": {
+    "for": [
+      "A single public NOFO you are considering",
+      "Someone who will write and submit themselves"
+    ],
+    "not": [
+      "Anyone who wants us to write the narrative",
+      "Private foundations with no public notice"
+    ],
+    "faq": [
+      [
+        "Will you write the grant?",
+        "No. This is eligibility and documents only."
+      ],
+      [
+        "Do you submit in Grants.gov?",
+        "No. You stay the applicant."
+      ],
+      [
+        "How fast?",
+        "Four business days after we have the notice URL."
+      ]
+    ]
+  },
+  "20-labor-posters": {
+    "for": [
+      "One US workplace address",
+      "Someone who can print or send to a print shop"
+    ],
+    "not": [
+      "Employment-law opinions",
+      "Multi-country workplaces"
+    ],
+    "faq": [
+      [
+        "Are these official?",
+        "We pull the current files from DOL and the state site and date the folder."
+      ],
+      [
+        "Do you mail printed posters?",
+        "Not in the base fee. You get PDFs and a hang list."
+      ],
+      [
+        "How fast?",
+        "Two business days after we have the address."
+      ]
     ]
   }
 }

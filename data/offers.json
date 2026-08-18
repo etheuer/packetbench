@@ -21,7 +21,7 @@
       "lens": "regulatory",
       "name": "FDA Food Facility Renewal",
       "icp": "US shared kitchens and small copackers",
-      "failure": "The Oct 1–Dec 31 2026 biennial renewal window is open and the FURLS login is a mess.",
+      "failure": "The Oct 1\u2013Dec 31 2026 biennial renewal window is open and the FURLS login is a mess.",
       "cost": "Registration expires Dec 31. Shipments can be held.",
       "deliverable": "A filled renewal worksheet, UFI/DUNS check, and step-by-step FURLS click-path for your owner to submit.",
       "price": "$900 one-time",
@@ -92,7 +92,7 @@
       "price": "$800 setup + $600/mo",
       "price_note": "Up to 40 disputes/mo.",
       "not": "We do not promise Amazon will reverse charges or collect cash.",
-      "lead": "Vendor Central award / brand registries; invite-only — outbound is referral + public brand lists"
+      "lead": "Vendor Central award / brand registries; invite-only \u2014 outbound is referral + public brand lists"
     },
     {
       "id": "08-gbp-trade-reinstatement",
@@ -121,30 +121,30 @@
       "lead": "Public contractor licenses + bid awards"
     },
     {
-      "id": "10-coi-chase-desk",
+      "id": "10-sos-annual-report",
       "lens": "labor",
-      "name": "Post-Award COI Chase",
-      "icp": "Specialty subcontractors after a public bid award",
-      "failure": "The GC will not let you on site until every cert matches the exhibit.",
-      "cost": "Mobilization slips. Liquidated damages start talking.",
-      "deliverable": "A requirement matrix, chase log, and matched COI packet. Your broker issues the certs.",
-      "price": "$500 setup + $350/mo",
-      "price_note": "One prime contract. Extra primes $200/mo.",
-      "not": "We do not decide coverage adequacy or bind insurance.",
-      "lead": "Public bid-award postings"
+      "name": "State Annual Report Worksheet",
+      "icp": "US LLC or corp owners with an entity in one or more states",
+      "failure": "The secretary of state due date is coming and the last filing is a blur.",
+      "cost": "Late fees, lost good standing, a blocked bank or license renewal.",
+      "deliverable": "A filled annual-report worksheet for one entity and one state, plus the official filing link. You submit.",
+      "price": "$247 one-time",
+      "price_note": "One entity, one state. Extra states $147.",
+      "not": "We do not file as your registered agent or give tax advice.",
+      "lead": "State SOS annual report calendars (public)"
     },
     {
-      "id": "11-prior-auth-chase",
+      "id": "11-wcag-punchlist",
       "lens": "labor",
-      "name": "Prior-Auth Status Desk",
-      "icp": "Independent specialty clinics",
-      "failure": "Auths sit in missing-info. Nobody is chasing the payer queue.",
-      "cost": "Procedures delay. Staff drown in portals.",
-      "deliverable": "A daily status and missing-info queue from your portal exports. Clinicians still decide medical necessity.",
-      "price": "$900 setup + $700/mo",
-      "price_note": "Up to 80 open auths. BAA required before any PHI.",
-      "not": "We do not determine medical necessity or submit clinical arguments.",
-      "lead": "NPPES specialty practices + job posts for auth coordinators"
+      "name": "Public-Page Accessibility Punch List",
+      "icp": "US small businesses that must show an accessibility pass for a bid or a complaint",
+      "failure": "A bid or a complaint asked for WCAG and nobody has a page-level list.",
+      "cost": "A lost bid, or a demand letter you cannot answer.",
+      "deliverable": "A punch list of concrete issues on up to 10 public URLs, with the WCAG criterion and a suggested fix. You decide what to implement.",
+      "price": "$797 one-time",
+      "price_note": "Up to 10 public URLs. Extra URLs $47.",
+      "not": "We do not certify WCAG conformance or represent you in a lawsuit.",
+      "lead": "Public websites; bid language that names WCAG"
     },
     {
       "id": "12-resto-cash-tax-pack",
@@ -173,17 +173,17 @@
       "lead": "State HVAC licenses + utility trade-ally lists"
     },
     {
-      "id": "14-pharmacy-pbm-recon",
+      "id": "14-nofo-matrix",
       "lens": "leakage",
-      "name": "Pharmacy PBM Reconciliation",
-      "icp": "Independent US pharmacies",
-      "failure": "DIR and recoupment statements do not match your claim export.",
-      "cost": "Silent margin leak. Disputes expire.",
-      "deliverable": "A monthly identified-vs-disputed-vs-collected ledger from your statements. You decide what to file.",
-      "price": "$1,200 setup + $800/mo",
-      "price_note": "One NPI / one primary PBM first.",
-      "not": "We do not give legal advice or guarantee recoveries.",
-      "lead": "NCPDP / state board independent pharmacy lists"
+      "name": "Grant NOFO Eligibility Matrix",
+      "icp": "First-time US applicants staring at a Grants.gov notice",
+      "failure": "The NOFO is 40 pages and nobody has mapped eligibility and required attachments.",
+      "cost": "You write for two weeks and miss a mandatory form.",
+      "deliverable": "An eligibility yes/no/unknown matrix and a required-document list from one public NOFO. You write the grant.",
+      "price": "$597 one-time",
+      "price_note": "One NOFO. Extra notices $297.",
+      "not": "We do not write the narrative, submit in Grants.gov, or promise an award.",
+      "lead": "https://www.grants.gov"
     },
     {
       "id": "15-warranty-labor-rescue",
@@ -251,17 +251,17 @@
       "lead": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-actions-and-activities/warning-letters"
     },
     {
-      "id": "20-new-medicare-dme",
+      "id": "20-labor-posters",
       "lens": "trigger",
-      "name": "New DME First-Billing Pack",
-      "icp": "Newly Medicare-enrolled DME suppliers",
-      "failure": "Enrollment is active and the first claims will bounce on missing documentation.",
-      "cost": "Cash stalls in month one.",
-      "deliverable": "A first-billing documentation kit and checklist. Your biller submits.",
-      "price": "$1,500 one-time",
-      "price_note": "BAA required before any beneficiary data.",
-      "not": "We do not bill Medicare or determine coverage.",
-      "lead": "PECOS / NPPES newly enrolled DME suppliers"
+      "name": "Workplace Poster Pack",
+      "icp": "US employers opening a site or updating a break room",
+      "failure": "A new site or a new state and nobody knows which posters must be on the wall.",
+      "cost": "A labor-board visit, or a missing notice in an employee claim.",
+      "deliverable": "A folder of the current official federal posters plus the state set for one workplace address, with a hang list. You print and post.",
+      "price": "$197 one-time",
+      "price_note": "One physical address. Extra states $97.",
+      "not": "We do not give employment-law advice or represent you to a labor board.",
+      "lead": "https://www.dol.gov/general/topics/posters"
     }
   ]
 }

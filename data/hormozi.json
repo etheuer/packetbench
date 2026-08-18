@@ -522,34 +522,34 @@
     "cta": "Request this file"
   },
   {
-    "id": "10-coi-chase-desk",
-    "name": "Site-Access COI Chase",
-    "headline": "Certificates matched so you can get on site.",
-    "sub": "We chase and pack the exhibit. Your broker issues the certs.",
-    "problem": "You cannot get on site and the exhibit is a scavenger hunt.",
-    "after": "A matrix, a log, and a packet for the GC.",
-    "mechanism": "Requirement matrix plus chase. Not an insurance opinion.",
-    "avatar": "PM at a specialty sub who won a public award and cannot get on site.",
-    "price": "$497 setup + $347/mo",
-    "price_note": "One prime contract.",
-    "delivery": "Setup in three days, then a twice-weekly chase.",
-    "anchor": "Idle mobilization costs more than a monthly chase.",
-    "core_value": 1800,
+    "id": "10-sos-annual-report",
+    "name": "Next-Due Annual Report File",
+    "headline": "The next annual report, filled in before it is late.",
+    "sub": "We prepare the worksheet from the public state rules. You submit and pay the state.",
+    "problem": "Every state uses a different form and date. Most owners remember after the late fee.",
+    "after": "You have a completed worksheet and the official link for that entity.",
+    "mechanism": "Public SOS instructions plus the facts you send. AI drafts the worksheet. You file.",
+    "avatar": "Owner of a US LLC who has at least one state annual report due in the next 90 days.",
+    "price": "$247",
+    "price_note": "One entity, one state. Extra states $147.",
+    "delivery": "Ready in three business days for one entity.",
+    "anchor": "A lost good-standing letter costs more than this worksheet.",
+    "core_value": 600,
     "stack": [
       {
-        "name": "Exhibit Matrix",
-        "does": "Every cert the GC asked for.",
-        "value": 500
+        "name": "State due-date card",
+        "does": "Form name and deadline for that entity type.",
+        "value": 150
       },
       {
-        "name": "Chase Log",
-        "does": "Last-touch dates, not a pile of PDFs.",
-        "value": 600
+        "name": "Completed worksheet",
+        "does": "Fields filled from what you sent.",
+        "value": 300
       },
       {
-        "name": "GC-Ready Packet",
-        "does": "Matched certs in one folder.",
-        "value": 400
+        "name": "Official filing link",
+        "does": "The SOS page, not a third-party upsell.",
+        "value": 100
       }
     ],
     "bonuses": [
@@ -575,38 +575,38 @@
         "value": 500
       }
     ],
-    "total_value": 4400,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "total_value": 2250,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a rejected filing or a failed bid.",
     "cta": "Request this file"
   },
   {
-    "id": "11-prior-auth-chase",
-    "name": "Missing-Info Auth Queue",
-    "headline": "A daily queue for missing-info auths.",
-    "sub": "We chase status. Clinicians still decide medical necessity. A BAA comes first.",
-    "problem": "Auths age out in missing-info and nobody owns the chase.",
-    "after": "A board of what is waiting on the payer vs the clinic.",
-    "mechanism": "Status only. No medical necessity language.",
-    "avatar": "Office manager at an independent specialty clinic.",
-    "price": "$897 setup + $697/mo",
-    "price_note": "Up to 80 open auths. BAA required before PHI.",
-    "delivery": "Daily queue once onboarded.",
-    "anchor": "A stalled procedure week costs more than the desk.",
-    "core_value": 2800,
+    "id": "11-wcag-punchlist",
+    "name": "WCAG Punch List",
+    "headline": "A page-level accessibility list, not a certificate.",
+    "sub": "We review up to 10 public URLs and list concrete issues. You own the fixes.",
+    "problem": "Someone asked for WCAG and you have a marketing site, not an audit.",
+    "after": "A punch list your developer can work in a week.",
+    "mechanism": "Public pages only. AI and a browser. No conformance seal.",
+    "avatar": "Owner of a US small business whose bid or complaint named WCAG.",
+    "price": "$797",
+    "price_note": "Up to 10 public URLs. Extra URLs $47.",
+    "delivery": "Ready in five business days.",
+    "anchor": "A lost bid or an unanswered letter costs more than this list.",
+    "core_value": 1800,
     "stack": [
       {
-        "name": "Daily Status Board",
-        "does": "Open auths, age, next ask.",
-        "value": 900
-      },
-      {
-        "name": "Missing-Info List",
-        "does": "The exact payer question.",
+        "name": "Issue list",
+        "does": "What is wrong on each URL.",
         "value": 800
       },
       {
-        "name": "BAA-First Onboarding",
-        "does": "No PHI until the paper is signed.",
+        "name": "Criterion map",
+        "does": "Which WCAG item it maps to.",
+        "value": 500
+      },
+      {
+        "name": "Fix notes",
+        "does": "What to change, in plain language.",
         "value": 400
       }
     ],
@@ -633,8 +633,8 @@
         "value": 500
       }
     ],
-    "total_value": 6000,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "total_value": 4600,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a rejected filing or a failed bid.",
     "cta": "Request this file"
   },
   {
@@ -754,34 +754,34 @@
     "cta": "Request this file"
   },
   {
-    "id": "14-pharmacy-pbm-recon",
-    "name": "PBM Remit Ledger",
-    "headline": "A monthly ledger of remit vs claims.",
-    "sub": "We mark exceptions. You decide what to dispute. Identified is not collected.",
-    "problem": "DIR and recoupment lines do not match your export.",
-    "after": "A ledger with four columns, not a feeling.",
-    "mechanism": "835 vs claims. No legal advice.",
-    "avatar": "Owner or PIC at an independent pharmacy.",
-    "price": "$1,197 setup + $797/mo",
-    "price_note": "One NPI, one primary PBM first.",
-    "delivery": "Monthly, ten business days after remits arrive.",
-    "anchor": "Unseen recoupments dwarf a monthly ledger.",
-    "core_value": 3600,
+    "id": "14-nofo-matrix",
+    "name": "NOFO Eligibility File",
+    "headline": "Know if the grant is even for you.",
+    "sub": "We turn one public NOFO into an eligibility and document matrix. You write the application.",
+    "problem": "The notice is long and the mandatory attachments hide in the back.",
+    "after": "A one-pass matrix before you spend a month writing.",
+    "mechanism": "Public NOFO text, extracted into a table. Not grant writing.",
+    "avatar": "First-time applicant with a specific Grants.gov notice open.",
+    "price": "$597",
+    "price_note": "One NOFO. Extra notices $297.",
+    "delivery": "Ready in four business days.",
+    "anchor": "A week of writing for the wrong notice is the expensive path.",
+    "core_value": 1500,
     "stack": [
       {
-        "name": "Monthly Exception Ledger",
-        "does": "Identified, disputed, collected, skip.",
-        "value": 1500
+        "name": "Eligibility matrix",
+        "does": "Each rule, with a quote from the notice.",
+        "value": 700
       },
       {
-        "name": "One-PBM Start",
-        "does": "We do not boil the ocean.",
-        "value": 600
+        "name": "Attachment list",
+        "does": "What must be in the packet.",
+        "value": 400
       },
       {
-        "name": "Dispute-Ready Rows",
-        "does": "You still file.",
-        "value": 500
+        "name": "Deadline card",
+        "does": "When and where it files.",
+        "value": 200
       }
     ],
     "bonuses": [
@@ -807,8 +807,8 @@
         "value": 500
       }
     ],
-    "total_value": 7300,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "total_value": 3900,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a rejected filing or a failed bid.",
     "cta": "Request this file"
   },
   {
@@ -1102,34 +1102,34 @@
     "cta": "Request this file"
   },
   {
-    "id": "20-new-medicare-dme",
-    "name": "First-Claim DME Kit",
-    "headline": "A first-claim kit before billing starts.",
-    "sub": "Documentation your biller needs. We do not bill Medicare or decide coverage.",
-    "problem": "The first claims die on missing paperwork.",
-    "after": "A chart checklist before claim one.",
-    "mechanism": "Documentation kit. Not a billing company.",
-    "avatar": "Owner or biller at a newly enrolled DME supplier.",
-    "price": "$1,497",
-    "price_note": "No beneficiary files before a BAA.",
-    "delivery": "Ready in seven business days. BAA before any beneficiary data.",
-    "anchor": "A month of bounced first claims costs more than the kit.",
-    "core_value": 3000,
+    "id": "20-labor-posters",
+    "name": "Federal + State Poster File",
+    "headline": "The posters that belong on that wall.",
+    "sub": "We gather the current official federal and state notices for one address. You print them.",
+    "problem": "Poster rules change and the break-room set is usually a mix of old PDFs.",
+    "after": "One dated folder and a hang list.",
+    "mechanism": "Official DOL and state downloads. Not legal advice.",
+    "avatar": "Owner of a US workplace who needs a current poster set for one address.",
+    "price": "$197",
+    "price_note": "One physical address. Extra states $97.",
+    "delivery": "Ready in two business days.",
+    "anchor": "A missing notice is a cheap problem to avoid.",
+    "core_value": 400,
     "stack": [
       {
-        "name": "First-Claim Checklist",
-        "does": "What must sit in the chart.",
-        "value": 900
+        "name": "Federal set",
+        "does": "Current DOL posters.",
+        "value": 150
       },
       {
-        "name": "Common Reject Crib",
-        "does": "Why new DME claims bounce.",
-        "value": 700
+        "name": "State set",
+        "does": "That state's official notices.",
+        "value": 150
       },
       {
-        "name": "BAA-First Gate",
-        "does": "Process only until the paper is signed.",
-        "value": 400
+        "name": "Hang list",
+        "does": "What to put on the wall.",
+        "value": 80
       }
     ],
     "bonuses": [
@@ -1155,8 +1155,8 @@
         "value": 500
       }
     ],
-    "total_value": 6100,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "total_value": 1880,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a rejected filing or a failed bid.",
     "cta": "Request this file"
   }
 ]
