@@ -43,7 +43,7 @@ LANDING = {
         ],
         "steps": [
             ("Send facility facts", "Legal name, address, food categories, and who owns the FDA account."),
-            ("We fill the worksheet", "You get a sit-beside pack, not a login request."),
+            ("We fill the worksheet", "You get a completed worksheet, not a login request."),
             ("Owner submits", "You stay the registrant. We never act as US Agent."),
         ],
         "turnaround": "3 business days per facility",
@@ -386,17 +386,17 @@ def shell(title: str, desc: str, body: str) -> str:
 """
 
 
-def nav(kind: str = "index", brand: str = "Packetbench") -> str:
-    links = (
-        '<div class="nav-links"><a href="/desks.html">Internal index</a></div>'
-        if kind == "index"
-        else ""
+def nav(kind: str = "index", brand: str = "Desk") -> str:
+    extra = (
+        f'<a class="nav-cta" href="#request">Request</a>'
+        if kind == "offer"
+        else ('<div class="nav-links"><a href="/desks.html">Index</a></div>' if kind == "index" else "")
     )
-    home = "/" if kind == "index" else "#"
+    href = "#" if kind == "offer" else "/"
     return f"""<div class="wrap">
   <nav class="nav">
-    <a class="brand" href="{home}">{esc(brand)}</a>
-    {links}
+    <a class="brand" href="{href}">{esc(brand)}</a>
+    {extra}
   </nav>
 </div>"""
 
@@ -404,10 +404,34 @@ def nav(kind: str = "index", brand: str = "Packetbench") -> str:
 def footer() -> str:
     return """<footer>
   <div class="wrap">
-    <p>This is a productized operations desk. We do not provide legal, medical, tax, or insurance advice. You own every submission and attestation.</p>
+    <p>We prepare the file. You own the filing. This is not legal, medical, tax, or insurance advice.</p>
     <p><a href="/legal/terms.html">Terms</a> · <a href="/legal/privacy.html">Privacy</a></p>
   </div>
 </footer>"""
+
+
+SHORT = {
+    "01-pecos-revalidation": "PECOS File",
+    "02-fda-ffr-renewal": "FDA Renewal",
+    "03-osha-ita-hygiene": "ITA Desk",
+    "04-fsis-origin-label": "Origin File",
+    "05-solar-interconnect": "Interconnect Check",
+    "06-gmc-pid-recovery": "Shopping File",
+    "07-amz-vendor-chargebacks": "Vendor Desk",
+    "08-gbp-trade-reinstatement": "Maps Appeal",
+    "09-ncci-emod-audit": "e-Mod File",
+    "10-coi-chase-desk": "COI Chase",
+    "11-prior-auth-chase": "Auth Queue",
+    "12-resto-cash-tax-pack": "Monday Pack",
+    "13-hvac-rebate-filing": "Rebate File",
+    "14-pharmacy-pbm-recon": "PBM Ledger",
+    "15-warranty-labor-rescue": "Labor Rescue",
+    "16-hotel-ota-shortpay": "Folio Desk",
+    "17-sam-first-award": "First Award",
+    "18-new-contractor-pack": "New License",
+    "19-fda-warning-cleanup": "Warning Index",
+    "20-new-medicare-dme": "First Claim",
+}
 
 
 def offer_page(oid: str) -> str:
@@ -415,9 +439,12 @@ def offer_page(oid: str) -> str:
     L = LANDING[oid]
     C = CONV[oid]
     H = HORMOZI[oid]
-    items = "\n".join(f"          <li>{esc(x)}</li>" for x in L["packet"])
+    items = "\n".join(
+        f'          <li data-n="{i:02d}">{esc(x)}</li>'
+        for i, x in enumerate(L["packet"], 1)
+    )
     steps = "\n".join(
-        f'      <div class="step"><h3>{esc(t)}</h3><p>{esc(b)}</p></div>'
+        f'      <div><h3>{esc(t)}</h3><p>{esc(b)}</p></div>'
         for t, b in L["steps"]
     )
     for_who = "\n".join(f"          <li>{esc(x)}</li>" for x in C["for"])
@@ -426,57 +453,44 @@ def offer_page(oid: str) -> str:
         f"      <details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>"
         for q, a in C["faq"]
     )
-    stack_html = "\n".join(
-        f'      <div class="stack-item"><div><strong>{esc(s["name"])}</strong><p>{esc(s["does"])}</p></div><div class="stack-val">${s["value"]:,}</div></div>'
+    includes = "\n".join(
+        f'      <li><strong>{esc(s["name"])}</strong><span>{esc(s["does"])}</span></li>'
         for s in H["stack"]
     )
-    bonus_html = "\n".join(
-        f'      <div class="stack-item"><div><strong>{esc(b["name"])}</strong><p>{esc(b["does"])}</p></div><div class="stack-val">${b["value"]:,}</div></div>'
+    extras = "\n".join(
+        f'      <li><strong>{esc(b["name"])}</strong><span>{esc(b["does"])}</span></li>'
         for b in H["bonuses"]
     )
-    body = f"""{nav("offer", H["name"])}
+    body = f"""{nav("offer", SHORT[oid])}
   <div class="wrap">
     <section class="hero">
-      <div>
-        <h1>{esc(H["headline"])}</h1>
-        <p class="sub">{esc(H["sub"])}</p>
-        <p class="meta">{esc(H["price"])} <span>{esc(H["delivery"])}</span></p>
-        <div class="actions">
-          <a class="btn" href="#request">Request this file</a>
-        </div>
-      </div>
-      <aside class="packet">
-        <h2>You get this file</h2>
-        <ol>
+      <h1>{esc(H["headline"])}</h1>
+      <p class="sub">{esc(H["sub"])}</p>
+      <p class="hero-meta"><b>{esc(H["price"])}</b> <span>{esc(H["delivery"])}</span></p>
+      <a class="btn" href="#request">Request this file</a>
+    </section>
+    <aside class="panel">
+      <h2>In the file</h2>
+      <ol>
 {items}
-        </ol>
-      </aside>
-    </section>
-  </div>
-  <div class="wrap">
+      </ol>
+    </aside>
     <section class="section">
-      <h2>The problem</h2>
-      <p class="lead">{esc(H["problem"])}</p>
+      <h2>What this is</h2>
+      <p class="prose">{esc(H["problem"])} {esc(H["after"])}</p>
+      <p class="prose">{esc(H["mechanism"])}</p>
     </section>
     <section class="section">
-      <h2>What changes</h2>
-      <p class="lead">{esc(H["after"])}</p>
-    </section>
-    <section class="section">
-      <h2>How this works</h2>
-      <p class="lead">{esc(H["mechanism"])}</p>
-    </section>
-    <section class="section">
-      <h2>Is this for you</h2>
+      <h2>Who this is for</h2>
       <div class="split">
-        <div class="block">
-          <strong>Buy this if</strong>
+        <div class="col">
+          <h3>A fit</h3>
           <ul>
 {for_who}
           </ul>
         </div>
-        <div class="block">
-          <strong>Do not buy if</strong>
+        <div class="col">
+          <h3>Not a fit</h3>
           <ul>
 {not_who}
           </ul>
@@ -485,54 +499,46 @@ def offer_page(oid: str) -> str:
     </section>
     <section class="section">
       <h2>How the work runs</h2>
-      <p class="lead">Built for the {esc(L["buyer"])}.</p>
-      <div class="steps">
+      <div class="work">
 {steps}
       </div>
     </section>
     <section class="section">
-      <h2>Everything in the file</h2>
-      <p class="lead">Value shown is packaging so you can see the stack. It is not an appraisal.</p>
-      <div class="stack">
-{stack_html}
-{bonus_html}
-      </div>
-      <div class="total"><span>Packaged stack</span><span>${H["total_value"]:,}</span></div>
+      <h2>What is included</h2>
+      <ul class="includes">
+{includes}
+{extras}
+      </ul>
     </section>
     <section class="section">
-      <h2>Price and limits</h2>
-      <div class="price-row">
-        <div class="price">{esc(H["price"])}</div>
-        <div class="price-note">{esc(H["price_note"])}</div>
-      </div>
-      <p class="lead">{esc(H["anchor"])}</p>
+      <h2>Fee</h2>
+      <div class="fee"><b>{esc(H["price"])}</b></div>
+      <p class="note">{esc(H["price_note"])} {esc(H["anchor"])}</p>
       <div class="split">
-        <div class="block">
-          <strong>What you get</strong>
-          <p>{esc(o["deliverable"])}</p>
+        <div class="col">
+          <h3>You receive</h3>
+          <p class="prose">{esc(o["deliverable"])}</p>
         </div>
-        <div class="block">
-          <strong>What we will not do</strong>
-          <p class="wont">{esc(o["not"])}</p>
+        <div class="col">
+          <h3>Outside this work</h3>
+          <p class="prose">{esc(o["not"])}</p>
         </div>
       </div>
     </section>
     <section class="section">
-      <h2>Common questions</h2>
+      <h2>If something is missing</h2>
+      <p class="prose">{esc(H["guarantee"])}</p>
+    </section>
+    <section class="section">
+      <h2>Questions</h2>
       <div class="faq">
 {faqs}
       </div>
     </section>
-    <section class="section">
-      <h2>If a listed item is missing</h2>
-      <div class="guarantee">
-        <p>{esc(H["guarantee"])}</p>
-      </div>
-    </section>
     <section class="section" id="request">
       <h2>Request this file</h2>
-      <p class="lead">Tell us what is due and when. If we cannot take the job this week we will say so.</p>
-      <div class="request-grid">
+      <p class="prose">Say what is due and when. If we cannot take it this week, we will say so.</p>
+      <div class="request">
       <form id="lead" class="intake">
         <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
         <input type="hidden" name="offer_id" value="{esc(oid)}">
@@ -542,15 +548,13 @@ def offer_page(oid: str) -> str:
         <input id="email" name="email" type="email" required autocomplete="email">
         <label for="message">What is due, and when?</label>
         <textarea id="message" name="message" rows="4" required></textarea>
-        <label class="check"><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
+        <label class="check"><input type="checkbox" name="consented" required> I have read the <a href="/legal/privacy.html">privacy notice</a>. This is not legal, medical, tax, or insurance advice.</label>
         <button class="btn" type="submit">Request this file</button>
         <p id="status" class="status"></p>
       </form>
-      <aside class="proof">
-        <h3>What happens after you send this</h3>
-        <p>We reply from the studio mailbox with a yes or a no for this week.</p>
-        <p>You keep every login. You attest. We assemble the file.</p>
-        <p>No case studies yet. The proof is the named packet and the boundary above.</p>
+      <aside class="quiet">
+        <p>You keep every login. You submit. We prepare the file.</p>
+        <p>We reply by email with a yes or no for this week.</p>
       </aside>
       </div>
     </section>
@@ -582,7 +586,7 @@ form.addEventListener('submit', async (e) => {{
     const j = await r.json();
     if (r.ok && j.ok) {{
       status.className = 'status ok';
-      status.textContent = 'Received. We will reply from the studio mailbox.';
+      status.textContent = 'Received. We will reply by email.';
       form.reset();
     }} else if (j.error === 'INTAKE_NOT_WIRED') {{
       status.className = 'status err';
