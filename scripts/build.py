@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
 DATA = json.loads((ROOT / "data" / "offers.json").read_text())
+CONV = json.loads((ROOT / "data" / "conversion.json").read_text())
 OFFERS = {o["id"]: o for o in DATA["offers"]}
 
 # Per-desk landing copy. No em-dashes. Headlines stay short.
@@ -384,15 +385,16 @@ def shell(title: str, desc: str, body: str) -> str:
 """
 
 
-def nav(current: str | None = None) -> str:
-    mid = f'<span>{esc(OFFERS[current]["name"])}</span>' if current else '<a href="/#desks">Desks</a>'
+def nav(kind: str = "index") -> str:
+    links = (
+        '<div class="nav-links"><a href="/#desks">Desks</a></div>'
+        if kind == "index"
+        else ""
+    )
     return f"""<div class="wrap">
   <nav class="nav">
     <a class="brand" href="/">Packetbench</a>
-    <div class="nav-links">
-      {mid}
-      <a href="/legal/terms.html">Terms</a>
-    </div>
+    {links}
   </nav>
 </div>"""
 
@@ -409,24 +411,31 @@ def footer() -> str:
 def offer_page(oid: str) -> str:
     o = OFFERS[oid]
     L = LANDING[oid]
+    C = CONV[oid]
     items = "\n".join(f"          <li>{esc(x)}</li>" for x in L["packet"])
     steps = "\n".join(
         f'      <div class="step"><h3>{esc(t)}</h3><p>{esc(b)}</p></div>'
         for t, b in L["steps"]
     )
-    body = f"""{nav(oid)}
+    for_who = "\n".join(f"          <li>{esc(x)}</li>" for x in C["for"])
+    not_who = "\n".join(f"          <li>{esc(x)}</li>" for x in C["not"])
+    faqs = "\n".join(
+        f"      <details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>"
+        for q, a in C["faq"]
+    )
+    body = f"""{nav("offer")}
   <div class="wrap">
     <section class="hero">
       <div>
         <h1>{esc(L["headline"])}</h1>
         <p class="sub">{esc(L["sub"])}</p>
+        <p class="meta">{esc(o["price"])} <span>{esc(L["turnaround"])}</span></p>
         <div class="actions">
           <a class="btn" href="#request">Request this packet</a>
-          <a class="btn ghost" href="#includes">See what is in it</a>
         </div>
       </div>
       <aside class="packet">
-        <h2>What is in the packet</h2>
+        <h2>You get this file</h2>
         <ol>
 {items}
         </ol>
@@ -434,9 +443,26 @@ def offer_page(oid: str) -> str:
     </section>
   </div>
   <div class="wrap">
-    <section class="section" id="includes">
+    <section class="section">
+      <h2>Is this for you</h2>
+      <div class="split">
+        <div class="block">
+          <strong>Buy this if</strong>
+          <ul>
+{for_who}
+          </ul>
+        </div>
+        <div class="block">
+          <strong>Do not buy if</strong>
+          <ul>
+{not_who}
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section">
       <h2>How the work runs</h2>
-      <p class="lead">Built for the {esc(L["buyer"])}. {esc(L["turnaround"])}.</p>
+      <p class="lead">Built for the {esc(L["buyer"])}.</p>
       <div class="steps">
 {steps}
       </div>
@@ -458,26 +484,39 @@ def offer_page(oid: str) -> str:
         </div>
       </div>
     </section>
+    <section class="section">
+      <h2>Common questions</h2>
+      <div class="faq">
+{faqs}
+      </div>
+    </section>
     <section class="section" id="request">
       <h2>Request this packet</h2>
       <p class="lead">Tell us what is due and when. If we cannot take the job this week we will say so.</p>
+      <div class="request-grid">
       <form id="lead" class="intake">
         <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
         <input type="hidden" name="offer_id" value="{esc(oid)}">
         <label for="name">Name</label>
-        <input id="name" name="name" required>
+        <input id="name" name="name" required autocomplete="name">
         <label for="email">Work email</label>
-        <input id="email" name="email" type="email" required>
-        <label for="company">Company</label>
-        <input id="company" name="company">
+        <input id="email" name="email" type="email" required autocomplete="email">
         <label for="message">What is due, and when?</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <textarea id="message" name="message" rows="4" required></textarea>
         <label class="check"><input type="checkbox" name="consented" required> I agree to the <a href="/legal/privacy.html">privacy notice</a> and understand this is not legal, medical, tax, or insurance advice.</label>
         <button class="btn" type="submit">Request this packet</button>
         <p id="status" class="status"></p>
       </form>
+      <aside class="proof">
+        <h3>What happens after you send this</h3>
+        <p>We reply from the studio mailbox with a yes or a no for this week.</p>
+        <p>You keep every login. You attest. We assemble the file.</p>
+        <p>No case studies yet. The proof is the named packet and the boundary above.</p>
+      </aside>
+      </div>
     </section>
   </div>
+  <div class="stick"><a class="btn" href="#request">Request this packet</a></div>
 {footer()}
 <script>
 const form = document.getElementById('lead');
@@ -564,6 +603,9 @@ def main() -> None:
     extra = set(LANDING) - set(OFFERS)
     if missing or extra:
         raise SystemExit(f"landing map mismatch missing={missing} extra={extra}")
+    cmiss = set(OFFERS) - set(CONV)
+    if cmiss:
+        raise SystemExit(f"conversion map missing {cmiss}")
     (PUBLIC / "offers").mkdir(parents=True, exist_ok=True)
     (PUBLIC / "legal").mkdir(parents=True, exist_ok=True)
     (PUBLIC / "index.html").write_text(index())
