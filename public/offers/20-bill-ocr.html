@@ -3,109 +3,121 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Next-Due Annual Report File</title>
-  <meta name="description" content="The next annual report, filled in before it is late.">
+  <title>Bill Extract File</title>
+  <meta name="description" content="A stack of bills, in a sheet.">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <!--
   THESIS: Each desk is a standalone product page that sells one packet, not a studio catalog.
-  OWN-WORLD: Cool paper, ink, one cobalt accent, sharp corners, self-hosted Geist.
+  OWN-WORLD: Cool sage paper, oxide stamp, hairline rules, hanging-folder exhibit object, sharp corners, Geist.
   STORY: Visitor sees the failure, the file they get, the price, and can request kickoff.
-  FIRST VIEWPORT: Split hero. Headline left, packet contents right, primary CTA under the subtext.
-  FORM: Trust-first B2B service landing. Seed: unattended-rebuild-2026-08-18.
+  FIRST VIEWPORT: Split. Headline, who, fee, and CTA left. Designed folder with numbered exhibits right.
+  FORM: Print shop + federal file clerk. Brief-pinned. VARIANCE 6 / MOTION 3 / DENSITY 4.
   FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
   -->
   <div class="wrap">
   <nav class="nav">
-    <a class="brand" href="#">Annual Report</a>
+    <a class="brand" href="#">Bill File</a>
     <a class="nav-cta" href="#request">Request</a>
   </nav>
 </div>
+  <section class="hero-band">
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <h1>A stack of bills, in a sheet.</h1>
+        <p class="sub">You send the PDFs. We return vendor, period, amount, and due date when they are on the page.</p>
+        <p class="hero-meta"><span class="who">Office manager or bookkeeper</span><b>$397</b> <span>Four business days for up to 40 bills.</span></p>
+        <a class="btn" href="#request">Request this file</a>
+      </div>
+      <aside class="dossier" aria-label="What is in the file">
+        <div class="dossier-tab">Bill File</div>
+        <div class="dossier-well">
+          <div class="sheet">
+            <div class="sheet-rule"><span>In the file</span><span>Four business days for up to 40 bills.</span></div>
+            <ol>
+            <li data-n="01">Vendor, period, amount, due date</li>
+            <li data-n="02">Source file name</li>
+            <li data-n="03">Unreadable scans</li>
+            <li data-n="04">You pay from your bank</li>
+            </ol>
+            <p class="stamp">You<br>submit</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
   <div class="wrap">
-    <section class="hero">
-      <h1>The next annual report, filled in before it is late.</h1>
-      <p class="sub">We prepare the worksheet from the public state rules. You submit and pay the state.</p>
-      <p class="hero-meta"><b>$247</b> <span>Ready in three business days for one entity.</span></p>
-      <a class="btn" href="#request">Request this file</a>
-    </section>
-    <aside class="panel">
-      <h2>In the file</h2>
-      <ol>
-          <li data-n="01">Due date and form name for that state and entity type</li>
-          <li data-n="02">Worksheet with the fields the state asks for</li>
-          <li data-n="03">Official filing URL</li>
-          <li data-n="04">A short list of what only you can confirm</li>
-      </ol>
-    </aside>
     <section class="section">
       <h2>What this is</h2>
-      <p class="prose">Every state uses a different form and date. Most owners remember after the late fee. You have a completed worksheet and the official link for that entity.</p>
-      <p class="prose">Public SOS instructions plus the facts you send. AI drafts the worksheet. You file.</p>
+      <p class="prose">ChatGPT will read one bill you upload. The month is a stack. A pay list, not a folder.</p>
+      <p class="prose">Batch OCR-style extract. No payments.</p>
     </section>
     <section class="section">
       <h2>Who this is for</h2>
       <div class="split">
-        <div class="col">
+        <div class="col fit">
           <h3>A fit</h3>
           <ul>
-          <li>A US LLC or corporation with a known home state</li>
-          <li>Someone who can confirm officers and the principal address</li>
+          <li>A batch of bill PDFs</li>
+          <li>Someone who pays the bills</li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col pass">
           <h3>Not a fit</h3>
           <ul>
-          <li>Anyone who wants us to be the registered agent</li>
-          <li>Tax return preparation</li>
+          <li>We will not access the bank</li>
+          <li>Personal tax returns</li>
           </ul>
         </div>
       </div>
     </section>
     <section class="section">
       <h2>How the work runs</h2>
-      <div class="work">
-      <div><h3>Send the entity facts</h3><p>Legal name, state, entity type, and the last annual report if you have it.</p></div>
-      <div><h3>We build the worksheet</h3><p>From the public SOS rules and your facts. AI drafts, we check the official page.</p></div>
-      <div><h3>You file</h3><p>You keep the SOS login. We do not pay the state fee.</p></div>
-      </div>
+      <ol class="run">
+      <li><h3>Send the zip</h3><p>Utility and vendor PDFs.</p></li>
+      <li><h3>We read them</h3><p>AI plus a check. Quotes where we can.</p></li>
+      <li><h3>You pay</h3><p>Your bank. Not us.</p></li>
+      </ol>
     </section>
     <section class="section">
       <h2>What is included</h2>
-      <ul class="includes">
-      <li><strong>State due-date card</strong><span>Form name and deadline for that entity type.</span></li>
-      <li><strong>Completed worksheet</strong><span>Fields filled from what you sent.</span></li>
-      <li><strong>Official filing link</strong><span>The SOS page, not a third-party upsell.</span></li>
-      <li><strong>3-Item Kickoff Sheet</strong><span>Tells you the only three things to send. Nothing else.</span></li>
-      <li><strong>Submit-Day Click Path</strong><span>Screen-by-screen path for the sitting where you attest.</span></li>
-      <li><strong>Incomplete-File Redo</strong><span>If a listed checklist item is missing, we fix it at no charge.</span></li>
-      </ul>
+      <ol class="docket">
+      <li><span class="ex">01</span><div><strong>Extract</strong><span class="does">What the bill states.</span></div></li>
+      <li><span class="ex">02</span><div><strong>Due list</strong><span class="does">Sorted if dates exist.</span></div></li>
+      <li><span class="ex">03</span><div><strong>Unread</strong><span class="does">Bad scans.</span></div></li>
+      <li><span class="ex">04</span><div><strong>Kickoff sheet</strong><span class="does">The only files we need, listed.</span></div></li>
+      <li><span class="ex">05</span><div><strong>Redo if we missed a listed item</strong><span class="does">We fix a missing listed item at no charge.</span></div></li>
+      <li><span class="ex">06</span><div><strong>How you use the file</strong><span class="does">Where this file goes, and what it is not.</span></div></li>
+      </ol>
     </section>
     <section class="section">
       <h2>Fee</h2>
-      <div class="fee"><b>$247</b></div>
-      <p class="note">One entity, one state. Extra states $147. A lost good-standing letter costs more than this worksheet.</p>
-      <div class="split">
+      <div class="fee"><b>$397</b></div>
+      <p class="note">Up to 40 bills. Extra $7 each. One late fee can cover this.</p>
+      <div class="bounds">
         <div class="col">
           <h3>You receive</h3>
-          <p class="prose">A filled annual-report worksheet for one entity and one state, plus the official filing link. You submit.</p>
+          <p class="prose">A sheet of bills we could read, plus unreadable files.</p>
         </div>
         <div class="col">
           <h3>Outside this work</h3>
-          <p class="prose">We do not file as your registered agent or give tax advice.</p>
+          <p class="prose">We do not pay bills or set up autopay.</p>
         </div>
       </div>
     </section>
     <section class="section">
       <h2>If something is missing</h2>
-      <p class="prose">If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a rejected filing or a failed bid.</p>
+      <div class="miss">
+        <p class="prose">If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.</p>
+      </div>
     </section>
     <section class="section">
       <h2>Questions</h2>
       <div class="faq">
-      <details><summary>Do you file it?</summary><p>No. You submit and pay the state. We prepare the worksheet.</p></details>
-      <details><summary>Which states?</summary><p>Any state with a public annual-report page. One state per order.</p></details>
-      <details><summary>How fast?</summary><p>Three business days after we have the entity facts.</p></details>
+      <details><summary>Why not ChatGPT?</summary><p>The stack. Forty files, one sheet.</p></details>
+      <details><summary>Do you pay?</summary><p>No.</p></details>
+      <details><summary>How fast?</summary><p>Four business days for up to 40.</p></details>
       </div>
     </section>
     <section class="section" id="request">
@@ -113,8 +125,9 @@
       <p class="prose">Say what is due and when. If we cannot take it this week, we will say so.</p>
       <div class="request">
       <form id="lead" class="intake">
+        <div class="slip"><span>Intake</span><span>Bill File</span></div>
         <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
-        <input type="hidden" name="offer_id" value="10-sos-annual-report">
+        <input type="hidden" name="offer_id" value="20-bill-ocr">
         <label for="name">Name</label>
         <input id="name" name="name" required autocomplete="name">
         <label for="email">Work email</label>
@@ -125,9 +138,11 @@
         <button class="btn" type="submit">Request this file</button>
         <p id="status" class="status"></p>
       </form>
-      <aside class="quiet">
+      <aside class="quiet proof">
         <p>You keep every login. You submit. We prepare the file.</p>
         <p>We reply by email with a yes or no for this week.</p>
+        <p>Four business days for up to 40 bills.</p>
+        <p>$397</p>
       </aside>
       </div>
     </section>

@@ -1,237 +1,5 @@
 [
   {
-    "id": "01-pecos-revalidation",
-    "name": "5-Day PECOS Revalidation File",
-    "headline": "Your PECOS revalidation, prepared in five days.",
-    "sub": "We assemble the application file. Your authorized official reviews it and submits in PECOS. We never take the password.",
-    "problem": "CMS has listed the NPI and the response window is already open. Most practices do not have someone who wants to own PECOS.",
-    "after": "Your official sits down once with a complete file instead of hunting screens.",
-    "mechanism": "We prepare the file. You review it and submit. We do not log in.",
-    "avatar": "Practice admin at an independent clinic whose NPI is on the CMS due-date list.",
-    "price": "$1,197",
-    "price_note": "One enrollment record. Extra NPIs $397 each.",
-    "delivery": "Ready in five business days. You keep the PECOS login.",
-    "anchor": "A deactivated enrollment stalls a month of claims. This is one sitting.",
-    "core_value": 2500,
-    "stack": [
-      {
-        "name": "PECOS Document Inventory",
-        "does": "Every screen mapped to a doc you already have or still need.",
-        "value": 900
-      },
-      {
-        "name": "Draft Attestation Answers",
-        "does": "Written for your official to edit, not for us to sign.",
-        "value": 800
-      },
-      {
-        "name": "Due-Date Extract",
-        "does": "Your line from the public CMS revalidation list.",
-        "value": 300
-      }
-    ],
-    "bonuses": [
-      {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
-        "value": 200
-      },
-      {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
-      },
-      {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
-        "value": 500
-      }
-    ],
-    "total_value": 5600,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
-    "cta": "Request this file"
-  },
-  {
-    "id": "02-fda-ffr-renewal",
-    "name": "Dec 31 FDA Renewal Sit-Beside",
-    "headline": "FDA facility renewal before December 31.",
-    "sub": "We complete the 2026 worksheet. The owner submits in FURLS and keeps the account.",
-    "problem": "FURLS is a mess and the even-year window does not wait.",
-    "after": "The owner has a completed worksheet and a December 15 reminder.",
-    "mechanism": "We prepare the worksheet and the click path. We do not act as US Agent.",
-    "avatar": "Owner of a US shared kitchen or small copacker who still has the FURLS login.",
-    "price": "$897",
-    "price_note": "Per facility.",
-    "delivery": "Ready in three business days per facility.",
-    "anchor": "An expired registration can hold shipments. This is a 3-day file.",
-    "core_value": 1800,
-    "stack": [
-      {
-        "name": "FURLS Worksheet",
-        "does": "Facility facts ready to type.",
-        "value": 700
-      },
-      {
-        "name": "UFI / DUNS Check",
-        "does": "Catch the identifier mismatch before you sit down.",
-        "value": 400
-      },
-      {
-        "name": "Dec 15 Reminder Card",
-        "does": "A dated nudge before the window dies.",
-        "value": 200
-      }
-    ],
-    "bonuses": [
-      {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
-        "value": 200
-      },
-      {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
-      },
-      {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
-        "value": 500
-      }
-    ],
-    "total_value": 4200,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
-    "cta": "Request this file"
-  },
-  {
-    "id": "03-osha-ita-hygiene",
-    "name": "OSHA ITA Cleanup Desk",
-    "headline": "A clean ITA file, then a quieter March.",
-    "sub": "We tidy last year\u2019s submission and leave a weekly log so the next filing is ordinary work.",
-    "problem": "The logs are incomplete and ITA does not explain itself.",
-    "after": "A file you can submit and a habit that feeds next March.",
-    "mechanism": "We format the file. You still decide what is recordable.",
-    "avatar": "Safety lead at a covered establishment with a late or messy 300A.",
-    "price": "$597 setup + $247/mo",
-    "price_note": "One establishment. Extra sites $147/mo.",
-    "delivery": "Cleanup in one week, then a monthly pass.",
-    "anchor": "A scramble every winter costs more than a monthly pass.",
-    "core_value": 2200,
-    "stack": [
-      {
-        "name": "Prior-Year Cleanup File",
-        "does": "300A checked against ITA rules.",
-        "value": 800
-      },
-      {
-        "name": "Weekly Capture Sheet",
-        "does": "What to write down so March is boring.",
-        "value": 600
-      },
-      {
-        "name": "Owner Decision Note",
-        "does": "The questions only you can answer.",
-        "value": 300
-      }
-    ],
-    "bonuses": [
-      {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
-        "value": 200
-      },
-      {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
-      },
-      {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
-        "value": 500
-      }
-    ],
-    "total_value": 5000,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
-    "cta": "Request this file"
-  },
-  {
-    "id": "04-fsis-origin-label",
-    "name": "Product-of-USA Evidence File",
-    "headline": "A paper trail for the origin claim.",
-    "sub": "We map the evidence. Your QA lead signs. We do not certify origin or file LSAS.",
-    "problem": "The label says Product of USA. The folder does not.",
-    "after": "QA has a folder an inspector can follow.",
-    "mechanism": "Document map, not a USDA approval.",
-    "avatar": "QA lead at a small FSIS plant printing a US-origin claim.",
-    "price": "$1,497",
-    "price_note": "One establishment, one claim set.",
-    "delivery": "Ready in ten business days.",
-    "anchor": "A pulled claim costs a lot more than a 10-day file.",
-    "core_value": 3500,
-    "stack": [
-      {
-        "name": "Claim Inventory",
-        "does": "Every current US-origin line on the label.",
-        "value": 800
-      },
-      {
-        "name": "Four-Step Evidence Map",
-        "does": "Born, raised, slaughtered, processed.",
-        "value": 1400
-      },
-      {
-        "name": "Inspector Folder Layout",
-        "does": "Where each PDF lives.",
-        "value": 400
-      }
-    ],
-    "bonuses": [
-      {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
-        "value": 200
-      },
-      {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
-      },
-      {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
-        "value": 500
-      }
-    ],
-    "total_value": 7200,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
-    "cta": "Request this file"
-  },
-  {
     "id": "05-solar-interconnect",
     "name": "First-Pass Interconnect Check",
     "headline": "Interconnection apps that pass completeness.",
@@ -406,64 +174,6 @@
     "cta": "Request this file"
   },
   {
-    "id": "08-gbp-trade-reinstatement",
-    "name": "One-Shot Maps Appeal File",
-    "headline": "One Maps appeal, matched to your license.",
-    "sub": "We prepare a single evidence file. You submit once. Google decides.",
-    "problem": "The profile is suspended and stacked appeals make it worse.",
-    "after": "One packet. Identity match first.",
-    "mechanism": "License-matched evidence pack. Not an SEO retainer.",
-    "avatar": "Licensed trades owner whose Google Business Profile is suspended.",
-    "price": "$747",
-    "price_note": "One listing. No monthly SEO.",
-    "delivery": "Ready in three business days.",
-    "anchor": "A dark Maps listing costs jobs every day.",
-    "core_value": 1500,
-    "stack": [
-      {
-        "name": "NAP Match Sheet",
-        "does": "Name, address, phone vs the docs.",
-        "value": 400
-      },
-      {
-        "name": "License and Proof Set",
-        "does": "What the appeal form actually wants.",
-        "value": 500
-      },
-      {
-        "name": "One-Shot Appeal Text",
-        "does": "Written for a single submit.",
-        "value": 300
-      }
-    ],
-    "bonuses": [
-      {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
-        "value": 200
-      },
-      {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
-      },
-      {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
-        "value": 500
-      }
-    ],
-    "total_value": 3800,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
-    "cta": "Request this file"
-  },
-  {
     "id": "09-ncci-emod-audit",
     "name": "e-Mod Mismatch File",
     "headline": "Check the worksheet before you pay the mod.",
@@ -519,64 +229,6 @@
     ],
     "total_value": 6300,
     "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
-    "cta": "Request this file"
-  },
-  {
-    "id": "10-sos-annual-report",
-    "name": "Next-Due Annual Report File",
-    "headline": "The next annual report, filled in before it is late.",
-    "sub": "We prepare the worksheet from the public state rules. You submit and pay the state.",
-    "problem": "Every state uses a different form and date. Most owners remember after the late fee.",
-    "after": "You have a completed worksheet and the official link for that entity.",
-    "mechanism": "Public SOS instructions plus the facts you send. AI drafts the worksheet. You file.",
-    "avatar": "Owner of a US LLC who has at least one state annual report due in the next 90 days.",
-    "price": "$247",
-    "price_note": "One entity, one state. Extra states $147.",
-    "delivery": "Ready in three business days for one entity.",
-    "anchor": "A lost good-standing letter costs more than this worksheet.",
-    "core_value": 600,
-    "stack": [
-      {
-        "name": "State due-date card",
-        "does": "Form name and deadline for that entity type.",
-        "value": 150
-      },
-      {
-        "name": "Completed worksheet",
-        "does": "Fields filled from what you sent.",
-        "value": 300
-      },
-      {
-        "name": "Official filing link",
-        "does": "The SOS page, not a third-party upsell.",
-        "value": 100
-      }
-    ],
-    "bonuses": [
-      {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
-        "value": 200
-      },
-      {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
-      },
-      {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
-        "value": 500
-      }
-    ],
-    "total_value": 2250,
-    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a rejected filing or a failed bid.",
     "cta": "Request this file"
   },
   {
@@ -754,64 +406,6 @@
     "cta": "Request this file"
   },
   {
-    "id": "14-nofo-matrix",
-    "name": "NOFO Eligibility File",
-    "headline": "Know if the grant is even for you.",
-    "sub": "We turn one public NOFO into an eligibility and document matrix. You write the application.",
-    "problem": "The notice is long and the mandatory attachments hide in the back.",
-    "after": "A one-pass matrix before you spend a month writing.",
-    "mechanism": "Public NOFO text, extracted into a table. Not grant writing.",
-    "avatar": "First-time applicant with a specific Grants.gov notice open.",
-    "price": "$597",
-    "price_note": "One NOFO. Extra notices $297.",
-    "delivery": "Ready in four business days.",
-    "anchor": "A week of writing for the wrong notice is the expensive path.",
-    "core_value": 1500,
-    "stack": [
-      {
-        "name": "Eligibility matrix",
-        "does": "Each rule, with a quote from the notice.",
-        "value": 700
-      },
-      {
-        "name": "Attachment list",
-        "does": "What must be in the packet.",
-        "value": 400
-      },
-      {
-        "name": "Deadline card",
-        "does": "When and where it files.",
-        "value": 200
-      }
-    ],
-    "bonuses": [
-      {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
-        "value": 200
-      },
-      {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
-      },
-      {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
-        "value": 500
-      }
-    ],
-    "total_value": 3900,
-    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a rejected filing or a failed bid.",
-    "cta": "Request this file"
-  },
-  {
     "id": "15-warranty-labor-rescue",
     "name": "Rejected Labor Rescue",
     "headline": "Rebuild the rejected labor claim.",
@@ -928,235 +522,641 @@
     "cta": "Request this file"
   },
   {
-    "id": "17-sam-first-award",
-    "name": "First-Award 30-Day File",
-    "headline": "A 30-day file after the first award.",
-    "sub": "Identifier hygiene and a reporting calendar. You stay the SAM registrant.",
-    "problem": "You cannot invoice cleanly and the reporting clock started.",
-    "after": "A pack and a calendar. No SAM password share.",
-    "mechanism": "Post-award onboarding. Not bid writing.",
-    "avatar": "Owner of a first-time SAM.gov federal awardee.",
-    "price": "$1,797",
-    "price_note": "One UEI. No proposal writing.",
-    "delivery": "Ready in seven business days.",
-    "anchor": "A missed reporting date on award one is expensive.",
-    "core_value": 4000,
+    "id": "01-nap-consistency",
+    "name": "NAP Consistency File",
+    "headline": "Your name, address, and phone, checked where people search.",
+    "sub": "We compare your location list to the live listings. You get a mismatch file.",
+    "problem": "Each directory drifted on its own. ChatGPT cannot see your live listings unless you paste them one by one.",
+    "after": "One mismatch file instead of a scavenger hunt.",
+    "mechanism": "Your sheet plus live public listings. Volume is the product.",
+    "avatar": "Ops lead with 5 or more US locations and a messy store list.",
+    "price": "$497",
+    "price_note": "Up to 25 locations. Extra $12 each.",
+    "delivery": "Five business days for up to 25 locations.",
+    "anchor": "One wrong phone number costs more than this file.",
+    "core_value": 1200,
     "stack": [
       {
-        "name": "Identifier Hygiene",
-        "does": "UEI, CAGE, legal name match.",
-        "value": 900
+        "name": "Live NAP pull",
+        "does": "What the public pages say now.",
+        "value": 500
       },
       {
-        "name": "30-Day Calendar",
-        "does": "What is actually due.",
+        "name": "Mismatch ledger",
+        "does": "Only the rows that disagree.",
+        "value": 500
+      },
+      {
+        "name": "Edit notes",
+        "does": "What to change, where.",
+        "value": 200
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
+        "value": 200
+      },
+      {
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
+        "value": 500
+      },
+      {
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
+        "value": 200
+      }
+    ],
+    "total_value": 3300,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "02-link-drift",
+    "name": "Link and Policy File",
+    "headline": "Broken links and quiet policy-page changes, listed.",
+    "sub": "We crawl the public site you name and hand back a dated issue file.",
+    "problem": "Links rot. Policy pages change without a note. A chat bot will not crawl your site for you every month.",
+    "after": "A dated list you can give a developer.",
+    "mechanism": "A real crawl of your public pages. Not a generic SEO essay.",
+    "avatar": "Marketer who owns a US brochure or shop site.",
+    "price": "$397",
+    "price_note": "One crawl, up to 200 public URLs. Monthly $197.",
+    "delivery": "Three business days for the first crawl.",
+    "anchor": "One broken checkout path pays for the crawl.",
+    "core_value": 900,
+    "stack": [
+      {
+        "name": "Crawl log",
+        "does": "What we hit.",
+        "value": 300
+      },
+      {
+        "name": "Break list",
+        "does": "404s and surprise redirects.",
+        "value": 400
+      },
+      {
+        "name": "Policy snapshot",
+        "does": "Dated copies of legal pages.",
+        "value": 200
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
+        "value": 200
+      },
+      {
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
+        "value": 500
+      },
+      {
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
+        "value": 200
+      }
+    ],
+    "total_value": 2700,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "03-ap-invoices",
+    "name": "Invoice Exception File",
+    "headline": "A folder of invoices, turned into exceptions.",
+    "sub": "You send PDFs or a zip. We match them to your export and list what does not line up.",
+    "problem": "ChatGPT will read one PDF. It will not clear a month of vendor mail.",
+    "after": "Exceptions, not another folder.",
+    "mechanism": "Batch read of your files against your export.",
+    "avatar": "Bookkeeper with a month of vendor PDFs.",
+    "price": "$697",
+    "price_note": "Up to 80 invoices. Extra $6 each.",
+    "delivery": "Five business days for up to 80 invoices.",
+    "anchor": "One duplicate payment covers this.",
+    "core_value": 1600,
+    "stack": [
+      {
+        "name": "Extract",
+        "does": "Vendor, date, total, invoice number.",
+        "value": 600
+      },
+      {
+        "name": "Match",
+        "does": "Against your export.",
+        "value": 600
+      },
+      {
+        "name": "Exceptions",
+        "does": "Only the weird rows.",
+        "value": 400
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
+        "value": 200
+      },
+      {
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
+        "value": 500
+      },
+      {
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
+        "value": 200
+      }
+    ],
+    "total_value": 4100,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "04-contract-extract",
+    "name": "Contract Tracker File",
+    "headline": "Dates, parties, and amounts out of a pile of contracts.",
+    "sub": "You send the PDFs. We return a tracker. You still own the legal meaning.",
+    "problem": "Asking ChatGPT about one contract is free. Getting a tracker from 25 PDFs is the work.",
+    "after": "A spreadsheet with cites, not a legal memo.",
+    "mechanism": "Extract and cite. No legal conclusions.",
+    "avatar": "Founder with a contracts folder and no CLM tool.",
+    "price": "$897",
+    "price_note": "Up to 25 contracts. Extra $25 each.",
+    "delivery": "Seven business days for up to 25 contracts.",
+    "anchor": "One unwanted auto-renew pays for the extract.",
+    "core_value": 2000,
+    "stack": [
+      {
+        "name": "Row per file",
+        "does": "Parties and dates.",
         "value": 800
       },
       {
-        "name": "Invoice Doc List",
-        "does": "What finance still needs to collect.",
+        "name": "Cites",
+        "does": "Where in the PDF.",
         "value": 700
+      },
+      {
+        "name": "Unread list",
+        "does": "Scans that failed.",
+        "value": 200
       }
     ],
     "bonuses": [
       {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
         "value": 200
       },
       {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
+        "value": 500
       },
       {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
-        "value": 500
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
+        "value": 200
       }
     ],
-    "total_value": 7500,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
+    "total_value": 4600,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
     "cta": "Request this file"
   },
   {
-    "id": "18-new-contractor-pack",
-    "name": "New License 90-Day File",
-    "headline": "Site-ready paperwork after the new license.",
-    "sub": "A 90-day checklist and a COI request for your broker. We do not sell insurance.",
-    "problem": "You have a number and none of the site paperwork.",
-    "after": "A pack your broker and accountant can finish.",
-    "mechanism": "First-90 checklist. Not a policy.",
-    "avatar": "Newly licensed contractor in California or Florida.",
-    "price": "$647",
-    "price_note": "One state license. CA or FL first.",
-    "delivery": "Ready in five business days.",
-    "anchor": "A month you cannot bid costs more than this file.",
-    "core_value": 1300,
+    "id": "08-ticket-themes",
+    "name": "Weekly Ticket Themes",
+    "headline": "What your tickets are actually about this week.",
+    "sub": "You export the help desk. We return themes, examples, and volume. Not a chatbot reply.",
+    "problem": "ChatGPT will summarize 20 tickets you paste. It will not read last week's thousand.",
+    "after": "A theme pack you can drop in a standup.",
+    "mechanism": "Your export, clustered. No customer replies.",
+    "avatar": "Support lead who can export CSV and cannot read every ticket.",
+    "price": "$597",
+    "price_note": "One export, up to 1,000 tickets. Weekly $397.",
+    "delivery": "Four business days for the first export.",
+    "anchor": "One avoided repeat-contact week pays for this.",
+    "core_value": 1400,
     "stack": [
       {
-        "name": "90-Day Checklist",
-        "does": "State-specific.",
+        "name": "Clusters",
+        "does": "Named themes.",
+        "value": 600
+      },
+      {
+        "name": "Quotes",
+        "does": "Evidence, not vibes.",
         "value": 400
       },
       {
-        "name": "Broker COI Request",
-        "does": "Drafted, not bound.",
-        "value": 350
+        "name": "Aging",
+        "does": "What is sitting.",
+        "value": 200
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
+        "value": 200
       },
       {
-        "name": "Posting List",
-        "does": "What has to be on the wall.",
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
+        "value": 500
+      },
+      {
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
+        "value": 200
+      }
+    ],
+    "total_value": 3500,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "10-payout-recon",
+    "name": "Payout Recon File",
+    "headline": "Stripe or Shopify payouts, matched to the bank.",
+    "sub": "Two exports in. Exception rows out. You still book cash.",
+    "problem": "ChatGPT can explain a payout. It will not recon your month.",
+    "after": "A short exception list for close.",
+    "mechanism": "Two of your files, lined up.",
+    "avatar": "Founder or controller who closes books from CSVs.",
+    "price": "$797",
+    "price_note": "One month, one processor. Extra months $297.",
+    "delivery": "Five business days for one month.",
+    "anchor": "A day of close time is the price.",
+    "core_value": 1800,
+    "stack": [
+      {
+        "name": "Match",
+        "does": "Payout to bank.",
+        "value": 800
+      },
+      {
+        "name": "Fees",
+        "does": "Called out, not buried.",
+        "value": 500
+      },
+      {
+        "name": "Unmatched",
+        "does": "What still needs a human.",
+        "value": 300
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
+        "value": 200
+      },
+      {
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
+        "value": 500
+      },
+      {
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
+        "value": 200
+      }
+    ],
+    "total_value": 4300,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "14-job-cost",
+    "name": "Job Cost Variance File",
+    "headline": "Where the job left the estimate.",
+    "sub": "You send estimate and actuals. We return variance by job, not a pep talk.",
+    "problem": "ChatGPT will talk about job costing. It will not recon your last 15 jobs.",
+    "after": "A variance file for the next estimate meeting.",
+    "mechanism": "Your two sheets, matched.",
+    "avatar": "Contractor who has estimates and actuals in spreadsheets.",
+    "price": "$697",
+    "price_note": "Up to 15 jobs. Extra $35 each.",
+    "delivery": "Five business days for up to 15 jobs.",
+    "anchor": "One under-bid job dwarfs this.",
+    "core_value": 1500,
+    "stack": [
+      {
+        "name": "Match",
+        "does": "Estimate to actual.",
+        "value": 600
+      },
+      {
+        "name": "Buckets",
+        "does": "Labor vs materials.",
+        "value": 500
+      },
+      {
+        "name": "Unmatched",
+        "does": "Jobs that need IDs.",
+        "value": 200
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
+        "value": 200
+      },
+      {
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
+        "value": 500
+      },
+      {
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
+        "value": 200
+      }
+    ],
+    "total_value": 3700,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "17-sku-copy",
+    "name": "SKU Copy File",
+    "headline": "Titles and descriptions for a catalog, not one SKU.",
+    "sub": "You send the sheet. We return draft copy for you to paste. You still own brand voice.",
+    "problem": "ChatGPT will write one product. The catalog is the job.",
+    "after": "A sheet you can upload or paste.",
+    "mechanism": "Batch draft from your catalog. You publish.",
+    "avatar": "Ecommerce lead with a thin catalog and no copywriter.",
+    "price": "$897",
+    "price_note": "Up to 150 SKUs. Extra $4 each.",
+    "delivery": "Seven business days for up to 150 SKUs.",
+    "anchor": "A week of in-house writing costs more.",
+    "core_value": 2000,
+    "stack": [
+      {
+        "name": "Drafts",
+        "does": "Title, blurb, bullets.",
+        "value": 1000
+      },
+      {
+        "name": "Skip list",
+        "does": "Rows with nothing to say.",
+        "value": 300
+      },
+      {
+        "name": "Voice note",
+        "does": "From your 3 examples.",
+        "value": 200
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
+        "value": 200
+      },
+      {
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
+        "value": 500
+      },
+      {
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
+        "value": 200
+      }
+    ],
+    "total_value": 4400,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "18-review-desk",
+    "name": "Weekly Review File",
+    "headline": "This week's public reviews, with draft replies.",
+    "sub": "We pull what is public on the listing you name. You post the replies.",
+    "problem": "ChatGPT will draft one reply you paste. It will not watch the listing every week.",
+    "after": "A short weekly file. You spend ten minutes posting.",
+    "mechanism": "Live public reviews. Drafts only.",
+    "avatar": "Local owner who has a Google listing and no time to answer it.",
+    "price": "$297 setup + $197/mo",
+    "price_note": "One public listing. Extra listings $97/mo.",
+    "delivery": "First file in three business days, then weekly.",
+    "anchor": "One recovered customer is the fee.",
+    "core_value": 800,
+    "stack": [
+      {
+        "name": "Pull",
+        "does": "What is new and public.",
+        "value": 300
+      },
+      {
+        "name": "Drafts",
+        "does": "One reply each.",
+        "value": 400
+      },
+      {
+        "name": "Escalate list",
+        "does": "Do not auto-answer these.",
+        "value": 100
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
+        "value": 200
+      },
+      {
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
+        "value": 500
+      },
+      {
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
+        "value": 200
+      }
+    ],
+    "total_value": 2500,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "19-rfq-batch",
+    "name": "RFQ Batch File",
+    "headline": "A pile of RFQs, turned into bid or missing-info.",
+    "sub": "You forward the PDFs or a mailbox export. We return a bid / no-bid / missing-info sheet.",
+    "problem": "ChatGPT will read one RFQ. The inbox is the job.",
+    "after": "A sheet for the estimating meeting.",
+    "mechanism": "Batch read. No bid prices.",
+    "avatar": "Estimator who gets RFQs as PDFs and is behind.",
+    "price": "$797",
+    "price_note": "Up to 20 RFQs. Extra $30 each. Weekly desk quoted.",
+    "delivery": "Five business days for up to 20 RFQs.",
+    "anchor": "One missed bid window is the fee.",
+    "core_value": 1600,
+    "stack": [
+      {
+        "name": "Rows",
+        "does": "What each RFQ is.",
+        "value": 600
+      },
+      {
+        "name": "Dates",
+        "does": "If the file has them.",
+        "value": 400
+      },
+      {
+        "name": "Missing info",
+        "does": "What you still need.",
+        "value": 400
+      }
+    ],
+    "bonuses": [
+      {
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
+        "value": 200
+      },
+      {
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
+        "value": 500
+      },
+      {
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
+        "value": 200
+      }
+    ],
+    "total_value": 3900,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
+    "cta": "Request this file"
+  },
+  {
+    "id": "20-bill-ocr",
+    "name": "Bill Extract File",
+    "headline": "A stack of bills, in a sheet.",
+    "sub": "You send the PDFs. We return vendor, period, amount, and due date when they are on the page.",
+    "problem": "ChatGPT will read one bill you upload. The month is a stack.",
+    "after": "A pay list, not a folder.",
+    "mechanism": "Batch OCR-style extract. No payments.",
+    "avatar": "Office manager with a bills folder.",
+    "price": "$397",
+    "price_note": "Up to 40 bills. Extra $7 each.",
+    "delivery": "Four business days for up to 40 bills.",
+    "anchor": "One late fee can cover this.",
+    "core_value": 800,
+    "stack": [
+      {
+        "name": "Extract",
+        "does": "What the bill states.",
+        "value": 400
+      },
+      {
+        "name": "Due list",
+        "does": "Sorted if dates exist.",
         "value": 250
+      },
+      {
+        "name": "Unread",
+        "does": "Bad scans.",
+        "value": 100
       }
     ],
     "bonuses": [
       {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
+        "name": "Kickoff sheet",
+        "purpose": "too much to send",
+        "does": "The only files we need, listed.",
+        "format": "one page",
         "value": 200
       },
       {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
-      },
-      {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
+        "name": "Redo if we missed a listed item",
+        "purpose": "what if it is incomplete",
+        "does": "We fix a missing listed item at no charge.",
+        "format": "service",
         "value": 500
-      }
-    ],
-    "total_value": 3400,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
-    "cta": "Request this file"
-  },
-  {
-    "id": "19-fda-warning-cleanup",
-    "name": "Warning-Letter File Index",
-    "headline": "An index of the files behind the letter.",
-    "sub": "We gather registration, labels, and recall documents for counsel. Counsel writes the response.",
-    "problem": "Retailers are asking and the PDFs live in five inboxes.",
-    "after": "Counsel has a folder, not a scavenger hunt.",
-    "mechanism": "Index only. No response letter.",
-    "avatar": "QA lead at a US food facility named on a new FDA letter.",
-    "price": "$2,397",
-    "price_note": "Document assembly only. Counsel must be on the thread.",
-    "delivery": "Ready in ten business days. Counsel required at intake.",
-    "anchor": "Counsel hours spent hunting files dwarf this index.",
-    "core_value": 6000,
-    "stack": [
-      {
-        "name": "Letter Date Index",
-        "does": "What they cited, where it lives.",
-        "value": 1200
       },
       {
-        "name": "Registration and Label Inventory",
-        "does": "Current, not hoped-for.",
-        "value": 1800
-      },
-      {
-        "name": "Counsel Handoff Memo",
-        "does": "Not a legal draft.",
-        "value": 900
-      }
-    ],
-    "bonuses": [
-      {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
+        "name": "How you use the file",
+        "purpose": "I will misuse it",
+        "does": "Where this file goes, and what it is not.",
+        "format": "note",
         "value": 200
-      },
-      {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
-      },
-      {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
-        "value": 500
       }
     ],
-    "total_value": 11000,
-    "guarantee": "If a checklist item we listed is missing, we fix it at no charge. We do not refund a rejected filing.",
-    "cta": "Request this file"
-  },
-  {
-    "id": "20-labor-posters",
-    "name": "Federal + State Poster File",
-    "headline": "The posters that belong on that wall.",
-    "sub": "We gather the current official federal and state notices for one address. You print them.",
-    "problem": "Poster rules change and the break-room set is usually a mix of old PDFs.",
-    "after": "One dated folder and a hang list.",
-    "mechanism": "Official DOL and state downloads. Not legal advice.",
-    "avatar": "Owner of a US workplace who needs a current poster set for one address.",
-    "price": "$197",
-    "price_note": "One physical address. Extra states $97.",
-    "delivery": "Ready in two business days.",
-    "anchor": "A missing notice is a cheap problem to avoid.",
-    "core_value": 400,
-    "stack": [
-      {
-        "name": "Federal set",
-        "does": "Current DOL posters.",
-        "value": 150
-      },
-      {
-        "name": "State set",
-        "does": "That state's official notices.",
-        "value": 150
-      },
-      {
-        "name": "Hang list",
-        "does": "What to put on the wall.",
-        "value": 80
-      }
-    ],
-    "bonuses": [
-      {
-        "name": "3-Item Kickoff Sheet",
-        "purpose": "I don't have time / it's complicated",
-        "does": "Tells you the only three things to send. Nothing else.",
-        "format": "one-page checklist",
-        "value": 200
-      },
-      {
-        "name": "Submit-Day Click Path",
-        "purpose": "I will mess up the portal",
-        "does": "Screen-by-screen path for the sitting where you attest.",
-        "format": "written click path",
-        "value": 400
-      },
-      {
-        "name": "Incomplete-File Redo",
-        "purpose": "What if you miss something",
-        "does": "If a listed checklist item is missing, we fix it at no charge.",
-        "format": "service guarantee",
-        "value": 500
-      }
-    ],
-    "total_value": 1880,
-    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a rejected filing or a failed bid.",
+    "total_value": 2450,
+    "guarantee": "If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a result you did not like.",
     "cta": "Request this file"
   }
 ]

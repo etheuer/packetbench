@@ -11,6 +11,12 @@ DATA = json.loads((ROOT / "data" / "offers.json").read_text())
 CONV = json.loads((ROOT / "data" / "conversion.json").read_text())
 HORMOZI = {o["id"]: o for o in json.loads((ROOT / "data" / "hormozi.json").read_text())}
 OFFERS = {o["id"]: o for o in DATA["offers"]}
+LANDING = json.loads((ROOT / "data" / "landing.json").read_text())
+SHORT = json.loads((ROOT / "data" / "short.json").read_text())
+# steps in landing.json are lists; normalize to tuples
+for _k, _v in LANDING.items():
+    _v["steps"] = [tuple(s) for s in _v["steps"]]
+
 
 # Per-desk landing copy. No em-dashes. Headlines stay short.
 LANDING = {
@@ -374,10 +380,10 @@ def shell(title: str, desc: str, body: str) -> str:
 <body>
   <!--
   THESIS: Each desk is a standalone product page that sells one packet, not a studio catalog.
-  OWN-WORLD: Cool paper, ink, one cobalt accent, sharp corners, self-hosted Geist.
+  OWN-WORLD: Cool sage paper, oxide stamp, hairline rules, hanging-folder exhibit object, sharp corners, Geist.
   STORY: Visitor sees the failure, the file they get, the price, and can request kickoff.
-  FIRST VIEWPORT: Split hero. Headline left, packet contents right, primary CTA under the subtext.
-  FORM: Trust-first B2B service landing. Seed: unattended-rebuild-2026-08-18.
+  FIRST VIEWPORT: Split. Headline, who, fee, and CTA left. Designed folder with numbered exhibits right.
+  FORM: Print shop + federal file clerk. Brief-pinned. VARIANCE 6 / MOTION 3 / DENSITY 4.
   FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
   -->
   {body}
@@ -434,17 +440,24 @@ SHORT = {
 }
 
 
+LANDING = json.loads((ROOT / "data" / "landing.json").read_text())
+SHORT = json.loads((ROOT / "data" / "short.json").read_text())
+for _k, _v in LANDING.items():
+    _v["steps"] = [tuple(s) for s in _v["steps"]]
+
+
 def offer_page(oid: str) -> str:
     o = OFFERS[oid]
     L = LANDING[oid]
     C = CONV[oid]
     H = HORMOZI[oid]
+    cta = H.get("cta") or "Request this file"
     items = "\n".join(
-        f'          <li data-n="{i:02d}">{esc(x)}</li>'
+        f'            <li data-n="{i:02d}">{esc(x)}</li>'
         for i, x in enumerate(L["packet"], 1)
     )
     steps = "\n".join(
-        f'      <div><h3>{esc(t)}</h3><p>{esc(b)}</p></div>'
+        f"      <li><h3>{esc(t)}</h3><p>{esc(b)}</p></li>"
         for t, b in L["steps"]
     )
     for_who = "\n".join(f"          <li>{esc(x)}</li>" for x in C["for"])
@@ -453,28 +466,35 @@ def offer_page(oid: str) -> str:
         f"      <details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>"
         for q, a in C["faq"]
     )
-    includes = "\n".join(
-        f'      <li><strong>{esc(s["name"])}</strong><span>{esc(s["does"])}</span></li>'
-        for s in H["stack"]
-    )
-    extras = "\n".join(
-        f'      <li><strong>{esc(b["name"])}</strong><span>{esc(b["does"])}</span></li>'
-        for b in H["bonuses"]
+    docket_src = list(H["stack"]) + list(H["bonuses"])
+    docket = "\n".join(
+        f'      <li><span class="ex">{i:02d}</span><div><strong>{esc(s["name"])}</strong><span class="does">{esc(s["does"])}</span></div></li>'
+        for i, s in enumerate(docket_src, 1)
     )
     body = f"""{nav("offer", SHORT[oid])}
-  <div class="wrap">
-    <section class="hero">
-      <h1>{esc(H["headline"])}</h1>
-      <p class="sub">{esc(H["sub"])}</p>
-      <p class="hero-meta"><b>{esc(H["price"])}</b> <span>{esc(H["delivery"])}</span></p>
-      <a class="btn" href="#request">Request this file</a>
-    </section>
-    <aside class="panel">
-      <h2>In the file</h2>
-      <ol>
+  <section class="hero-band">
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <h1>{esc(H["headline"])}</h1>
+        <p class="sub">{esc(H["sub"])}</p>
+        <p class="hero-meta"><span class="who">{esc(L["buyer"])}</span><b>{esc(H["price"])}</b> <span>{esc(H["delivery"])}</span></p>
+        <a class="btn" href="#request">{esc(cta)}</a>
+      </div>
+      <aside class="dossier" aria-label="What is in the file">
+        <div class="dossier-tab">{esc(SHORT[oid])}</div>
+        <div class="dossier-well">
+          <div class="sheet">
+            <div class="sheet-rule"><span>In the file</span><span>{esc(L["turnaround"])}</span></div>
+            <ol>
 {items}
-      </ol>
-    </aside>
+            </ol>
+            <p class="stamp">You<br>submit</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <div class="wrap">
     <section class="section">
       <h2>What this is</h2>
       <p class="prose">{esc(H["problem"])} {esc(H["after"])}</p>
@@ -483,13 +503,13 @@ def offer_page(oid: str) -> str:
     <section class="section">
       <h2>Who this is for</h2>
       <div class="split">
-        <div class="col">
+        <div class="col fit">
           <h3>A fit</h3>
           <ul>
 {for_who}
           </ul>
         </div>
-        <div class="col">
+        <div class="col pass">
           <h3>Not a fit</h3>
           <ul>
 {not_who}
@@ -499,22 +519,21 @@ def offer_page(oid: str) -> str:
     </section>
     <section class="section">
       <h2>How the work runs</h2>
-      <div class="work">
+      <ol class="run">
 {steps}
-      </div>
+      </ol>
     </section>
     <section class="section">
       <h2>What is included</h2>
-      <ul class="includes">
-{includes}
-{extras}
-      </ul>
+      <ol class="docket">
+{docket}
+      </ol>
     </section>
     <section class="section">
       <h2>Fee</h2>
       <div class="fee"><b>{esc(H["price"])}</b></div>
       <p class="note">{esc(H["price_note"])} {esc(H["anchor"])}</p>
-      <div class="split">
+      <div class="bounds">
         <div class="col">
           <h3>You receive</h3>
           <p class="prose">{esc(o["deliverable"])}</p>
@@ -527,7 +546,9 @@ def offer_page(oid: str) -> str:
     </section>
     <section class="section">
       <h2>If something is missing</h2>
-      <p class="prose">{esc(H["guarantee"])}</p>
+      <div class="miss">
+        <p class="prose">{esc(H["guarantee"])}</p>
+      </div>
     </section>
     <section class="section">
       <h2>Questions</h2>
@@ -536,10 +557,11 @@ def offer_page(oid: str) -> str:
       </div>
     </section>
     <section class="section" id="request">
-      <h2>Request this file</h2>
+      <h2>{esc(cta)}</h2>
       <p class="prose">Say what is due and when. If we cannot take it this week, we will say so.</p>
       <div class="request">
       <form id="lead" class="intake">
+        <div class="slip"><span>Intake</span><span>{esc(SHORT[oid])}</span></div>
         <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
         <input type="hidden" name="offer_id" value="{esc(oid)}">
         <label for="name">Name</label>
@@ -549,17 +571,19 @@ def offer_page(oid: str) -> str:
         <label for="message">What is due, and when?</label>
         <textarea id="message" name="message" rows="4" required></textarea>
         <label class="check"><input type="checkbox" name="consented" required> I have read the <a href="/legal/privacy.html">privacy notice</a>. This is not legal, medical, tax, or insurance advice.</label>
-        <button class="btn" type="submit">Request this file</button>
+        <button class="btn" type="submit">{esc(cta)}</button>
         <p id="status" class="status"></p>
       </form>
-      <aside class="quiet">
+      <aside class="quiet proof">
         <p>You keep every login. You submit. We prepare the file.</p>
         <p>We reply by email with a yes or no for this week.</p>
+        <p>{esc(L["turnaround"])}</p>
+        <p>{esc(H["price"])}</p>
       </aside>
       </div>
     </section>
   </div>
-  <div class="stick"><a class="btn" href="#request">Request this file</a></div>
+  <div class="stick"><a class="btn" href="#request">{esc(cta)}</a></div>
 {footer()}
 <script>
 const form = document.getElementById('lead');
@@ -693,12 +717,17 @@ def main() -> None:
         (PUBLIC / "offers" / f"{oid}.html").write_text(offer_page(oid))
     # Ban check
     bad = []
+    banned_offer = ("Packetbench", "Sit-Beside", "sit-beside", "DFY", "Buy this if")
     for p in PUBLIC.rglob("*.html"):
         t = p.read_text()
         if "—" in t or "–" in t:
-            bad.append(str(p))
+            bad.append(f"dash:{p}")
+        if "/offers/" in str(p):
+            for token in banned_offer:
+                if token in t:
+                    bad.append(f"{token}:{p}")
     if bad:
-        raise SystemExit(f"em/en dash in {bad}")
+        raise SystemExit(f"banned strings in {bad}")
     print(f"wrote {2 + len(OFFERS)} html pages")
 
 

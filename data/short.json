@@ -1,0 +1,22 @@
+{
+  "05-solar-interconnect": "Interconnect Check",
+  "06-gmc-pid-recovery": "Shopping File",
+  "07-amz-vendor-chargebacks": "Vendor Desk",
+  "09-ncci-emod-audit": "e-Mod File",
+  "11-wcag-punchlist": "Access Audit",
+  "12-resto-cash-tax-pack": "Monday Pack",
+  "13-hvac-rebate-filing": "Rebate File",
+  "15-warranty-labor-rescue": "Labor Rescue",
+  "16-hotel-ota-shortpay": "Folio Desk",
+  "01-nap-consistency": "NAP Check",
+  "02-link-drift": "Link Watch",
+  "03-ap-invoices": "AP File",
+  "04-contract-extract": "Contract File",
+  "08-ticket-themes": "Ticket Themes",
+  "10-payout-recon": "Payout Recon",
+  "14-job-cost": "Job Cost",
+  "17-sku-copy": "SKU Copy",
+  "18-review-desk": "Review Desk",
+  "19-rfq-batch": "RFQ File",
+  "20-bill-ocr": "Bill File"
+}

@@ -1,0 +1,513 @@
+{
+  "16-hotel-ota-shortpay": {
+    "headline": "Nightly folio exceptions, next morning.",
+    "sub": "Short pays and unbilled no-shows, with a dispute packet attached. You send it.",
+    "buyer": "Independent US hotels",
+    "packet": [
+      "Short pays and no-shows.",
+      "Per reservation.",
+      "Noise under your number."
+    ],
+    "steps": [
+      [
+        "Send the files",
+        "Your export or URLs. No login."
+      ],
+      [
+        "We run the pass",
+        "AI plus tools on your material."
+      ],
+      [
+        "You act",
+        "You keep every account."
+      ]
+    ],
+    "turnaround": "Nightly file. Pack the next morning."
+  },
+  "09-ncci-emod-audit": {
+    "headline": "Check the worksheet before you pay the mod.",
+    "sub": "We line the rating sheet up to your claim file. Your broker files any mismatches.",
+    "buyer": "US contractors who are experience-rated",
+    "packet": [
+      "Worksheet against the claim extract.",
+      "The usual silent errors.",
+      "Ready to send."
+    ],
+    "steps": [
+      [
+        "Send the files",
+        "Your export or URLs. No login."
+      ],
+      [
+        "We run the pass",
+        "AI plus tools on your material."
+      ],
+      [
+        "You act",
+        "You keep every account."
+      ]
+    ],
+    "turnaround": "Seven business days for one rating year."
+  },
+  "07-amz-vendor-chargebacks": {
+    "headline": "Evidence packets for Vendor chargebacks.",
+    "sub": "We build the dispute file from the defect list. You upload it. Amazon still decides.",
+    "buyer": "US Amazon Vendor Central brands",
+    "packet": [
+      "One folder per dispute.",
+      "Identified vs submitted. Not collected.",
+      "Disputes that are not worth filing."
+    ],
+    "steps": [
+      [
+        "Send the files",
+        "Your export or URLs. No login."
+      ],
+      [
+        "We run the pass",
+        "AI plus tools on your material."
+      ],
+      [
+        "You act",
+        "You keep every account."
+      ]
+    ],
+    "turnaround": "Setup in one week, then a weekly batch."
+  },
+  "11-wcag-punchlist": {
+    "headline": "A page-level accessibility list, not a certificate.",
+    "sub": "We review up to 10 public URLs and list concrete issues. You own the fixes.",
+    "buyer": "US small businesses that must show an accessibility pass for a bid or a complaint",
+    "packet": [
+      "What is wrong on each URL.",
+      "Which WCAG item it maps to.",
+      "What to change, in plain language."
+    ],
+    "steps": [
+      [
+        "Send the files",
+        "Your export or URLs. No login."
+      ],
+      [
+        "We run the pass",
+        "AI plus tools on your material."
+      ],
+      [
+        "You act",
+        "You keep every account."
+      ]
+    ],
+    "turnaround": "Ready in five business days."
+  },
+  "13-hvac-rebate-filing": {
+    "headline": "Rebate forms for jobs you already finished.",
+    "sub": "We complete the utility packet from the job file. You or the homeowner submit.",
+    "buyer": "Licensed US HVAC contractors",
+    "packet": [
+      "From your invoice and photos.",
+      "What that program actually wants.",
+      "Jobs we will not fake."
+    ],
+    "steps": [
+      [
+        "Send the files",
+        "Your export or URLs. No login."
+      ],
+      [
+        "We run the pass",
+        "AI plus tools on your material."
+      ],
+      [
+        "You act",
+        "You keep every account."
+      ]
+    ],
+    "turnaround": "Four business days per packet."
+  },
+  "15-warranty-labor-rescue": {
+    "headline": "Rebuild the rejected labor claim.",
+    "sub": "We match the pack to the rejection reason. We do not promise the manufacturer pays.",
+    "buyer": "Independent appliance and HVAC techs",
+    "packet": [
+      "Why it died, in their words.",
+      "Only what that OEM asked for.",
+      "We do not keep billing a corpse."
+    ],
+    "steps": [
+      [
+        "Send the files",
+        "Your export or URLs. No login."
+      ],
+      [
+        "We run the pass",
+        "AI plus tools on your material."
+      ],
+      [
+        "You act",
+        "You keep every account."
+      ]
+    ],
+    "turnaround": "Two business days per claim."
+  },
+  "05-solar-interconnect": {
+    "headline": "Interconnection apps that pass completeness.",
+    "sub": "We check the packet against that utility\u2019s list before you send it. Your engineer still stamps.",
+    "buyer": "Residential solar installers",
+    "packet": [
+      "Their list, not a generic one.",
+      "Inverter and module vs the site plan.",
+      "If they already rejected you."
+    ],
+    "steps": [
+      [
+        "Send the files",
+        "Your export or URLs. No login."
+      ],
+      [
+        "We run the pass",
+        "AI plus tools on your material."
+      ],
+      [
+        "You act",
+        "You keep every account."
+      ]
+    ],
+    "turnaround": "Two business days per application."
+  },
+  "12-resto-cash-tax-pack": {
+    "headline": "A Monday pack from the POS export.",
+    "sub": "Cash over-short and sales-tax exceptions, named the way your CPA asked. We do not file returns.",
+    "buyer": "Multi-unit independent restaurants",
+    "packet": [
+      "By unit, by day.",
+      "What does not match the export.",
+      "The folder they actually asked for."
+    ],
+    "steps": [
+      [
+        "Send the files",
+        "Your export or URLs. No login."
+      ],
+      [
+        "We run the pass",
+        "AI plus tools on your material."
+      ],
+      [
+        "You act",
+        "You keep every account."
+      ]
+    ],
+    "turnaround": "Every Monday for the prior week."
+  },
+  "06-gmc-pid-recovery": {
+    "headline": "A fix list for dark Shopping listings.",
+    "sub": "We match price and availability errors to the landing page and the feed. You publish the changes.",
+    "buyer": "US Shopify brands with Shopping listings down",
+    "packet": [
+      "Cause and fix per flagged item.",
+      "URL, schema, visible price.",
+      "What to tell Merchant Center."
+    ],
+    "steps": [
+      [
+        "Send the files",
+        "Your export or URLs. No login."
+      ],
+      [
+        "We run the pass",
+        "AI plus tools on your material."
+      ],
+      [
+        "You act",
+        "You keep every account."
+      ]
+    ],
+    "turnaround": "Five business days for up to 200 SKUs."
+  },
+  "01-nap-consistency": {
+    "headline": "Your name, address, and phone, checked where people search.",
+    "sub": "We compare your location list to the live listings. You get a mismatch file.",
+    "buyer": "Marketing or ops lead with a location spreadsheet",
+    "packet": [
+      "Your list, normalized",
+      "Live name / address / phone per source we can see",
+      "Mismatch rows only",
+      "Suggested correction, not a login"
+    ],
+    "steps": [
+      [
+        "Send the list",
+        "Spreadsheet of locations. Public listing URLs if you have them."
+      ],
+      [
+        "We check live pages",
+        "Browser plus AI. No account access."
+      ],
+      [
+        "You fix the sources",
+        "You own every listing login."
+      ]
+    ],
+    "turnaround": "Five business days for up to 25 locations."
+  },
+  "02-link-drift": {
+    "headline": "Broken links and quiet policy-page changes, listed.",
+    "sub": "We crawl the public site you name and hand back a dated issue file.",
+    "buyer": "Site owner or marketer",
+    "packet": [
+      "Broken and redirected URLs",
+      "Policy pages we found, dated",
+      "Diff if you send last month's crawl",
+      "Pages we did not reach (login, noindex)"
+    ],
+    "steps": [
+      [
+        "Send the site",
+        "Homepage or sitemap. Public only."
+      ],
+      [
+        "We crawl",
+        "Browser plus AI. Dated folder."
+      ],
+      [
+        "You fix URLs",
+        "Your CMS, your call."
+      ]
+    ],
+    "turnaround": "Three business days for the first crawl."
+  },
+  "03-ap-invoices": {
+    "headline": "A folder of invoices, turned into exceptions.",
+    "sub": "You send PDFs or a zip. We match them to your export and list what does not line up.",
+    "buyer": "Controller or bookkeeper",
+    "packet": [
+      "Invoice header extract",
+      "Match vs the export you sent",
+      "Exception rows only",
+      "Unreadable PDFs called out"
+    ],
+    "steps": [
+      [
+        "Send the zip",
+        "PDFs plus your AP export if you have one."
+      ],
+      [
+        "We read and match",
+        "AI on the files. You still approve payment."
+      ],
+      [
+        "You clear exceptions",
+        "Your books, your bank."
+      ]
+    ],
+    "turnaround": "Five business days for up to 80 invoices."
+  },
+  "04-contract-extract": {
+    "headline": "Dates, parties, and amounts out of a pile of contracts.",
+    "sub": "You send the PDFs. We return a tracker. You still own the legal meaning.",
+    "buyer": "COO, GC, or founder",
+    "packet": [
+      "One row per contract",
+      "Quoted dates and amounts",
+      "Page cite where we found them",
+      "Files we could not read"
+    ],
+    "steps": [
+      [
+        "Send the PDFs",
+        "Executed copies. Redact if you want."
+      ],
+      [
+        "We extract",
+        "AI plus a pass for dates. Quotes stay in the file."
+      ],
+      [
+        "You decide",
+        "Counsel still owns legal calls."
+      ]
+    ],
+    "turnaround": "Seven business days for up to 25 contracts."
+  },
+  "08-ticket-themes": {
+    "headline": "What your tickets are actually about this week.",
+    "sub": "You export the help desk. We return themes, examples, and volume. Not a chatbot reply.",
+    "buyer": "Support or product lead",
+    "packet": [
+      "Themes with counts",
+      "Two or three quoted tickets each",
+      "Aging over 7 days",
+      "Tickets we skipped (empty, spam)"
+    ],
+    "steps": [
+      [
+        "Export CSV",
+        "Redact names if you want. No admin login."
+      ],
+      [
+        "We cluster",
+        "AI on your rows. Themes you can argue with."
+      ],
+      [
+        "You pick a fix",
+        "Product or help-center. Your call."
+      ]
+    ],
+    "turnaround": "Four business days for the first export."
+  },
+  "10-payout-recon": {
+    "headline": "Stripe or Shopify payouts, matched to the bank.",
+    "sub": "Two exports in. Exception rows out. You still book cash.",
+    "buyer": "Controller or founder-finance",
+    "packet": [
+      "Match table",
+      "Fee and reserve rows",
+      "Unmatched bank lines",
+      "Days with no payout"
+    ],
+    "steps": [
+      [
+        "Send both CSVs",
+        "Processor payouts and bank lines for the same month."
+      ],
+      [
+        "We match",
+        "AI plus checks. Exceptions only in the summary."
+      ],
+      [
+        "You book",
+        "Your accountant owns the entries."
+      ]
+    ],
+    "turnaround": "Five business days for one month."
+  },
+  "14-job-cost": {
+    "headline": "Where the job left the estimate.",
+    "sub": "You send estimate and actuals. We return variance by job, not a pep talk.",
+    "buyer": "Owner or PM",
+    "packet": [
+      "One sheet per job",
+      "Variance by bucket",
+      "Jobs we could not match",
+      "Questions only you can answer"
+    ],
+    "steps": [
+      [
+        "Send the books",
+        "Estimate vs actual, same job IDs if you have them."
+      ],
+      [
+        "We line them up",
+        "AI on your sheets."
+      ],
+      [
+        "You change the next bid",
+        "Your price, your crew."
+      ]
+    ],
+    "turnaround": "Five business days for up to 15 jobs."
+  },
+  "17-sku-copy": {
+    "headline": "Titles and descriptions for a catalog, not one SKU.",
+    "sub": "You send the sheet. We return draft copy for you to paste. You still own brand voice.",
+    "buyer": "Ecommerce lead",
+    "packet": [
+      "Sheet with draft fields",
+      "Rows we skipped (no source text)",
+      "A short voice note from your examples",
+      "You paste and edit"
+    ],
+    "steps": [
+      [
+        "Send the CSV",
+        "Plus 3 examples of copy you like."
+      ],
+      [
+        "We draft the batch",
+        "AI on your rows. Not live publish."
+      ],
+      [
+        "You edit and paste",
+        "Your store, your voice."
+      ]
+    ],
+    "turnaround": "Seven business days for up to 150 SKUs."
+  },
+  "18-review-desk": {
+    "headline": "This week's public reviews, with draft replies.",
+    "sub": "We pull what is public on the listing you name. You post the replies.",
+    "buyer": "Owner or office manager",
+    "packet": [
+      "New reviews since last file",
+      "Draft reply per review",
+      "Ones that need a human (legal, medical, threats)",
+      "You post"
+    ],
+    "steps": [
+      [
+        "Send the public URL",
+        "No login."
+      ],
+      [
+        "We pull and draft",
+        "Browser plus AI, weekly."
+      ],
+      [
+        "You post",
+        "Your listing, your name."
+      ]
+    ],
+    "turnaround": "First file in three business days, then weekly."
+  },
+  "19-rfq-batch": {
+    "headline": "A pile of RFQs, turned into bid or missing-info.",
+    "sub": "You forward the PDFs or a mailbox export. We return a bid / no-bid / missing-info sheet.",
+    "buyer": "Estimator or owner",
+    "packet": [
+      "Row per RFQ",
+      "Due date if stated",
+      "Missing-info list",
+      "You decide bid or skip"
+    ],
+    "steps": [
+      [
+        "Send the pile",
+        "PDFs or email export. Redact if you want."
+      ],
+      [
+        "We read for structure",
+        "AI on the files. No pricing."
+      ],
+      [
+        "You bid or skip",
+        "Your numbers, your submit."
+      ]
+    ],
+    "turnaround": "Five business days for up to 20 RFQs."
+  },
+  "20-bill-ocr": {
+    "headline": "A stack of bills, in a sheet.",
+    "sub": "You send the PDFs. We return vendor, period, amount, and due date when they are on the page.",
+    "buyer": "Office manager or bookkeeper",
+    "packet": [
+      "Vendor, period, amount, due date",
+      "Source file name",
+      "Unreadable scans",
+      "You pay from your bank"
+    ],
+    "steps": [
+      [
+        "Send the zip",
+        "Utility and vendor PDFs."
+      ],
+      [
+        "We read them",
+        "AI plus a check. Quotes where we can."
+      ],
+      [
+        "You pay",
+        "Your bank. Not us."
+      ]
+    ],
+    "turnaround": "Four business days for up to 40 bills."
+  }
+}

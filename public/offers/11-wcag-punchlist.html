@@ -10,10 +10,10 @@
 <body>
   <!--
   THESIS: Each desk is a standalone product page that sells one packet, not a studio catalog.
-  OWN-WORLD: Cool paper, ink, one cobalt accent, sharp corners, self-hosted Geist.
+  OWN-WORLD: Cool sage paper, oxide stamp, hairline rules, hanging-folder exhibit object, sharp corners, Geist.
   STORY: Visitor sees the failure, the file they get, the price, and can request kickoff.
-  FIRST VIEWPORT: Split hero. Headline left, packet contents right, primary CTA under the subtext.
-  FORM: Trust-first B2B service landing. Seed: unattended-rebuild-2026-08-18.
+  FIRST VIEWPORT: Split. Headline, who, fee, and CTA left. Designed folder with numbered exhibits right.
+  FORM: Print shop + federal file clerk. Brief-pinned. VARIANCE 6 / MOTION 3 / DENSITY 4.
   FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
   -->
   <div class="wrap">
@@ -22,22 +22,31 @@
     <a class="nav-cta" href="#request">Request</a>
   </nav>
 </div>
+  <section class="hero-band">
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <h1>A page-level accessibility list, not a certificate.</h1>
+        <p class="sub">We review up to 10 public URLs and list concrete issues. You own the fixes.</p>
+        <p class="hero-meta"><span class="who">US small businesses that must show an accessibility pass for a bid or a complaint</span><b>$797</b> <span>Ready in five business days.</span></p>
+        <a class="btn" href="#request">Request this file</a>
+      </div>
+      <aside class="dossier" aria-label="What is in the file">
+        <div class="dossier-tab">Access Audit</div>
+        <div class="dossier-well">
+          <div class="sheet">
+            <div class="sheet-rule"><span>In the file</span><span>Ready in five business days.</span></div>
+            <ol>
+            <li data-n="01">What is wrong on each URL.</li>
+            <li data-n="02">Which WCAG item it maps to.</li>
+            <li data-n="03">What to change, in plain language.</li>
+            </ol>
+            <p class="stamp">You<br>submit</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
   <div class="wrap">
-    <section class="hero">
-      <h1>A page-level accessibility list, not a certificate.</h1>
-      <p class="sub">We review up to 10 public URLs and list concrete issues. You own the fixes.</p>
-      <p class="hero-meta"><b>$797</b> <span>Ready in five business days.</span></p>
-      <a class="btn" href="#request">Request this file</a>
-    </section>
-    <aside class="panel">
-      <h2>In the file</h2>
-      <ol>
-          <li data-n="01">URL-by-URL issue list</li>
-          <li data-n="02">WCAG criterion cited for each issue</li>
-          <li data-n="03">Suggested fix in plain language</li>
-          <li data-n="04">A do-not-claim note: this is not a certification</li>
-      </ol>
-    </aside>
     <section class="section">
       <h2>What this is</h2>
       <p class="prose">Someone asked for WCAG and you have a marketing site, not an audit. A punch list your developer can work in a week.</p>
@@ -46,14 +55,14 @@
     <section class="section">
       <h2>Who this is for</h2>
       <div class="split">
-        <div class="col">
+        <div class="col fit">
           <h3>A fit</h3>
           <ul>
           <li>A public marketing or brochure site</li>
           <li>A bid or complaint that named WCAG or ADA web access</li>
           </ul>
         </div>
-        <div class="col">
+        <div class="col pass">
           <h3>Not a fit</h3>
           <ul>
           <li>Logged-in apps we cannot see</li>
@@ -64,28 +73,28 @@
     </section>
     <section class="section">
       <h2>How the work runs</h2>
-      <div class="work">
-      <div><h3>Send the URLs</h3><p>Up to 10 public pages. No login walls.</p></div>
-      <div><h3>We crawl and list</h3><p>AI plus a browser pass. Only what is visible without an account.</p></div>
-      <div><h3>You fix or assign</h3><p>Your developer implements. We do not certify.</p></div>
-      </div>
+      <ol class="run">
+      <li><h3>Send the files</h3><p>Your export or URLs. No login.</p></li>
+      <li><h3>We run the pass</h3><p>AI plus tools on your material.</p></li>
+      <li><h3>You act</h3><p>You keep every account.</p></li>
+      </ol>
     </section>
     <section class="section">
       <h2>What is included</h2>
-      <ul class="includes">
-      <li><strong>Issue list</strong><span>What is wrong on each URL.</span></li>
-      <li><strong>Criterion map</strong><span>Which WCAG item it maps to.</span></li>
-      <li><strong>Fix notes</strong><span>What to change, in plain language.</span></li>
-      <li><strong>3-Item Kickoff Sheet</strong><span>Tells you the only three things to send. Nothing else.</span></li>
-      <li><strong>Submit-Day Click Path</strong><span>Screen-by-screen path for the sitting where you attest.</span></li>
-      <li><strong>Incomplete-File Redo</strong><span>If a listed checklist item is missing, we fix it at no charge.</span></li>
-      </ul>
+      <ol class="docket">
+      <li><span class="ex">01</span><div><strong>Issue list</strong><span class="does">What is wrong on each URL.</span></div></li>
+      <li><span class="ex">02</span><div><strong>Criterion map</strong><span class="does">Which WCAG item it maps to.</span></div></li>
+      <li><span class="ex">03</span><div><strong>Fix notes</strong><span class="does">What to change, in plain language.</span></div></li>
+      <li><span class="ex">04</span><div><strong>3-Item Kickoff Sheet</strong><span class="does">Tells you the only three things to send. Nothing else.</span></div></li>
+      <li><span class="ex">05</span><div><strong>Submit-Day Click Path</strong><span class="does">Screen-by-screen path for the sitting where you attest.</span></div></li>
+      <li><span class="ex">06</span><div><strong>Incomplete-File Redo</strong><span class="does">If a listed checklist item is missing, we fix it at no charge.</span></div></li>
+      </ol>
     </section>
     <section class="section">
       <h2>Fee</h2>
       <div class="fee"><b>$797</b></div>
       <p class="note">Up to 10 public URLs. Extra URLs $47. A lost bid or an unanswered letter costs more than this list.</p>
-      <div class="split">
+      <div class="bounds">
         <div class="col">
           <h3>You receive</h3>
           <p class="prose">A punch list of concrete issues on up to 10 public URLs, with the WCAG criterion and a suggested fix. You decide what to implement.</p>
@@ -98,7 +107,9 @@
     </section>
     <section class="section">
       <h2>If something is missing</h2>
-      <p class="prose">If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a rejected filing or a failed bid.</p>
+      <div class="miss">
+        <p class="prose">If a listed item is missing from the file we sent, we fix it at no charge. We do not refund a rejected filing or a failed bid.</p>
+      </div>
     </section>
     <section class="section">
       <h2>Questions</h2>
@@ -113,6 +124,7 @@
       <p class="prose">Say what is due and when. If we cannot take it this week, we will say so.</p>
       <div class="request">
       <form id="lead" class="intake">
+        <div class="slip"><span>Intake</span><span>Access Audit</span></div>
         <input class="hp" name="company_website" tabindex="-1" autocomplete="off">
         <input type="hidden" name="offer_id" value="11-wcag-punchlist">
         <label for="name">Name</label>
@@ -125,9 +137,11 @@
         <button class="btn" type="submit">Request this file</button>
         <p id="status" class="status"></p>
       </form>
-      <aside class="quiet">
+      <aside class="quiet proof">
         <p>You keep every login. You submit. We prepare the file.</p>
         <p>We reply by email with a yes or no for this week.</p>
+        <p>Ready in five business days.</p>
+        <p>$797</p>
       </aside>
       </div>
     </section>

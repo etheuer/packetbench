@@ -1,100 +1,4 @@
 {
-  "01-pecos-revalidation": {
-    "for": [
-      "Independent medical or dental practices with a CMS revalidation due date",
-      "A practice admin or authorized official who can attest in PECOS"
-    ],
-    "not": [
-      "Billing companies that already run PECOS as a product",
-      "Anyone who wants us to log in or click Submit"
-    ],
-    "faq": [
-      [
-        "Do you need our PECOS password?",
-        "No. You keep the login. We send a packet your official uses in one sitting."
-      ],
-      [
-        "Can you guarantee CMS accepts it?",
-        "No. We assemble a complete file. Acceptance stays with CMS and your official."
-      ],
-      [
-        "How fast?",
-        "Five business days for one enrollment record after we have the NPI and due month."
-      ]
-    ]
-  },
-  "02-fda-ffr-renewal": {
-    "for": [
-      "US shared kitchens and small copackers that must renew in the 2026 window",
-      "An owner who still has the FDA account"
-    ],
-    "not": [
-      "Foreign facilities that need a US Agent",
-      "Anyone who wants us to hold the FURLS login"
-    ],
-    "faq": [
-      [
-        "Is the 2026 window still open?",
-        "Yes. October 1 through December 31, 2026. After that the registration expires."
-      ],
-      [
-        "Will you submit for us?",
-        "No. The owner submits. We prepare the worksheet and the click path."
-      ],
-      [
-        "How fast?",
-        "Three business days per facility."
-      ]
-    ]
-  },
-  "03-osha-ita-hygiene": {
-    "for": [
-      "Establishments that must file OSHA injury data electronically",
-      "A safety lead who already keeps 300 and 300A logs"
-    ],
-    "not": [
-      "Companies that want us to decide what is recordable",
-      "Anyone asking us to speak to OSHA"
-    ],
-    "faq": [
-      [
-        "March 2 already passed. Too late?",
-        "OSHA still accepts the file through December 31. We also set next year's weekly log."
-      ],
-      [
-        "Do you decide recordability?",
-        "No. That stays with you. We clean the file and list questions only you can answer."
-      ],
-      [
-        "How fast?",
-        "Setup in one week, then a monthly hygiene pass."
-      ]
-    ]
-  },
-  "04-fsis-origin-label": {
-    "for": [
-      "Small FSIS plants that print Product of USA or Made in USA",
-      "A QA lead who can sign the plant file"
-    ],
-    "not": [
-      "Plants that want us to obtain USDA label approval",
-      "Anyone asking us to certify origin"
-    ],
-    "faq": [
-      [
-        "Is this USDA approval?",
-        "No. We map the evidence file. LSAS and approval stay with you."
-      ],
-      [
-        "What do you need from us?",
-        "Current labels plus whatever origin records you already have."
-      ],
-      [
-        "How fast?",
-        "Ten business days for one establishment."
-      ]
-    ]
-  },
   "05-solar-interconnect": {
     "for": [
       "Residential solar installers who keep missing completeness checks",
@@ -164,30 +68,6 @@
       [
         "How fast?",
         "Setup in one week, then a weekly batch."
-      ]
-    ]
-  },
-  "08-gbp-trade-reinstatement": {
-    "for": [
-      "Licensed home-service trades with a suspended Google Business Profile",
-      "An owner who can upload license and address proof once"
-    ],
-    "not": [
-      "Agencies looking for monthly SEO",
-      "Anyone who wants a guaranteed reinstatement"
-    ],
-    "faq": [
-      [
-        "Can you guarantee we come back on Maps?",
-        "No. We build one clean appeal packet. Google decides."
-      ],
-      [
-        "Should we keep appealing?",
-        "No. One packet. Stacked appeals usually make it worse."
-      ],
-      [
-        "How fast?",
-        "Three business days."
       ]
     ]
   },
@@ -311,102 +191,6 @@
       ]
     ]
   },
-  "17-sam-first-award": {
-    "for": [
-      "First-time SAM.gov federal awardees in the first 30 days",
-      "An owner who will stay the registrant"
-    ],
-    "not": [
-      "Firms that want us to bid or certify size status",
-      "Anyone who wants us to take the SAM login"
-    ],
-    "faq": [
-      [
-        "Do you register us in SAM?",
-        "No. You remain the registrant. We build the 30-day onboarding packet."
-      ],
-      [
-        "Is this proposal writing?",
-        "No. Post-award onboarding only."
-      ],
-      [
-        "How fast?",
-        "Seven business days."
-      ]
-    ]
-  },
-  "18-new-contractor-pack": {
-    "for": [
-      "Newly licensed contractors in California or Florida",
-      "An owner who has or will have a broker"
-    ],
-    "not": [
-      "Anyone who wants us to sell insurance",
-      "We do not act as agent of record"
-    ],
-    "faq": [
-      [
-        "Do you issue the COI?",
-        "No. Your broker does. We write the request and the 90-day checklist."
-      ],
-      [
-        "Which states?",
-        "California and Florida first. Their new-license lists are public."
-      ],
-      [
-        "How fast?",
-        "Five business days."
-      ]
-    ]
-  },
-  "19-fda-warning-cleanup": {
-    "for": [
-      "US food facilities named on a new FDA warning letter",
-      "A QA lead who already has counsel on the thread"
-    ],
-    "not": [
-      "Anyone who wants us to write the FDA response",
-      "We will not start without counsel"
-    ],
-    "faq": [
-      [
-        "Are you lawyers?",
-        "No. We index registration, labels, and recall files for your counsel."
-      ],
-      [
-        "Will this close the letter?",
-        "Counsel owns the response and the close-out. We own the file pile."
-      ],
-      [
-        "How fast?",
-        "Ten business days for the index."
-      ]
-    ]
-  },
-  "10-sos-annual-report": {
-    "for": [
-      "A US LLC or corporation with a known home state",
-      "Someone who can confirm officers and the principal address"
-    ],
-    "not": [
-      "Anyone who wants us to be the registered agent",
-      "Tax return preparation"
-    ],
-    "faq": [
-      [
-        "Do you file it?",
-        "No. You submit and pay the state. We prepare the worksheet."
-      ],
-      [
-        "Which states?",
-        "Any state with a public annual-report page. One state per order."
-      ],
-      [
-        "How fast?",
-        "Three business days after we have the entity facts."
-      ]
-    ]
-  },
   "11-wcag-punchlist": {
     "for": [
       "A public marketing or brochure site",
@@ -431,51 +215,267 @@
       ]
     ]
   },
-  "14-nofo-matrix": {
+  "01-nap-consistency": {
     "for": [
-      "A single public NOFO you are considering",
-      "Someone who will write and submit themselves"
+      "A spreadsheet of real locations",
+      "Someone who can edit the listings"
     ],
     "not": [
-      "Anyone who wants us to write the narrative",
-      "Private foundations with no public notice"
+      "Anyone who wants us to take the Google login",
+      "A single location they can check by eye"
     ],
     "faq": [
       [
-        "Will you write the grant?",
-        "No. This is eligibility and documents only."
+        "Why not ChatGPT?",
+        "It cannot open 25 live listings and your sheet in one pass unless you paste every page."
       ],
       [
-        "Do you submit in Grants.gov?",
-        "No. You stay the applicant."
+        "Do you change Google for us?",
+        "No. You keep every login."
       ],
       [
         "How fast?",
-        "Four business days after we have the notice URL."
+        "Five business days for up to 25 locations."
       ]
     ]
   },
-  "20-labor-posters": {
+  "02-link-drift": {
     "for": [
-      "One US workplace address",
-      "Someone who can print or send to a print shop"
+      "A public site we can crawl without a login",
+      "Someone who can change URLs"
     ],
     "not": [
-      "Employment-law opinions",
-      "Multi-country workplaces"
+      "Apps behind a login",
+      "Anyone who wants us in the CMS"
     ],
     "faq": [
       [
-        "Are these official?",
-        "We pull the current files from DOL and the state site and date the folder."
+        "Why not ChatGPT?",
+        "It does not crawl 200 of your URLs and keep a dated folder."
       ],
       [
-        "Do you mail printed posters?",
-        "Not in the base fee. You get PDFs and a hang list."
+        "Will you fix the links?",
+        "No. We list them."
+      ],
+      [
+        "Monthly?",
+        "Yes, $197 if you want the next crawl."
+      ]
+    ]
+  },
+  "03-ap-invoices": {
+    "for": [
+      "A batch of invoice PDFs",
+      "Someone who approves payment"
+    ],
+    "not": [
+      "Full bookkeeping",
+      "Payroll or tax filing"
+    ],
+    "faq": [
+      [
+        "Why not ChatGPT?",
+        "Eighty PDFs and a match to your export is the job. A chat window is not."
+      ],
+      [
+        "Do you pay anyone?",
+        "No."
+      ],
+      [
+        "Bad scans?",
+        "They go on the unreadable list."
+      ]
+    ]
+  },
+  "04-contract-extract": {
+    "for": [
+      "A batch of signed PDFs",
+      "Someone who can involve counsel"
+    ],
+    "not": [
+      "Legal opinions",
+      "Negotiation"
+    ],
+    "faq": [
+      [
+        "Is this legal advice?",
+        "No. We copy dates and amounts and show the page."
+      ],
+      [
+        "Why not ChatGPT?",
+        "You would have to paste every contract. This is the pile."
       ],
       [
         "How fast?",
-        "Two business days after we have the address."
+        "Seven business days for up to 25 files."
+      ]
+    ]
+  },
+  "08-ticket-themes": {
+    "for": [
+      "A CSV export from a real help desk",
+      "Someone who owns the help center"
+    ],
+    "not": [
+      "We will not staff your inbox",
+      "PHI or clinical tickets"
+    ],
+    "faq": [
+      [
+        "Why not ChatGPT?",
+        "Volume. This is your week of tickets, not a sample."
+      ],
+      [
+        "Do you reply to customers?",
+        "No."
+      ],
+      [
+        "Weekly?",
+        "Yes, $397 if the export is regular."
+      ]
+    ]
+  },
+  "10-payout-recon": {
+    "for": [
+      "One processor and one bank account",
+      "A month you can export"
+    ],
+    "not": [
+      "Full accounting",
+      "Tax"
+    ],
+    "faq": [
+      [
+        "Why not ChatGPT?",
+        "Two real month files, line by line. That is the product."
+      ],
+      [
+        "Which processors?",
+        "Stripe or Shopify first. Others if the export is clean."
+      ],
+      [
+        "Do you book it?",
+        "No."
+      ]
+    ]
+  },
+  "14-job-cost": {
+    "for": [
+      "A set of closed jobs with numbers",
+      "Someone who bids the next one"
+    ],
+    "not": [
+      "Live project management",
+      "We will not visit the site"
+    ],
+    "faq": [
+      [
+        "Why not ChatGPT?",
+        "Your closed jobs, in bulk. Not a lecture on costing."
+      ],
+      [
+        "What format?",
+        "Sheets or CSV. We will say if we cannot read it."
+      ],
+      [
+        "How fast?",
+        "Five business days for up to 15 jobs."
+      ]
+    ]
+  },
+  "17-sku-copy": {
+    "for": [
+      "A product export",
+      "Someone who will edit before publish"
+    ],
+    "not": [
+      "We will not publish",
+      "Regulated claims we invent"
+    ],
+    "faq": [
+      [
+        "Why not ChatGPT?",
+        "One hundred fifty rows, one voice, one sheet. That is the product."
+      ],
+      [
+        "Do you upload to Shopify?",
+        "No."
+      ],
+      [
+        "How fast?",
+        "Seven business days for up to 150 SKUs."
+      ]
+    ]
+  },
+  "18-review-desk": {
+    "for": [
+      "One public listing URL",
+      "Someone who can post replies"
+    ],
+    "not": [
+      "We will not take the Google login",
+      "Medical or legal advice in replies"
+    ],
+    "faq": [
+      [
+        "Why not ChatGPT?",
+        "The watch is the product. Weekly, on your live listing."
+      ],
+      [
+        "Do you post?",
+        "No."
+      ],
+      [
+        "How fast?",
+        "First file in three days, then weekly."
+      ]
+    ]
+  },
+  "19-rfq-batch": {
+    "for": [
+      "A batch of RFQ files",
+      "Someone who prices and submits"
+    ],
+    "not": [
+      "We will not bid",
+      "Government classified solicitations"
+    ],
+    "faq": [
+      [
+        "Why not ChatGPT?",
+        "Twenty RFQs in a pile. That is the desk."
+      ],
+      [
+        "Do you quote?",
+        "No."
+      ],
+      [
+        "How fast?",
+        "Five business days for up to 20."
+      ]
+    ]
+  },
+  "20-bill-ocr": {
+    "for": [
+      "A batch of bill PDFs",
+      "Someone who pays the bills"
+    ],
+    "not": [
+      "We will not access the bank",
+      "Personal tax returns"
+    ],
+    "faq": [
+      [
+        "Why not ChatGPT?",
+        "The stack. Forty files, one sheet."
+      ],
+      [
+        "Do you pay?",
+        "No."
+      ],
+      [
+        "How fast?",
+        "Four business days for up to 40."
       ]
     ]
   }
